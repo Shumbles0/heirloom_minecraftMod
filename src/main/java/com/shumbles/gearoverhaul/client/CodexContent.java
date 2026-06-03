@@ -54,9 +54,10 @@ public final class CodexContent {
 			+ "then Core, and at the summit Quintessence. Each five-level band leans on the next compound, alongside "
 			+ "materials fitting the gear itself."));
 		out.add(Text.literal(""));
-		out.add(Text.literal("MILESTONES. Level 10 is a threshold the gear must be put to use to cross. Level 20 is a "
-			+ "ritual rather than a plain temper — the rite that unlocks the last five levels (and, for weapons, a "
-			+ "touch of restored speed at the very end)."));
+		out.add(Text.literal("MILESTONES. Level 10 is a threshold the gear must be put to use to cross — each kind of "
+			+ "piece has its own deed to perform. The exact condition for each can be inscribed into this Codex, just "
+			+ "as recipes are. Level 20 is a ritual rather than a plain temper — the rite that unlocks the last five "
+			+ "levels (and, for weapons, a touch of restored speed at the very end)."));
 		out.add(Text.literal(""));
 		out.add(Text.literal("SPECIAL ARMS. The bow, crossbow, trident and mace are handled apart. Their signature "
 			+ "powers are dulled and restored as they temper: the bow's draw quickens back to true, the crossbow's "
@@ -65,6 +66,18 @@ public final class CodexContent {
 		out.add(Text.literal("THE CODEX. Knowledge is inscribed, not given. Gather Tempering Manuscripts, choose a "
 			+ "rarity, and spend them to reveal its recipes — chapter by chapter — onto these pages."));
 		return out;
+	}
+
+	// ---- milestones ---------------------------------------------------------
+
+	/** The exact Level-10 condition for a milestone entry. */
+	public static List<Text> milestoneLines(int index) {
+		return MilestoneText.codexLines(CodexEntries.milestoneKindOf(index));
+	}
+
+	/** The Level-20 rite for a ritual entry. */
+	public static List<Text> ritualLines(int index) {
+		return RitualText.codexLines(CodexEntries.ritualKindOf(index));
 	}
 
 	// ---- chapters -----------------------------------------------------------

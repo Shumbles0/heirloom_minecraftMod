@@ -10,10 +10,14 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registries;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.slot.Slot;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
@@ -130,7 +134,25 @@ public class TemperingStationScreenHandler extends ScreenHandler {
 		Tempering.setLevel(gear, target);
 		inventory.markDirty();
 		sendContentUpdates();
+		playTemperEffects(target);
 		return true;
+	}
+
+	/** Forge clang + a small burst of flame, smoke and sparks at the station on a successful temper. */
+	private void playTemperEffects(int level) {
+		context.run((world, pos) -> {
+			// Pitch climbs a touch with the level reached, so higher tempers ring brighter.
+			float pitch = 0.9f + Math.min(level, Tempering.MAX_TEMPER) * 0.02f;
+			world.playSound(null, pos, SoundEvents.BLOCK_ANVIL_USE, SoundCategory.BLOCKS, 0.7f, pitch);
+			if (world instanceof ServerWorld server) {
+				double cx = pos.getX() + 0.5;
+				double cy = pos.getY() + 1.0;
+				double cz = pos.getZ() + 0.5;
+				server.spawnParticles(ParticleTypes.FLAME, cx, cy, cz, 14, 0.25, 0.2, 0.25, 0.02);
+				server.spawnParticles(ParticleTypes.SMOKE, cx, cy, cz, 8, 0.2, 0.2, 0.2, 0.01);
+				server.spawnParticles(ParticleTypes.ENCHANT, cx, cy + 0.2, cz, 12, 0.3, 0.4, 0.3, 0.1);
+			}
+		});
 	}
 
 	/** The level the station would advance to from {@code current}, or -1 if it can't. */

@@ -21,25 +21,28 @@ import org.jetbrains.annotations.Nullable;
 public final class UsageGate {
 	/** Per-gear-type condition. The threshold's unit is noted per kind. */
 	public enum Kind {
-		SWORD(20, "kills"),         // no-damage kill-streak (resets when hit)
-		AXE(200, "logs"),           // logs broken
-		PICKAXE(20, "ores"),        // iron+ ore streak (resets on coal/copper ore)
-		SHOVEL(200, "dug"),         // earth blocks broken
-		BOW(10, "long shots"),      // kills from >10 blocks
-		CROSSBOW(10, "bolt hits"),  // hits, any range
-		TRIDENT(5, "throw kills"),  // thrown-trident kills
-		MACE(50, "slams"),          // hits while falling
-		HELMET(6000, "submerged"),  // ticks submerged (300s)
-		CHESTPLATE(200, "absorbed"),// damage absorbed without dying (resets on death)
-		LEGGINGS(2800, "travelled"),// blocks travelled on foot
-		BOOTS(1, "hard landing");   // survive a fall leaving <= half a heart
+		SWORD(20, "kills", "Sword"),            // no-damage kill-streak (resets when hit)
+		AXE(200, "logs", "Axe"),                // logs broken
+		PICKAXE(20, "ores", "Pickaxe"),         // iron+ ore streak (resets on coal/copper ore)
+		SHOVEL(200, "dug", "Shovel"),           // earth blocks broken
+		BOW(10, "long shots", "Bow"),           // kills from >10 blocks
+		CROSSBOW(10, "bolt hits", "Crossbow"),  // hits, any range
+		TRIDENT(5, "throw kills", "Trident"),   // thrown-trident kills
+		MACE(50, "slams", "Mace"),              // hits while falling
+		HELMET(6000, "submerged", "Helmet"),    // ticks submerged (300s)
+		CHESTPLATE(200, "absorbed", "Chestplate"),// damage absorbed without dying (resets on death)
+		LEGGINGS(2800, "travelled", "Leggings"),// blocks travelled on foot
+		BOOTS(1, "hard landing", "Boots");      // survive a fall leaving <= half a heart
 
 		public final int threshold;
 		public final String label;
+		/** Display name of the gear type, used for milestone titles/hints. */
+		public final String gearName;
 
-		Kind(int threshold, String label) {
+		Kind(int threshold, String label, String gearName) {
 			this.threshold = threshold;
 			this.label = label;
+			this.gearName = gearName;
 		}
 	}
 

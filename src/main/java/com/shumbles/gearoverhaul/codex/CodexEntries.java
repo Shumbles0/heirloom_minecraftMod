@@ -1,5 +1,6 @@
 package com.shumbles.gearoverhaul.codex;
 
+import com.shumbles.gearoverhaul.usage.UsageGate;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -60,9 +61,158 @@ public final class CodexEntries {
 		return ITEMS.size() * BANDS;
 	}
 
-	/** Total addressable entries including the overview. */
+	/** Total addressable entries including the overview, milestones and rituals. */
 	public static int count() {
+		return 1 + chapterCount() + MILESTONE_KINDS.length + RITUAL_KINDS.length;
+	}
+
+	// ---- milestones ---------------------------------------------------------
+	// Level-10 "use it" entries, one per gear-type. Unlike recipe chapters they are
+	// rarity-agnostic (the same condition applies to every rarity of a type), so they
+	// get their own index range after the recipe chapters and are seeded into every
+	// rarity's reveal pool. Enum order is stable, so the indices stay valid across loads.
+
+	/** Milestone entries, one per gear-type {@link UsageGate.Kind}, in enum order. */
+	public static final UsageGate.Kind[] MILESTONE_KINDS = UsageGate.Kind.values();
+
+	/** Index of the first milestone entry — right after the recipe chapters. */
+	public static int milestoneBase() {
 		return 1 + chapterCount();
+	}
+
+	public static int milestoneIndex(int kindOrdinal) {
+		return milestoneBase() + kindOrdinal;
+	}
+
+	public static boolean isMilestone(int index) {
+		return index >= milestoneBase() && index < milestoneBase() + MILESTONE_KINDS.length;
+	}
+
+	public static UsageGate.Kind milestoneKindOf(int index) {
+		return MILESTONE_KINDS[index - milestoneBase()];
+	}
+
+	/** All milestone entry indices, in order. */
+	public static List<Integer> allMilestones() {
+		List<Integer> out = new ArrayList<>();
+		for (int i = 0; i < MILESTONE_KINDS.length; i++) {
+			out.add(milestoneIndex(i));
+		}
+		return out;
+	}
+
+	/** Milestone entries not yet in {@code unlocked}. */
+	public static List<Integer> lockedMilestones(List<Integer> unlocked) {
+		List<Integer> out = new ArrayList<>();
+		for (int index : allMilestones()) {
+			if (!unlocked.contains(index)) {
+				out.add(index);
+			}
+		}
+		return out;
+	}
+
+	/** The locked entries a reveal of {@code rarity} may draw: that rarity's recipes plus all milestones. */
+	public static List<Integer> revealPool(Rarity rarity, List<Integer> unlocked) {
+		List<Integer> out = new ArrayList<>(lockedInRarity(rarity, unlocked));
+		out.addAll(lockedMilestones(unlocked));
+		return out;
+	}
+
+	// ---- rituals ------------------------------------------------------------
+	// Level-20 ritual entries, one per gear-type, after the milestones. Rarity-agnostic like
+	// milestones, but in their own RITUAL track unlocked by Ritual Manuscripts.
+
+	/** Ritual entries, one per gear-type {@link UsageGate.Kind}, in enum order. */
+	public static final UsageGate.Kind[] RITUAL_KINDS = UsageGate.Kind.values();
+
+	/** Index of the first ritual entry — right after the milestone entries. */
+	public static int ritualBase() {
+		return milestoneBase() + MILESTONE_KINDS.length;
+	}
+
+	public static int ritualIndex(int kindOrdinal) {
+		return ritualBase() + kindOrdinal;
+	}
+
+	public static boolean isRitual(int index) {
+		return index >= ritualBase() && index < ritualBase() + RITUAL_KINDS.length;
+	}
+
+	public static UsageGate.Kind ritualKindOf(int index) {
+		return RITUAL_KINDS[index - ritualBase()];
+	}
+
+	/** All ritual entry indices, in order. */
+	public static List<Integer> allRituals() {
+		List<Integer> out = new ArrayList<>();
+		for (int i = 0; i < RITUAL_KINDS.length; i++) {
+			out.add(ritualIndex(i));
+		}
+		return out;
+	}
+
+	/** Ritual entries not yet in {@code unlocked}. */
+	public static List<Integer> lockedRituals(List<Integer> unlocked) {
+		List<Integer> out = new ArrayList<>();
+		for (int index : allRituals()) {
+			if (!unlocked.contains(index)) {
+				out.add(index);
+			}
+		}
+		return out;
+	}
+
+	// ---- tracks -------------------------------------------------------------
+	// The Codex is split into three knowledge tracks, each fed by its own manuscript type
+	// (see CodexItems.trackOf). The reading view and the inscribe pool are filtered per track.
+
+	/** The three knowledge tracks. */
+	public enum Track {
+		TEMPERING("Tempering"), RITUAL("Ritual"), ARCANE("Arcane");
+
+		public final String label;
+
+		Track(String label) {
+			this.label = label;
+		}
+	}
+
+	/** Which track an entry index belongs to. (The overview is shown in every track.) */
+	public static Track trackOf(int index) {
+		if (isRitual(index)) {
+			return Track.RITUAL;
+		}
+		// Overview, recipe chapters and milestones are all Tempering; Arcane has no entries yet.
+		return Track.TEMPERING;
+	}
+
+	/** Total inscribable entries in a track — the denominator for the "x / y" display. */
+	public static int totalInTrack(Track track) {
+		return switch (track) {
+			case TEMPERING -> chapterCount() + MILESTONE_KINDS.length;
+			case RITUAL -> RITUAL_KINDS.length;
+			case ARCANE -> 0;
+		};
+	}
+
+	/** How many of a track's entries are currently unlocked. */
+	public static int unlockedInTrack(Track track, List<Integer> unlocked) {
+		int n = 0;
+		for (int idx : unlocked) {
+			if (trackOf(idx) == track) {
+				n++;
+			}
+		}
+		return n;
+	}
+
+	/** Locked entries of a non-tempering track (ritual/arcane), for a flat reveal pool. */
+	public static List<Integer> lockedInTrack(Track track, List<Integer> unlocked) {
+		return switch (track) {
+			case RITUAL -> lockedRituals(unlocked);
+			default -> List.of();
+		};
 	}
 
 	public static boolean isOverview(int index) {
@@ -95,10 +245,16 @@ public final class CodexEntries {
 		return item != null ? new ItemStack(item).getName() : Text.literal(gear.id().getPath());
 	}
 
-	/** Chapter title: the overview, or "<Item> (<band>)". */
+	/** Chapter title: the overview, a milestone, or "<Item> (<band>)". */
 	public static Text title(int index) {
 		if (isOverview(index)) {
 			return Text.literal("The Heirloom Codex");
+		}
+		if (isMilestone(index)) {
+			return Text.literal(milestoneKindOf(index).gearName + " Milestone");
+		}
+		if (isRitual(index)) {
+			return Text.literal(ritualKindOf(index).gearName + " Ritual");
 		}
 		Gear gear = gearOf(index);
 		return gearName(gear).copy().append(Text.literal(" (" + BAND_LABELS[bandOf(index)] + ")"));

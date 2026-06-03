@@ -4,6 +4,7 @@ import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.shumbles.gearoverhaul.Heirloom;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
@@ -18,6 +19,9 @@ import static net.minecraft.server.command.CommandManager.literal;
  *   <li>{@code /heirloom temper get} — print the held item's level</li>
  *   <li>{@code /heirloom temper set <0..25>} — set it</li>
  *   <li>{@code /heirloom temper add <delta>} — adjust it (clamped)</li>
+ *   <li>{@code /heirloom temper rebake} — re-apply the held item's stats from the
+ *       current tables (level unchanged); use after editing a table and {@code /reload}</li>
+ *   <li>{@code /heirloom temper rebake all} — same, for every item in the inventory</li>
  * </ul>
  *
  * Operates on the player's main-hand item. Must be run by a player. This is a dev
@@ -54,7 +58,42 @@ public final class TemperCommand {
 								}
 								Tempering.setLevel(held, Tempering.getLevel(held) + IntegerArgumentType.getInteger(ctx, "delta"));
 								return report(ctx.getSource());
-							}))))));
+							})))
+					.then(literal("rebake")
+						.executes(ctx -> rebakeHeld(ctx.getSource()))
+						.then(literal("all").executes(ctx -> rebakeAll(ctx.getSource())))))));
+	}
+
+	/** Re-applies the held item's stat modifiers from the current tables, keeping its level. */
+	private static int rebakeHeld(ServerCommandSource source) {
+		ItemStack held = heldOrNull(source);
+		if (held == null) {
+			return 0;
+		}
+		TemperStats.refresh(held);
+		int level = Tempering.getLevel(held);
+		source.sendFeedback(() -> Text.literal("Rebaked held item (temper " + level + ")."), false);
+		return level;
+	}
+
+	/** Re-applies stats for every item in the source player's inventory. */
+	private static int rebakeAll(ServerCommandSource source) {
+		if (!(source.getEntity() instanceof PlayerEntity player)) {
+			source.sendError(Text.literal("Must be run by a player."));
+			return 0;
+		}
+		PlayerInventory inv = player.getInventory();
+		int rebaked = 0;
+		for (int i = 0; i < inv.size(); i++) {
+			ItemStack stack = inv.getStack(i);
+			if (!stack.isEmpty() && Tempering.isTempered(stack)) {
+				TemperStats.refresh(stack);
+				rebaked++;
+			}
+		}
+		int count = rebaked;
+		source.sendFeedback(() -> Text.literal("Rebaked " + count + " tempered item(s) in inventory."), false);
+		return count;
 	}
 
 	private static int report(ServerCommandSource source) {

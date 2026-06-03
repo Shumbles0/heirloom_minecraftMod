@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:ink_sac"
+  ],
+  "result": { "id": "heirloom:tempering_manuscript", "count": 1 }
+}

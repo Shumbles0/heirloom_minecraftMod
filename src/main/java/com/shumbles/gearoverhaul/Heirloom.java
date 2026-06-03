@@ -6,6 +6,8 @@ import com.shumbles.gearoverhaul.block.HeirloomBlocks;
 import com.shumbles.gearoverhaul.codex.CodexComponents;
 import com.shumbles.gearoverhaul.codex.CodexItems;
 import com.shumbles.gearoverhaul.foundation.GearNerf;
+import com.shumbles.gearoverhaul.ritual.RitualBlocks;
+import com.shumbles.gearoverhaul.ritual.RitualItems;
 import com.shumbles.gearoverhaul.screen.HeirloomScreenHandlers;
 import com.shumbles.gearoverhaul.temper.TemperCommand;
 import com.shumbles.gearoverhaul.temper.TemperComponents;
@@ -62,5 +64,9 @@ public class Heirloom implements ModInitializer {
 		// Level-10 milestone: per-gear "use it" gate + the gameplay tracking that feeds it.
 		UsageComponents.register();
 		UsageTracking.register();
+
+		// Level-20 rituals: placeholder blocks + items (behavior wired per-ritual later).
+		RitualBlocks.register();
+		RitualItems.register();
 	}
 }

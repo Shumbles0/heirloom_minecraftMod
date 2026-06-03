@@ -28,7 +28,10 @@ import java.util.List;
  */
 public class CodexScreenHandler extends ScreenHandler {
 	public static final int CHOICE_BUTTON_BASE = 0;
-	public static final int REVEAL_BUTTON_BASE = 10; // + Rarity.ordinal()
+	public static final int TRACK_REVEAL_BUTTON = 3; // reveal for ritual/arcane (no rarity)
+	public static final int ENTER_INSCRIBE = 4;      // arm the manuscript slot
+	public static final int LEAVE_INSCRIBE = 5;      // disarm it + return its contents
+	public static final int REVEAL_BUTTON_BASE = 10; // + Rarity.ordinal() (tempering, per rarity)
 	public static final int MANUSCRIPT_COST = 3;
 	public static final int MANUSCRIPT_SLOT = 0;
 
@@ -37,25 +40,33 @@ public class CodexScreenHandler extends ScreenHandler {
 
 	private final PlayerInventory playerInventory;
 	private final Inventory manuscriptInventory = new SimpleInventory(1);
+	/** The manuscript slot is only live while the Inscribe view is open. */
+	private boolean inscribeActive = false;
 
 	public CodexScreenHandler(int syncId, PlayerInventory playerInventory) {
 		super(HeirloomScreenHandlers.CODEX, syncId);
 		this.playerInventory = playerInventory;
 
-		this.addSlot(new Slot(manuscriptInventory, 0, 80, 18) {
+		this.addSlot(new Slot(manuscriptInventory, 0, 80, 22) {
 			@Override
 			public boolean canInsert(ItemStack stack) {
-				return CodexItems.isManuscript(stack);
+				return inscribeActive && CodexItems.isManuscript(stack);
+			}
+
+			@Override
+			public boolean isEnabled() {
+				// Disabled outside the Inscribe view, so its contents never render over the menu.
+				return inscribeActive;
 			}
 		});
 
 		for (int row = 0; row < 3; row++) {
 			for (int col = 0; col < 9; col++) {
-				this.addSlot(new Slot(playerInventory, col + row * 9 + 9, 8 + col * 18, 118 + row * 18));
+				this.addSlot(new Slot(playerInventory, col + row * 9 + 9, 8 + col * 18, 140 + row * 18));
 			}
 		}
 		for (int col = 0; col < 9; col++) {
-			this.addSlot(new Slot(playerInventory, col, 8 + col * 18, 176));
+			this.addSlot(new Slot(playerInventory, col, 8 + col * 18, 198));
 		}
 	}
 
@@ -66,6 +77,19 @@ public class CodexScreenHandler extends ScreenHandler {
 
 	@Override
 	public boolean onButtonClick(PlayerEntity player, int id) {
+		// Arming/disarming the manuscript slot needs no codex.
+		if (id == ENTER_INSCRIBE) {
+			inscribeActive = true;
+			sendContentUpdates();
+			return true;
+		}
+		if (id == LEAVE_INSCRIBE) {
+			inscribeActive = false;
+			returnManuscripts(player);
+			sendContentUpdates();
+			return true;
+		}
+
 		ItemStack codex = CodexItems.findCodex(player);
 		if (codex.isEmpty()) {
 			return false;
@@ -73,6 +97,8 @@ public class CodexScreenHandler extends ScreenHandler {
 		boolean changed;
 		if (id >= CHOICE_BUTTON_BASE && id < CHOICE_BUTTON_BASE + 3) {
 			changed = chooseEntry(codex, id - CHOICE_BUTTON_BASE);
+		} else if (id == TRACK_REVEAL_BUTTON) {
+			changed = tryRevealTrack(codex);
 		} else if (id >= REVEAL_BUTTON_BASE && id < REVEAL_BUTTON_BASE + CodexEntries.Rarity.values().length) {
 			changed = tryReveal(codex, CodexEntries.Rarity.values()[id - REVEAL_BUTTON_BASE]);
 		} else {
@@ -93,13 +119,36 @@ public class CodexScreenHandler extends ScreenHandler {
 			return false;
 		}
 
-		List<Integer> locked = CodexEntries.lockedInRarity(rarity, CodexComponents.getUnlocked(codex));
-		if (locked.isEmpty()) {
-			return false; // whole rarity already inscribed
-		}
+		// Pool = this rarity's locked recipes + all locked milestones (milestones are
+		// rarity-agnostic and seeded equally into every rarity's draw).
+		List<Integer> pool = CodexEntries.revealPool(rarity, CodexComponents.getUnlocked(codex));
+		return rollPending(codex, manuscripts, pool);
+	}
 
-		Collections.shuffle(locked);
-		List<Integer> pending = new ArrayList<>(locked.subList(0, Math.min(3, locked.size())));
+	/** Reveal for ritual/arcane manuscripts: a flat, rarity-less pool of that track's locked entries. */
+	private boolean tryRevealTrack(ItemStack codex) {
+		if (!CodexComponents.getPending(codex).isEmpty()) {
+			return false; // a draw is already pending
+		}
+		ItemStack manuscripts = manuscriptInventory.getStack(0);
+		if (!CodexItems.isManuscript(manuscripts) || manuscripts.getCount() < MANUSCRIPT_COST) {
+			return false;
+		}
+		CodexEntries.Track track = CodexItems.trackOf(manuscripts);
+		if (track == CodexEntries.Track.TEMPERING) {
+			return false; // tempering inscribes per-rarity via tryReveal
+		}
+		List<Integer> pool = CodexEntries.lockedInTrack(track, CodexComponents.getUnlocked(codex));
+		return rollPending(codex, manuscripts, pool);
+	}
+
+	/** Shuffle the pool, take up to 3 into pending, and spend the manuscripts. */
+	private boolean rollPending(ItemStack codex, ItemStack manuscripts, List<Integer> pool) {
+		if (pool.isEmpty()) {
+			return false; // nothing left to draw
+		}
+		Collections.shuffle(pool);
+		List<Integer> pending = new ArrayList<>(pool.subList(0, Math.min(3, pool.size())));
 		manuscripts.decrement(MANUSCRIPT_COST);
 		codex.set(CodexComponents.PENDING, pending);
 		return true;
@@ -123,6 +172,11 @@ public class CodexScreenHandler extends ScreenHandler {
 	@Override
 	public void onClosed(PlayerEntity player) {
 		super.onClosed(player);
+		returnManuscripts(player);
+	}
+
+	/** Empties the manuscript slot back into the player's inventory. */
+	private void returnManuscripts(PlayerEntity player) {
 		ItemStack left = manuscriptInventory.removeStack(0);
 		if (!left.isEmpty()) {
 			player.getInventory().offerOrDrop(left);
@@ -140,7 +194,7 @@ public class CodexScreenHandler extends ScreenHandler {
 				if (!this.insertItem(stack, FIRST_PLAYER_SLOT, this.slots.size(), true)) {
 					return ItemStack.EMPTY;
 				}
-			} else if (CodexItems.isManuscript(stack)) {
+			} else if (CodexItems.isManuscript(stack) && inscribeActive) {
 				if (!this.insertItem(stack, MANUSCRIPT_SLOT, MANUSCRIPT_SLOT + 1, false)) {
 					return ItemStack.EMPTY;
 				}
@@ -162,5 +216,18 @@ public class CodexScreenHandler extends ScreenHandler {
 
 	public ItemStack getManuscriptStack() {
 		return manuscriptInventory.getStack(0);
+	}
+
+	public boolean isInscribeActive() {
+		return inscribeActive;
+	}
+
+	/**
+	 * Mirrors the inscribe state onto this handler. The client calls this locally (in addition
+	 * to sending the button) so the manuscript slot renders immediately — the field is plain and
+	 * not synced, so the server sets its own copy in {@link #onButtonClick}.
+	 */
+	public void setInscribeActive(boolean active) {
+		this.inscribeActive = active;
 	}
 }

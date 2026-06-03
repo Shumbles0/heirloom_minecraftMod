@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:book",
+    "heirloom:tempering_dust"
+  ],
+  "result": { "id": "heirloom:codex", "count": 1 }
+}

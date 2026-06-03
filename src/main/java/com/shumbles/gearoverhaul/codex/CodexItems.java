@@ -53,6 +53,17 @@ public final class CodexItems {
 		return stack.isOf(TEMPERING_MANUSCRIPT);
 	}
 
+	/** Which Codex track a manuscript inscribes into. */
+	public static CodexEntries.Track trackOf(ItemStack manuscript) {
+		if (manuscript.isOf(RITUAL_MANUSCRIPT)) {
+			return CodexEntries.Track.RITUAL;
+		}
+		if (manuscript.isOf(ENCHANTING_MANUSCRIPT)) {
+			return CodexEntries.Track.ARCANE;
+		}
+		return CodexEntries.Track.TEMPERING;
+	}
+
 	public static boolean isManuscript(ItemStack stack) {
 		return stack.isOf(TEMPERING_MANUSCRIPT) || stack.isOf(RITUAL_MANUSCRIPT) || stack.isOf(ENCHANTING_MANUSCRIPT);
 	}

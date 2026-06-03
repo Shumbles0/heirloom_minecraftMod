@@ -3,6 +3,7 @@ package com.shumbles.gearoverhaul.client;
 import com.shumbles.gearoverhaul.Heirloom;
 import com.shumbles.gearoverhaul.screen.TemperingStationScreenHandler;
 import com.shumbles.gearoverhaul.temper.Tempering;
+import com.shumbles.gearoverhaul.usage.UsageGate;
 import net.minecraft.client.gl.RenderPipelines;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
@@ -62,10 +63,14 @@ public class TemperingStationScreen extends HandledScreen<TemperingStationScreen
 			line = Text.literal("Place gear");
 		} else {
 			int level = Tempering.getLevel(gear);
+			UsageGate.Kind kind = UsageGate.kindOf(gear);
 			if (level >= Tempering.MAX_TEMPER) {
 				line = Text.literal("Temper " + level + " (max)");
 			} else if (level + 1 == 20) {
 				line = Text.literal("Lvl " + level + " - ritual");
+			} else if (level == 10 && kind != null && !UsageGate.isComplete(gear)) {
+				// Milestone blocks the 10 -> 11 step; say so (vague), with a word-only sense of progress.
+				line = Text.literal("Milestone unmet - " + MilestoneText.stage(kind, UsageGate.progress(gear)));
 			} else {
 				line = Text.literal("Temper " + level + " → " + (level + 1));
 			}

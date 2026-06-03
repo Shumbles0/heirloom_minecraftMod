@@ -44,10 +44,12 @@ public class HeirloomClient implements ClientModInitializer {
 					? line.copy().formatted(Formatting.GOLD, Formatting.BOLD)
 					: line.copy().formatted(Formatting.AQUA));
 
-				// Level-10 milestone progress, shown until the gear has earned it.
+				// Level-10 milestone: a vague lore hint + a word-only sense of progress,
+				// shown until the gear has earned it. The exact rule lives in the Codex.
 				UsageGate.Kind kind = UsageGate.kindOf(stack);
 				if (kind != null && !UsageGate.isComplete(stack)) {
-					lines.add(Text.literal("L10 " + kind.label + ": " + UsageGate.progress(stack) + " / " + kind.threshold)
+					lines.add(Text.literal(MilestoneText.hint(kind)).formatted(Formatting.DARK_GRAY, Formatting.ITALIC));
+					lines.add(Text.literal("Milestone: " + MilestoneText.stage(kind, UsageGate.progress(stack)))
 						.formatted(Formatting.DARK_GRAY));
 				}
 			}
