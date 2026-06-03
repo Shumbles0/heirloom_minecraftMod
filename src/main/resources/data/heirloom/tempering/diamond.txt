@@ -1,0 +1,211 @@
+# Heirloom tempering table — DIAMOND tier. Sword 100% = +6 (t19), 110% (t25).
+# Blue/crystal theme. Tools scale by mining tier (x8/6 of iron); armor 3/8/6/3 + toughness 2. L20 = ritual.
+
+[diamond_sword]
+t1: 2 heirloom:tempering_dust, 4 lapis_lazuli -> +1.14 attack_damage
+t2: 4 heirloom:tempering_dust, 8 lapis_lazuli -> +1.28 attack_damage
+t3: 8 heirloom:tempering_dust, 12 lapis_lazuli -> +1.42 attack_damage
+t4: 16 heirloom:tempering_dust, 16 lapis_lazuli -> +1.56 attack_damage
+t5: 32 heirloom:tempering_dust, 20 lapis_lazuli -> +1.70 attack_damage
+t6: 2 heirloom:tempering_flux, 2 amethyst_shard, 1 diamond -> +1.84 attack_damage
+t7: 4 heirloom:tempering_flux, 3 amethyst_shard, 2 diamond -> +1.98 attack_damage
+t8: 8 heirloom:tempering_flux, 4 amethyst_shard, 3 diamond -> +2.12 attack_damage
+t9: 16 heirloom:tempering_flux, 5 amethyst_shard, 4 diamond -> +2.26 attack_damage
+t10: 32 heirloom:tempering_flux, 6 amethyst_shard, 5 diamond -> +2.40 attack_damage
+t11: 2 heirloom:tempering_alloy, 2 diamond, 2 prismarine_crystals -> +2.80 attack_damage
+t12: 3 heirloom:tempering_alloy, 3 diamond, 4 prismarine_crystals -> +3.20 attack_damage
+t13: 4 heirloom:tempering_alloy, 4 diamond, 6 prismarine_crystals -> +3.60 attack_damage
+t14: 5 heirloom:tempering_alloy, 5 diamond, 8 prismarine_crystals -> +4.00 attack_damage
+t15: 6 heirloom:tempering_alloy, 6 diamond, 10 prismarine_crystals -> +4.40 attack_damage
+t16: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard -> +4.80 attack_damage
+t17: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +5.20 attack_damage
+t18: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +5.60 attack_damage
+t19: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +6.00 attack_damage
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +6.20 attack_damage
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +6.30 attack_damage
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +6.40 attack_damage
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +6.50 attack_damage
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block, 1 breeze_rod -> +6.60 attack_damage, +0.10 attack_speed
+
+[diamond_pickaxe]
+t1: 2 heirloom:tempering_dust, 4 lapis_lazuli -> +0.40 block_break_speed
+t2: 4 heirloom:tempering_dust, 8 lapis_lazuli -> +0.80 block_break_speed
+t3: 8 heirloom:tempering_dust, 12 lapis_lazuli -> +1.20 block_break_speed
+t4: 16 heirloom:tempering_dust, 16 lapis_lazuli -> +1.60 block_break_speed
+t5: 32 heirloom:tempering_dust, 20 lapis_lazuli -> +2.00 block_break_speed
+t6: 2 heirloom:tempering_flux, 2 amethyst_shard, 1 diamond -> +2.40 block_break_speed
+t7: 4 heirloom:tempering_flux, 3 amethyst_shard, 2 diamond -> +2.80 block_break_speed
+t8: 8 heirloom:tempering_flux, 4 amethyst_shard, 3 diamond -> +3.20 block_break_speed
+t9: 16 heirloom:tempering_flux, 5 amethyst_shard, 4 diamond -> +3.60 block_break_speed
+t10: 32 heirloom:tempering_flux, 6 amethyst_shard, 5 diamond -> +4.00 block_break_speed
+t11: 2 heirloom:tempering_alloy, 2 diamond, 2 prismarine_crystals -> +4.13 block_break_speed
+t12: 3 heirloom:tempering_alloy, 3 diamond, 4 prismarine_crystals -> +4.27 block_break_speed
+t13: 4 heirloom:tempering_alloy, 4 diamond, 6 prismarine_crystals -> +4.40 block_break_speed
+t14: 5 heirloom:tempering_alloy, 5 diamond, 8 prismarine_crystals -> +4.53 block_break_speed
+t15: 6 heirloom:tempering_alloy, 6 diamond, 10 prismarine_crystals -> +4.67 block_break_speed
+t16: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard -> +4.80 block_break_speed
+t17: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +4.93 block_break_speed
+t18: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +5.07 block_break_speed
+t19: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +5.20 block_break_speed
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.47 block_break_speed
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.60 block_break_speed
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.73 block_break_speed
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.87 block_break_speed
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block, 1 breeze_rod -> +6.00 block_break_speed
+
+[diamond_axe]
+t1: 2 heirloom:tempering_dust, 4 lapis_lazuli -> +0.40 block_break_speed
+t2: 4 heirloom:tempering_dust, 8 lapis_lazuli -> +0.80 block_break_speed
+t3: 8 heirloom:tempering_dust, 12 lapis_lazuli -> +1.20 block_break_speed
+t4: 16 heirloom:tempering_dust, 16 lapis_lazuli -> +1.60 block_break_speed
+t5: 32 heirloom:tempering_dust, 20 lapis_lazuli -> +2.00 block_break_speed
+t6: 2 heirloom:tempering_flux, 2 amethyst_shard, 1 diamond -> +2.40 block_break_speed
+t7: 4 heirloom:tempering_flux, 3 amethyst_shard, 2 diamond -> +2.80 block_break_speed
+t8: 8 heirloom:tempering_flux, 4 amethyst_shard, 3 diamond -> +3.20 block_break_speed
+t9: 16 heirloom:tempering_flux, 5 amethyst_shard, 4 diamond -> +3.60 block_break_speed
+t10: 32 heirloom:tempering_flux, 6 amethyst_shard, 5 diamond -> +4.00 block_break_speed
+t11: 2 heirloom:tempering_alloy, 2 diamond, 2 prismarine_crystals -> +4.13 block_break_speed
+t12: 3 heirloom:tempering_alloy, 3 diamond, 4 prismarine_crystals -> +4.27 block_break_speed
+t13: 4 heirloom:tempering_alloy, 4 diamond, 6 prismarine_crystals -> +4.40 block_break_speed
+t14: 5 heirloom:tempering_alloy, 5 diamond, 8 prismarine_crystals -> +4.53 block_break_speed
+t15: 6 heirloom:tempering_alloy, 6 diamond, 10 prismarine_crystals -> +4.67 block_break_speed
+t16: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard -> +4.80 block_break_speed
+t17: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +4.93 block_break_speed
+t18: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +5.07 block_break_speed
+t19: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +5.20 block_break_speed
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.47 block_break_speed
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.60 block_break_speed
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.73 block_break_speed
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.87 block_break_speed
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block, 1 breeze_rod -> +6.00 block_break_speed
+
+[diamond_shovel]
+t1: 2 heirloom:tempering_dust, 4 lapis_lazuli -> +0.40 block_break_speed
+t2: 4 heirloom:tempering_dust, 8 lapis_lazuli -> +0.80 block_break_speed
+t3: 8 heirloom:tempering_dust, 12 lapis_lazuli -> +1.20 block_break_speed
+t4: 16 heirloom:tempering_dust, 16 lapis_lazuli -> +1.60 block_break_speed
+t5: 32 heirloom:tempering_dust, 20 lapis_lazuli -> +2.00 block_break_speed
+t6: 2 heirloom:tempering_flux, 2 amethyst_shard, 1 diamond -> +2.40 block_break_speed
+t7: 4 heirloom:tempering_flux, 3 amethyst_shard, 2 diamond -> +2.80 block_break_speed
+t8: 8 heirloom:tempering_flux, 4 amethyst_shard, 3 diamond -> +3.20 block_break_speed
+t9: 16 heirloom:tempering_flux, 5 amethyst_shard, 4 diamond -> +3.60 block_break_speed
+t10: 32 heirloom:tempering_flux, 6 amethyst_shard, 5 diamond -> +4.00 block_break_speed
+t11: 2 heirloom:tempering_alloy, 2 diamond, 2 prismarine_crystals -> +4.13 block_break_speed
+t12: 3 heirloom:tempering_alloy, 3 diamond, 4 prismarine_crystals -> +4.27 block_break_speed
+t13: 4 heirloom:tempering_alloy, 4 diamond, 6 prismarine_crystals -> +4.40 block_break_speed
+t14: 5 heirloom:tempering_alloy, 5 diamond, 8 prismarine_crystals -> +4.53 block_break_speed
+t15: 6 heirloom:tempering_alloy, 6 diamond, 10 prismarine_crystals -> +4.67 block_break_speed
+t16: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard -> +4.80 block_break_speed
+t17: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +4.93 block_break_speed
+t18: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +5.07 block_break_speed
+t19: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +5.20 block_break_speed
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.47 block_break_speed
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.60 block_break_speed
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.73 block_break_speed
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.87 block_break_speed
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block, 1 breeze_rod -> +6.00 block_break_speed
+
+[diamond_helmet]
+t1: 2 heirloom:tempering_dust, 4 lapis_lazuli -> +0.26 armor, +0.17 armor_toughness
+t2: 4 heirloom:tempering_dust, 8 lapis_lazuli -> +0.36 armor, +0.24 armor_toughness
+t3: 8 heirloom:tempering_dust, 12 lapis_lazuli -> +0.47 armor, +0.31 armor_toughness
+t4: 16 heirloom:tempering_dust, 16 lapis_lazuli -> +0.57 armor, +0.38 armor_toughness
+t5: 32 heirloom:tempering_dust, 20 lapis_lazuli -> +0.68 armor, +0.45 armor_toughness
+t6: 2 heirloom:tempering_flux, 2 amethyst_shard, 1 diamond -> +0.78 armor, +0.52 armor_toughness
+t7: 4 heirloom:tempering_flux, 3 amethyst_shard, 2 diamond -> +0.89 armor, +0.59 armor_toughness
+t8: 8 heirloom:tempering_flux, 4 amethyst_shard, 3 diamond -> +0.99 armor, +0.66 armor_toughness
+t9: 16 heirloom:tempering_flux, 5 amethyst_shard, 4 diamond -> +1.10 armor, +0.73 armor_toughness
+t10: 32 heirloom:tempering_flux, 6 amethyst_shard, 5 diamond -> +1.20 armor, +0.80 armor_toughness
+t11: 2 heirloom:tempering_alloy, 2 diamond, 2 prismarine_crystals -> +1.37 armor, +0.91 armor_toughness
+t12: 3 heirloom:tempering_alloy, 3 diamond, 4 prismarine_crystals -> +1.53 armor, +1.02 armor_toughness
+t13: 4 heirloom:tempering_alloy, 4 diamond, 6 prismarine_crystals -> +1.70 armor, +1.13 armor_toughness
+t14: 5 heirloom:tempering_alloy, 5 diamond, 8 prismarine_crystals -> +1.87 armor, +1.24 armor_toughness
+t15: 6 heirloom:tempering_alloy, 6 diamond, 10 prismarine_crystals -> +2.03 armor, +1.36 armor_toughness
+t16: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard -> +2.20 armor, +1.47 armor_toughness
+t17: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +2.37 armor, +1.58 armor_toughness
+t18: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +2.53 armor, +1.69 armor_toughness
+t19: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +2.70 armor, +1.80 armor_toughness
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +2.80 armor, +1.87 armor_toughness
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +2.85 armor, +1.90 armor_toughness
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +2.90 armor, +1.93 armor_toughness
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +2.95 armor, +1.97 armor_toughness
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block, 1 breeze_rod -> +3.00 armor, +2.00 armor_toughness
+
+[diamond_chestplate]
+t1: 2 heirloom:tempering_dust, 4 lapis_lazuli -> +0.68 armor, +0.17 armor_toughness
+t2: 4 heirloom:tempering_dust, 8 lapis_lazuli -> +0.96 armor, +0.24 armor_toughness
+t3: 8 heirloom:tempering_dust, 12 lapis_lazuli -> +1.24 armor, +0.31 armor_toughness
+t4: 16 heirloom:tempering_dust, 16 lapis_lazuli -> +1.52 armor, +0.38 armor_toughness
+t5: 32 heirloom:tempering_dust, 20 lapis_lazuli -> +1.80 armor, +0.45 armor_toughness
+t6: 2 heirloom:tempering_flux, 2 amethyst_shard, 1 diamond -> +2.08 armor, +0.52 armor_toughness
+t7: 4 heirloom:tempering_flux, 3 amethyst_shard, 2 diamond -> +2.36 armor, +0.59 armor_toughness
+t8: 8 heirloom:tempering_flux, 4 amethyst_shard, 3 diamond -> +2.64 armor, +0.66 armor_toughness
+t9: 16 heirloom:tempering_flux, 5 amethyst_shard, 4 diamond -> +2.92 armor, +0.73 armor_toughness
+t10: 32 heirloom:tempering_flux, 6 amethyst_shard, 5 diamond -> +3.20 armor, +0.80 armor_toughness
+t11: 2 heirloom:tempering_alloy, 2 diamond, 2 prismarine_crystals -> +3.64 armor, +0.91 armor_toughness
+t12: 3 heirloom:tempering_alloy, 3 diamond, 4 prismarine_crystals -> +4.09 armor, +1.02 armor_toughness
+t13: 4 heirloom:tempering_alloy, 4 diamond, 6 prismarine_crystals -> +4.53 armor, +1.13 armor_toughness
+t14: 5 heirloom:tempering_alloy, 5 diamond, 8 prismarine_crystals -> +4.98 armor, +1.24 armor_toughness
+t15: 6 heirloom:tempering_alloy, 6 diamond, 10 prismarine_crystals -> +5.42 armor, +1.36 armor_toughness
+t16: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard -> +5.87 armor, +1.47 armor_toughness
+t17: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +6.31 armor, +1.58 armor_toughness
+t18: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +6.76 armor, +1.69 armor_toughness
+t19: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +7.20 armor, +1.80 armor_toughness
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +7.47 armor, +1.87 armor_toughness
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +7.60 armor, +1.90 armor_toughness
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +7.73 armor, +1.93 armor_toughness
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +7.87 armor, +1.97 armor_toughness
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block, 1 breeze_rod -> +8.00 armor, +2.00 armor_toughness
+
+[diamond_leggings]
+t1: 2 heirloom:tempering_dust, 4 lapis_lazuli -> +0.51 armor, +0.17 armor_toughness
+t2: 4 heirloom:tempering_dust, 8 lapis_lazuli -> +0.72 armor, +0.24 armor_toughness
+t3: 8 heirloom:tempering_dust, 12 lapis_lazuli -> +0.93 armor, +0.31 armor_toughness
+t4: 16 heirloom:tempering_dust, 16 lapis_lazuli -> +1.14 armor, +0.38 armor_toughness
+t5: 32 heirloom:tempering_dust, 20 lapis_lazuli -> +1.35 armor, +0.45 armor_toughness
+t6: 2 heirloom:tempering_flux, 2 amethyst_shard, 1 diamond -> +1.56 armor, +0.52 armor_toughness
+t7: 4 heirloom:tempering_flux, 3 amethyst_shard, 2 diamond -> +1.77 armor, +0.59 armor_toughness
+t8: 8 heirloom:tempering_flux, 4 amethyst_shard, 3 diamond -> +1.98 armor, +0.66 armor_toughness
+t9: 16 heirloom:tempering_flux, 5 amethyst_shard, 4 diamond -> +2.19 armor, +0.73 armor_toughness
+t10: 32 heirloom:tempering_flux, 6 amethyst_shard, 5 diamond -> +2.40 armor, +0.80 armor_toughness
+t11: 2 heirloom:tempering_alloy, 2 diamond, 2 prismarine_crystals -> +2.73 armor, +0.91 armor_toughness
+t12: 3 heirloom:tempering_alloy, 3 diamond, 4 prismarine_crystals -> +3.07 armor, +1.02 armor_toughness
+t13: 4 heirloom:tempering_alloy, 4 diamond, 6 prismarine_crystals -> +3.40 armor, +1.13 armor_toughness
+t14: 5 heirloom:tempering_alloy, 5 diamond, 8 prismarine_crystals -> +3.73 armor, +1.24 armor_toughness
+t15: 6 heirloom:tempering_alloy, 6 diamond, 10 prismarine_crystals -> +4.07 armor, +1.36 armor_toughness
+t16: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard -> +4.40 armor, +1.47 armor_toughness
+t17: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +4.73 armor, +1.58 armor_toughness
+t18: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +5.07 armor, +1.69 armor_toughness
+t19: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +5.40 armor, +1.80 armor_toughness
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.60 armor, +1.87 armor_toughness
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.70 armor, +1.90 armor_toughness
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.80 armor, +1.93 armor_toughness
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +5.90 armor, +1.97 armor_toughness
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block, 1 breeze_rod -> +6.00 armor, +2.00 armor_toughness
+
+[diamond_boots]
+t1: 2 heirloom:tempering_dust, 4 lapis_lazuli -> +0.26 armor, +0.17 armor_toughness
+t2: 4 heirloom:tempering_dust, 8 lapis_lazuli -> +0.36 armor, +0.24 armor_toughness
+t3: 8 heirloom:tempering_dust, 12 lapis_lazuli -> +0.47 armor, +0.31 armor_toughness
+t4: 16 heirloom:tempering_dust, 16 lapis_lazuli -> +0.57 armor, +0.38 armor_toughness
+t5: 32 heirloom:tempering_dust, 20 lapis_lazuli -> +0.68 armor, +0.45 armor_toughness
+t6: 2 heirloom:tempering_flux, 2 amethyst_shard, 1 diamond -> +0.78 armor, +0.52 armor_toughness
+t7: 4 heirloom:tempering_flux, 3 amethyst_shard, 2 diamond -> +0.89 armor, +0.59 armor_toughness
+t8: 8 heirloom:tempering_flux, 4 amethyst_shard, 3 diamond -> +0.99 armor, +0.66 armor_toughness
+t9: 16 heirloom:tempering_flux, 5 amethyst_shard, 4 diamond -> +1.10 armor, +0.73 armor_toughness
+t10: 32 heirloom:tempering_flux, 6 amethyst_shard, 5 diamond -> +1.20 armor, +0.80 armor_toughness
+t11: 2 heirloom:tempering_alloy, 2 diamond, 2 prismarine_crystals -> +1.37 armor, +0.91 armor_toughness
+t12: 3 heirloom:tempering_alloy, 3 diamond, 4 prismarine_crystals -> +1.53 armor, +1.02 armor_toughness
+t13: 4 heirloom:tempering_alloy, 4 diamond, 6 prismarine_crystals -> +1.70 armor, +1.13 armor_toughness
+t14: 5 heirloom:tempering_alloy, 5 diamond, 8 prismarine_crystals -> +1.87 armor, +1.24 armor_toughness
+t15: 6 heirloom:tempering_alloy, 6 diamond, 10 prismarine_crystals -> +2.03 armor, +1.36 armor_toughness
+t16: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard -> +2.20 armor, +1.47 armor_toughness
+t17: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +2.37 armor, +1.58 armor_toughness
+t18: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +2.53 armor, +1.69 armor_toughness
+t19: 1 heirloom:tempering_core, 5 diamond, 5 amethyst_shard, 1 lapis_block -> +2.70 armor, +1.80 armor_toughness
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +2.80 armor, +1.87 armor_toughness
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +2.85 armor, +1.90 armor_toughness
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +2.90 armor, +1.93 armor_toughness
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block -> +2.95 armor, +1.97 armor_toughness
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 diamond_block, 1 sea_lantern, 1 amethyst_block, 1 breeze_rod -> +3.00 armor, +2.00 armor_toughness
+

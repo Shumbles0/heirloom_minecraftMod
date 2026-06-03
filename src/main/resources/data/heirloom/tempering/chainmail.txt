@@ -1,0 +1,107 @@
+# Heirloom tempering table — CHAINMAIL tier (armor only). Defense 2/5/4/1 (helm/chest/legs/boots).
+# Theme: iron rings, iron chains, bars. Very basic (Dust only). L20 = ritual.
+
+[chainmail_helmet]
+t1: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.17 armor
+t2: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.24 armor
+t3: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.31 armor
+t4: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.38 armor
+t5: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.45 armor
+t6: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +0.52 armor
+t7: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +0.59 armor
+t8: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +0.66 armor
+t9: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +0.73 armor
+t10: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +0.80 armor
+t11: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +0.91 armor
+t12: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +1.02 armor
+t13: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +1.13 armor
+t14: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +1.24 armor
+t15: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +1.36 armor
+t16: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +1.47 armor
+t17: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +1.58 armor
+t18: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +1.69 armor
+t19: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +1.80 armor
+t21: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +1.87 armor
+t22: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +1.90 armor
+t23: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +1.93 armor
+t24: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +1.97 armor
+t25: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +2.00 armor
+
+[chainmail_chestplate]
+t1: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.43 armor
+t2: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.60 armor
+t3: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.78 armor
+t4: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.95 armor
+t5: 2 heirloom:tempering_dust, 1 iron_nugget -> +1.13 armor
+t6: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +1.30 armor
+t7: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +1.48 armor
+t8: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +1.65 armor
+t9: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +1.83 armor
+t10: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +2.00 armor
+t11: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +2.28 armor
+t12: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +2.56 armor
+t13: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +2.83 armor
+t14: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +3.11 armor
+t15: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +3.39 armor
+t16: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +3.67 armor
+t17: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +3.94 armor
+t18: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +4.22 armor
+t19: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +4.50 armor
+t21: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +4.67 armor
+t22: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +4.75 armor
+t23: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +4.83 armor
+t24: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +4.92 armor
+t25: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +5.00 armor
+
+[chainmail_leggings]
+t1: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.34 armor
+t2: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.48 armor
+t3: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.62 armor
+t4: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.76 armor
+t5: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.90 armor
+t6: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +1.04 armor
+t7: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +1.18 armor
+t8: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +1.32 armor
+t9: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +1.46 armor
+t10: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +1.60 armor
+t11: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +1.82 armor
+t12: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +2.04 armor
+t13: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +2.27 armor
+t14: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +2.49 armor
+t15: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +2.71 armor
+t16: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +2.93 armor
+t17: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +3.16 armor
+t18: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +3.38 armor
+t19: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +3.60 armor
+t21: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +3.73 armor
+t22: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +3.80 armor
+t23: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +3.87 armor
+t24: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +3.93 armor
+t25: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +4.00 armor
+
+[chainmail_boots]
+t1: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.09 armor
+t2: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.12 armor
+t3: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.16 armor
+t4: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.19 armor
+t5: 2 heirloom:tempering_dust, 1 iron_nugget -> +0.23 armor
+t6: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +0.26 armor
+t7: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +0.30 armor
+t8: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +0.33 armor
+t9: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +0.37 armor
+t10: 3 heirloom:tempering_dust, 2 iron_nugget, 1 iron_chain -> +0.40 armor
+t11: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +0.46 armor
+t12: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +0.51 armor
+t13: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +0.57 armor
+t14: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +0.62 armor
+t15: 4 heirloom:tempering_dust, 1 iron_bars, 1 iron_chain -> +0.68 armor
+t16: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +0.73 armor
+t17: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +0.79 armor
+t18: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +0.84 armor
+t19: 5 heirloom:tempering_dust, 1 iron_ingot, 1 iron_bars -> +0.90 armor
+t21: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +0.93 armor
+t22: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +0.95 armor
+t23: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +0.97 armor
+t24: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +0.98 armor
+t25: 6 heirloom:tempering_dust, 1 iron_block, 1 iron_chain -> +1.00 armor
+

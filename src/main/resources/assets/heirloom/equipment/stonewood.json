@@ -1,0 +1,6 @@
+{
+  "layers": {
+    "humanoid": [ { "texture": "heirloom:stonewood" } ],
+    "humanoid_leggings": [ { "texture": "heirloom:stonewood" } ]
+  }
+}

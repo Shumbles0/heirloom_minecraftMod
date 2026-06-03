@@ -1,0 +1,18 @@
+{
+	"required": true,
+	"package": "com.shumbles.gearoverhaul.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin",
+		"BowItemMixin",
+		"CrossbowItemMixin",
+		"MaceItemMixin",
+		"TridentEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

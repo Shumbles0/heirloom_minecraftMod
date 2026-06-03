@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GG",
+    "WW"
+  ],
+  "key": {
+    "G": "#heirloom:temperable_gear",
+    "W": "#minecraft:planks"
+  },
+  "result": { "id": "heirloom:tempering_station", "count": 1 }
+}

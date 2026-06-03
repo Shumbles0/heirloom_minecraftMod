@@ -1,0 +1,212 @@
+# Heirloom tempering table — NETHERITE tier. Sword 100% = +7 (t19), 110% (t25).
+# Grind-heavy (theme loose). Tools scale by mining tier (x9/6 of iron); armor 3/8/6/3 + toughness 3.
+# Knockback resistance is never nerfed, so it stays vanilla untouched. L20 = ritual.
+
+[netherite_sword]
+t1: 4 heirloom:tempering_dust, 2 gold_ingot, 16 blackstone, 16 netherrack -> +1.18 attack_damage
+t2: 8 heirloom:tempering_dust, 4 gold_ingot, 24 blackstone, 32 netherrack -> +1.36 attack_damage
+t3: 16 heirloom:tempering_dust, 6 gold_ingot, 32 blackstone, 48 netherrack -> +1.54 attack_damage
+t4: 32 heirloom:tempering_dust, 8 gold_ingot, 40 blackstone, 64 netherrack -> +1.72 attack_damage
+t5: 64 heirloom:tempering_dust, 10 gold_ingot, 48 blackstone, 80 netherrack -> +1.90 attack_damage
+t6: 4 heirloom:tempering_flux, 1 gold_block, 2 magma_cream, 8 quartz, 4 glowstone_dust -> +2.08 attack_damage
+t7: 8 heirloom:tempering_flux, 2 gold_block, 4 magma_cream, 16 quartz, 8 glowstone_dust -> +2.26 attack_damage
+t8: 16 heirloom:tempering_flux, 3 gold_block, 6 magma_cream, 24 quartz, 12 glowstone_dust -> +2.44 attack_damage
+t9: 32 heirloom:tempering_flux, 4 gold_block, 8 magma_cream, 32 quartz, 16 glowstone_dust -> +2.62 attack_damage
+t10: 64 heirloom:tempering_flux, 5 gold_block, 10 magma_cream, 40 quartz, 20 glowstone_dust -> +2.80 attack_damage
+t11: 3 heirloom:tempering_alloy, 1 ancient_debris, 2 gold_block, 4 gilded_blackstone, 4 blaze_powder -> +3.27 attack_damage
+t12: 4 heirloom:tempering_alloy, 1 ancient_debris, 3 gold_block, 8 gilded_blackstone, 6 blaze_powder -> +3.73 attack_damage
+t13: 5 heirloom:tempering_alloy, 2 ancient_debris, 4 gold_block, 12 gilded_blackstone, 8 blaze_powder -> +4.20 attack_damage
+t14: 6 heirloom:tempering_alloy, 2 ancient_debris, 5 gold_block, 16 gilded_blackstone, 10 blaze_powder -> +4.67 attack_damage
+t15: 7 heirloom:tempering_alloy, 2 ancient_debris, 6 gold_block, 20 gilded_blackstone, 12 blaze_powder -> +5.13 attack_damage
+t16: 1 heirloom:tempering_core, 1 netherite_scrap, 2 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +5.60 attack_damage
+t17: 1 heirloom:tempering_core, 2 netherite_scrap, 3 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +6.07 attack_damage
+t18: 1 heirloom:tempering_core, 2 netherite_scrap, 4 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +6.53 attack_damage
+t19: 1 heirloom:tempering_core, 3 netherite_scrap, 5 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +7.00 attack_damage
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 2 ancient_debris, 4 gold_block, 2 ghast_tear -> +7.23 attack_damage
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 5 gold_block, 2 ghast_tear -> +7.35 attack_damage
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 6 gold_block, 2 ghast_tear -> +7.47 attack_damage
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 7 gold_block, 2 ghast_tear -> +7.58 attack_damage
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 8 gold_block, 2 ghast_tear, 1 netherite_block, 1 breeze_rod -> +7.70 attack_damage, +0.10 attack_speed
+
+[netherite_pickaxe]
+t1: 4 heirloom:tempering_dust, 2 gold_ingot, 16 blackstone, 16 netherrack -> +0.45 block_break_speed
+t2: 8 heirloom:tempering_dust, 4 gold_ingot, 24 blackstone, 32 netherrack -> +0.90 block_break_speed
+t3: 16 heirloom:tempering_dust, 6 gold_ingot, 32 blackstone, 48 netherrack -> +1.35 block_break_speed
+t4: 32 heirloom:tempering_dust, 8 gold_ingot, 40 blackstone, 64 netherrack -> +1.80 block_break_speed
+t5: 64 heirloom:tempering_dust, 10 gold_ingot, 48 blackstone, 80 netherrack -> +2.25 block_break_speed
+t6: 4 heirloom:tempering_flux, 1 gold_block, 2 magma_cream, 8 quartz, 4 glowstone_dust -> +2.70 block_break_speed
+t7: 8 heirloom:tempering_flux, 2 gold_block, 4 magma_cream, 16 quartz, 8 glowstone_dust -> +3.15 block_break_speed
+t8: 16 heirloom:tempering_flux, 3 gold_block, 6 magma_cream, 24 quartz, 12 glowstone_dust -> +3.60 block_break_speed
+t9: 32 heirloom:tempering_flux, 4 gold_block, 8 magma_cream, 32 quartz, 16 glowstone_dust -> +4.05 block_break_speed
+t10: 64 heirloom:tempering_flux, 5 gold_block, 10 magma_cream, 40 quartz, 20 glowstone_dust -> +4.50 block_break_speed
+t11: 3 heirloom:tempering_alloy, 1 ancient_debris, 2 gold_block, 4 gilded_blackstone, 4 blaze_powder -> +4.65 block_break_speed
+t12: 4 heirloom:tempering_alloy, 1 ancient_debris, 3 gold_block, 8 gilded_blackstone, 6 blaze_powder -> +4.80 block_break_speed
+t13: 5 heirloom:tempering_alloy, 2 ancient_debris, 4 gold_block, 12 gilded_blackstone, 8 blaze_powder -> +4.95 block_break_speed
+t14: 6 heirloom:tempering_alloy, 2 ancient_debris, 5 gold_block, 16 gilded_blackstone, 10 blaze_powder -> +5.10 block_break_speed
+t15: 7 heirloom:tempering_alloy, 2 ancient_debris, 6 gold_block, 20 gilded_blackstone, 12 blaze_powder -> +5.25 block_break_speed
+t16: 1 heirloom:tempering_core, 1 netherite_scrap, 2 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +5.40 block_break_speed
+t17: 1 heirloom:tempering_core, 2 netherite_scrap, 3 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +5.55 block_break_speed
+t18: 1 heirloom:tempering_core, 2 netherite_scrap, 4 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +5.70 block_break_speed
+t19: 1 heirloom:tempering_core, 3 netherite_scrap, 5 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +5.85 block_break_speed
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 2 ancient_debris, 4 gold_block, 2 ghast_tear -> +6.15 block_break_speed
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 5 gold_block, 2 ghast_tear -> +6.30 block_break_speed
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 6 gold_block, 2 ghast_tear -> +6.45 block_break_speed
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 7 gold_block, 2 ghast_tear -> +6.60 block_break_speed
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 8 gold_block, 2 ghast_tear, 1 netherite_block, 1 breeze_rod -> +6.75 block_break_speed
+
+[netherite_axe]
+t1: 4 heirloom:tempering_dust, 2 gold_ingot, 16 blackstone, 16 netherrack -> +0.45 block_break_speed
+t2: 8 heirloom:tempering_dust, 4 gold_ingot, 24 blackstone, 32 netherrack -> +0.90 block_break_speed
+t3: 16 heirloom:tempering_dust, 6 gold_ingot, 32 blackstone, 48 netherrack -> +1.35 block_break_speed
+t4: 32 heirloom:tempering_dust, 8 gold_ingot, 40 blackstone, 64 netherrack -> +1.80 block_break_speed
+t5: 64 heirloom:tempering_dust, 10 gold_ingot, 48 blackstone, 80 netherrack -> +2.25 block_break_speed
+t6: 4 heirloom:tempering_flux, 1 gold_block, 2 magma_cream, 8 quartz, 4 glowstone_dust -> +2.70 block_break_speed
+t7: 8 heirloom:tempering_flux, 2 gold_block, 4 magma_cream, 16 quartz, 8 glowstone_dust -> +3.15 block_break_speed
+t8: 16 heirloom:tempering_flux, 3 gold_block, 6 magma_cream, 24 quartz, 12 glowstone_dust -> +3.60 block_break_speed
+t9: 32 heirloom:tempering_flux, 4 gold_block, 8 magma_cream, 32 quartz, 16 glowstone_dust -> +4.05 block_break_speed
+t10: 64 heirloom:tempering_flux, 5 gold_block, 10 magma_cream, 40 quartz, 20 glowstone_dust -> +4.50 block_break_speed
+t11: 3 heirloom:tempering_alloy, 1 ancient_debris, 2 gold_block, 4 gilded_blackstone, 4 blaze_powder -> +4.65 block_break_speed
+t12: 4 heirloom:tempering_alloy, 1 ancient_debris, 3 gold_block, 8 gilded_blackstone, 6 blaze_powder -> +4.80 block_break_speed
+t13: 5 heirloom:tempering_alloy, 2 ancient_debris, 4 gold_block, 12 gilded_blackstone, 8 blaze_powder -> +4.95 block_break_speed
+t14: 6 heirloom:tempering_alloy, 2 ancient_debris, 5 gold_block, 16 gilded_blackstone, 10 blaze_powder -> +5.10 block_break_speed
+t15: 7 heirloom:tempering_alloy, 2 ancient_debris, 6 gold_block, 20 gilded_blackstone, 12 blaze_powder -> +5.25 block_break_speed
+t16: 1 heirloom:tempering_core, 1 netherite_scrap, 2 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +5.40 block_break_speed
+t17: 1 heirloom:tempering_core, 2 netherite_scrap, 3 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +5.55 block_break_speed
+t18: 1 heirloom:tempering_core, 2 netherite_scrap, 4 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +5.70 block_break_speed
+t19: 1 heirloom:tempering_core, 3 netherite_scrap, 5 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +5.85 block_break_speed
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 2 ancient_debris, 4 gold_block, 2 ghast_tear -> +6.15 block_break_speed
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 5 gold_block, 2 ghast_tear -> +6.30 block_break_speed
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 6 gold_block, 2 ghast_tear -> +6.45 block_break_speed
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 7 gold_block, 2 ghast_tear -> +6.60 block_break_speed
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 8 gold_block, 2 ghast_tear, 1 netherite_block, 1 breeze_rod -> +6.75 block_break_speed
+
+[netherite_shovel]
+t1: 4 heirloom:tempering_dust, 2 gold_ingot, 16 blackstone, 16 netherrack -> +0.45 block_break_speed
+t2: 8 heirloom:tempering_dust, 4 gold_ingot, 24 blackstone, 32 netherrack -> +0.90 block_break_speed
+t3: 16 heirloom:tempering_dust, 6 gold_ingot, 32 blackstone, 48 netherrack -> +1.35 block_break_speed
+t4: 32 heirloom:tempering_dust, 8 gold_ingot, 40 blackstone, 64 netherrack -> +1.80 block_break_speed
+t5: 64 heirloom:tempering_dust, 10 gold_ingot, 48 blackstone, 80 netherrack -> +2.25 block_break_speed
+t6: 4 heirloom:tempering_flux, 1 gold_block, 2 magma_cream, 8 quartz, 4 glowstone_dust -> +2.70 block_break_speed
+t7: 8 heirloom:tempering_flux, 2 gold_block, 4 magma_cream, 16 quartz, 8 glowstone_dust -> +3.15 block_break_speed
+t8: 16 heirloom:tempering_flux, 3 gold_block, 6 magma_cream, 24 quartz, 12 glowstone_dust -> +3.60 block_break_speed
+t9: 32 heirloom:tempering_flux, 4 gold_block, 8 magma_cream, 32 quartz, 16 glowstone_dust -> +4.05 block_break_speed
+t10: 64 heirloom:tempering_flux, 5 gold_block, 10 magma_cream, 40 quartz, 20 glowstone_dust -> +4.50 block_break_speed
+t11: 3 heirloom:tempering_alloy, 1 ancient_debris, 2 gold_block, 4 gilded_blackstone, 4 blaze_powder -> +4.65 block_break_speed
+t12: 4 heirloom:tempering_alloy, 1 ancient_debris, 3 gold_block, 8 gilded_blackstone, 6 blaze_powder -> +4.80 block_break_speed
+t13: 5 heirloom:tempering_alloy, 2 ancient_debris, 4 gold_block, 12 gilded_blackstone, 8 blaze_powder -> +4.95 block_break_speed
+t14: 6 heirloom:tempering_alloy, 2 ancient_debris, 5 gold_block, 16 gilded_blackstone, 10 blaze_powder -> +5.10 block_break_speed
+t15: 7 heirloom:tempering_alloy, 2 ancient_debris, 6 gold_block, 20 gilded_blackstone, 12 blaze_powder -> +5.25 block_break_speed
+t16: 1 heirloom:tempering_core, 1 netherite_scrap, 2 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +5.40 block_break_speed
+t17: 1 heirloom:tempering_core, 2 netherite_scrap, 3 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +5.55 block_break_speed
+t18: 1 heirloom:tempering_core, 2 netherite_scrap, 4 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +5.70 block_break_speed
+t19: 1 heirloom:tempering_core, 3 netherite_scrap, 5 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +5.85 block_break_speed
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 2 ancient_debris, 4 gold_block, 2 ghast_tear -> +6.15 block_break_speed
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 5 gold_block, 2 ghast_tear -> +6.30 block_break_speed
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 6 gold_block, 2 ghast_tear -> +6.45 block_break_speed
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 7 gold_block, 2 ghast_tear -> +6.60 block_break_speed
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 8 gold_block, 2 ghast_tear, 1 netherite_block, 1 breeze_rod -> +6.75 block_break_speed
+
+[netherite_helmet]
+t1: 4 heirloom:tempering_dust, 2 gold_ingot, 16 blackstone, 16 netherrack -> +0.26 armor, +0.26 armor_toughness
+t2: 8 heirloom:tempering_dust, 4 gold_ingot, 24 blackstone, 32 netherrack -> +0.36 armor, +0.36 armor_toughness
+t3: 16 heirloom:tempering_dust, 6 gold_ingot, 32 blackstone, 48 netherrack -> +0.47 armor, +0.47 armor_toughness
+t4: 32 heirloom:tempering_dust, 8 gold_ingot, 40 blackstone, 64 netherrack -> +0.57 armor, +0.57 armor_toughness
+t5: 64 heirloom:tempering_dust, 10 gold_ingot, 48 blackstone, 80 netherrack -> +0.68 armor, +0.68 armor_toughness
+t6: 4 heirloom:tempering_flux, 1 gold_block, 2 magma_cream, 8 quartz, 4 glowstone_dust -> +0.78 armor, +0.78 armor_toughness
+t7: 8 heirloom:tempering_flux, 2 gold_block, 4 magma_cream, 16 quartz, 8 glowstone_dust -> +0.89 armor, +0.89 armor_toughness
+t8: 16 heirloom:tempering_flux, 3 gold_block, 6 magma_cream, 24 quartz, 12 glowstone_dust -> +0.99 armor, +0.99 armor_toughness
+t9: 32 heirloom:tempering_flux, 4 gold_block, 8 magma_cream, 32 quartz, 16 glowstone_dust -> +1.10 armor, +1.10 armor_toughness
+t10: 64 heirloom:tempering_flux, 5 gold_block, 10 magma_cream, 40 quartz, 20 glowstone_dust -> +1.20 armor, +1.20 armor_toughness
+t11: 3 heirloom:tempering_alloy, 1 ancient_debris, 2 gold_block, 4 gilded_blackstone, 4 blaze_powder -> +1.37 armor, +1.37 armor_toughness
+t12: 4 heirloom:tempering_alloy, 1 ancient_debris, 3 gold_block, 8 gilded_blackstone, 6 blaze_powder -> +1.53 armor, +1.53 armor_toughness
+t13: 5 heirloom:tempering_alloy, 2 ancient_debris, 4 gold_block, 12 gilded_blackstone, 8 blaze_powder -> +1.70 armor, +1.70 armor_toughness
+t14: 6 heirloom:tempering_alloy, 2 ancient_debris, 5 gold_block, 16 gilded_blackstone, 10 blaze_powder -> +1.87 armor, +1.87 armor_toughness
+t15: 7 heirloom:tempering_alloy, 2 ancient_debris, 6 gold_block, 20 gilded_blackstone, 12 blaze_powder -> +2.03 armor, +2.03 armor_toughness
+t16: 1 heirloom:tempering_core, 1 netherite_scrap, 2 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +2.20 armor, +2.20 armor_toughness
+t17: 1 heirloom:tempering_core, 2 netherite_scrap, 3 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +2.37 armor, +2.37 armor_toughness
+t18: 1 heirloom:tempering_core, 2 netherite_scrap, 4 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +2.53 armor, +2.53 armor_toughness
+t19: 1 heirloom:tempering_core, 3 netherite_scrap, 5 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +2.70 armor, +2.70 armor_toughness
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 2 ancient_debris, 4 gold_block, 2 ghast_tear -> +2.80 armor, +2.80 armor_toughness
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 5 gold_block, 2 ghast_tear -> +2.85 armor, +2.85 armor_toughness
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 6 gold_block, 2 ghast_tear -> +2.90 armor, +2.90 armor_toughness
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 7 gold_block, 2 ghast_tear -> +2.95 armor, +2.95 armor_toughness
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 8 gold_block, 2 ghast_tear, 1 netherite_block, 1 breeze_rod -> +3.00 armor, +3.00 armor_toughness
+
+[netherite_chestplate]
+t1: 4 heirloom:tempering_dust, 2 gold_ingot, 16 blackstone, 16 netherrack -> +0.68 armor, +0.26 armor_toughness
+t2: 8 heirloom:tempering_dust, 4 gold_ingot, 24 blackstone, 32 netherrack -> +0.96 armor, +0.36 armor_toughness
+t3: 16 heirloom:tempering_dust, 6 gold_ingot, 32 blackstone, 48 netherrack -> +1.24 armor, +0.47 armor_toughness
+t4: 32 heirloom:tempering_dust, 8 gold_ingot, 40 blackstone, 64 netherrack -> +1.52 armor, +0.57 armor_toughness
+t5: 64 heirloom:tempering_dust, 10 gold_ingot, 48 blackstone, 80 netherrack -> +1.80 armor, +0.68 armor_toughness
+t6: 4 heirloom:tempering_flux, 1 gold_block, 2 magma_cream, 8 quartz, 4 glowstone_dust -> +2.08 armor, +0.78 armor_toughness
+t7: 8 heirloom:tempering_flux, 2 gold_block, 4 magma_cream, 16 quartz, 8 glowstone_dust -> +2.36 armor, +0.89 armor_toughness
+t8: 16 heirloom:tempering_flux, 3 gold_block, 6 magma_cream, 24 quartz, 12 glowstone_dust -> +2.64 armor, +0.99 armor_toughness
+t9: 32 heirloom:tempering_flux, 4 gold_block, 8 magma_cream, 32 quartz, 16 glowstone_dust -> +2.92 armor, +1.10 armor_toughness
+t10: 64 heirloom:tempering_flux, 5 gold_block, 10 magma_cream, 40 quartz, 20 glowstone_dust -> +3.20 armor, +1.20 armor_toughness
+t11: 3 heirloom:tempering_alloy, 1 ancient_debris, 2 gold_block, 4 gilded_blackstone, 4 blaze_powder -> +3.64 armor, +1.37 armor_toughness
+t12: 4 heirloom:tempering_alloy, 1 ancient_debris, 3 gold_block, 8 gilded_blackstone, 6 blaze_powder -> +4.09 armor, +1.53 armor_toughness
+t13: 5 heirloom:tempering_alloy, 2 ancient_debris, 4 gold_block, 12 gilded_blackstone, 8 blaze_powder -> +4.53 armor, +1.70 armor_toughness
+t14: 6 heirloom:tempering_alloy, 2 ancient_debris, 5 gold_block, 16 gilded_blackstone, 10 blaze_powder -> +4.98 armor, +1.87 armor_toughness
+t15: 7 heirloom:tempering_alloy, 2 ancient_debris, 6 gold_block, 20 gilded_blackstone, 12 blaze_powder -> +5.42 armor, +2.03 armor_toughness
+t16: 1 heirloom:tempering_core, 1 netherite_scrap, 2 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +5.87 armor, +2.20 armor_toughness
+t17: 1 heirloom:tempering_core, 2 netherite_scrap, 3 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +6.31 armor, +2.37 armor_toughness
+t18: 1 heirloom:tempering_core, 2 netherite_scrap, 4 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +6.76 armor, +2.53 armor_toughness
+t19: 1 heirloom:tempering_core, 3 netherite_scrap, 5 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +7.20 armor, +2.70 armor_toughness
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 2 ancient_debris, 4 gold_block, 2 ghast_tear -> +7.47 armor, +2.80 armor_toughness
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 5 gold_block, 2 ghast_tear -> +7.60 armor, +2.85 armor_toughness
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 6 gold_block, 2 ghast_tear -> +7.73 armor, +2.90 armor_toughness
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 7 gold_block, 2 ghast_tear -> +7.87 armor, +2.95 armor_toughness
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 8 gold_block, 2 ghast_tear, 1 netherite_block, 1 breeze_rod -> +8.00 armor, +3.00 armor_toughness
+
+[netherite_leggings]
+t1: 4 heirloom:tempering_dust, 2 gold_ingot, 16 blackstone, 16 netherrack -> +0.51 armor, +0.26 armor_toughness
+t2: 8 heirloom:tempering_dust, 4 gold_ingot, 24 blackstone, 32 netherrack -> +0.72 armor, +0.36 armor_toughness
+t3: 16 heirloom:tempering_dust, 6 gold_ingot, 32 blackstone, 48 netherrack -> +0.93 armor, +0.47 armor_toughness
+t4: 32 heirloom:tempering_dust, 8 gold_ingot, 40 blackstone, 64 netherrack -> +1.14 armor, +0.57 armor_toughness
+t5: 64 heirloom:tempering_dust, 10 gold_ingot, 48 blackstone, 80 netherrack -> +1.35 armor, +0.68 armor_toughness
+t6: 4 heirloom:tempering_flux, 1 gold_block, 2 magma_cream, 8 quartz, 4 glowstone_dust -> +1.56 armor, +0.78 armor_toughness
+t7: 8 heirloom:tempering_flux, 2 gold_block, 4 magma_cream, 16 quartz, 8 glowstone_dust -> +1.77 armor, +0.89 armor_toughness
+t8: 16 heirloom:tempering_flux, 3 gold_block, 6 magma_cream, 24 quartz, 12 glowstone_dust -> +1.98 armor, +0.99 armor_toughness
+t9: 32 heirloom:tempering_flux, 4 gold_block, 8 magma_cream, 32 quartz, 16 glowstone_dust -> +2.19 armor, +1.10 armor_toughness
+t10: 64 heirloom:tempering_flux, 5 gold_block, 10 magma_cream, 40 quartz, 20 glowstone_dust -> +2.40 armor, +1.20 armor_toughness
+t11: 3 heirloom:tempering_alloy, 1 ancient_debris, 2 gold_block, 4 gilded_blackstone, 4 blaze_powder -> +2.73 armor, +1.37 armor_toughness
+t12: 4 heirloom:tempering_alloy, 1 ancient_debris, 3 gold_block, 8 gilded_blackstone, 6 blaze_powder -> +3.07 armor, +1.53 armor_toughness
+t13: 5 heirloom:tempering_alloy, 2 ancient_debris, 4 gold_block, 12 gilded_blackstone, 8 blaze_powder -> +3.40 armor, +1.70 armor_toughness
+t14: 6 heirloom:tempering_alloy, 2 ancient_debris, 5 gold_block, 16 gilded_blackstone, 10 blaze_powder -> +3.73 armor, +1.87 armor_toughness
+t15: 7 heirloom:tempering_alloy, 2 ancient_debris, 6 gold_block, 20 gilded_blackstone, 12 blaze_powder -> +4.07 armor, +2.03 armor_toughness
+t16: 1 heirloom:tempering_core, 1 netherite_scrap, 2 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +4.40 armor, +2.20 armor_toughness
+t17: 1 heirloom:tempering_core, 2 netherite_scrap, 3 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +4.73 armor, +2.37 armor_toughness
+t18: 1 heirloom:tempering_core, 2 netherite_scrap, 4 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +5.07 armor, +2.53 armor_toughness
+t19: 1 heirloom:tempering_core, 3 netherite_scrap, 5 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +5.40 armor, +2.70 armor_toughness
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 2 ancient_debris, 4 gold_block, 2 ghast_tear -> +5.60 armor, +2.80 armor_toughness
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 5 gold_block, 2 ghast_tear -> +5.70 armor, +2.85 armor_toughness
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 6 gold_block, 2 ghast_tear -> +5.80 armor, +2.90 armor_toughness
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 7 gold_block, 2 ghast_tear -> +5.90 armor, +2.95 armor_toughness
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 8 gold_block, 2 ghast_tear, 1 netherite_block, 1 breeze_rod -> +6.00 armor, +3.00 armor_toughness
+
+[netherite_boots]
+t1: 4 heirloom:tempering_dust, 2 gold_ingot, 16 blackstone, 16 netherrack -> +0.26 armor, +0.26 armor_toughness
+t2: 8 heirloom:tempering_dust, 4 gold_ingot, 24 blackstone, 32 netherrack -> +0.36 armor, +0.36 armor_toughness
+t3: 16 heirloom:tempering_dust, 6 gold_ingot, 32 blackstone, 48 netherrack -> +0.47 armor, +0.47 armor_toughness
+t4: 32 heirloom:tempering_dust, 8 gold_ingot, 40 blackstone, 64 netherrack -> +0.57 armor, +0.57 armor_toughness
+t5: 64 heirloom:tempering_dust, 10 gold_ingot, 48 blackstone, 80 netherrack -> +0.68 armor, +0.68 armor_toughness
+t6: 4 heirloom:tempering_flux, 1 gold_block, 2 magma_cream, 8 quartz, 4 glowstone_dust -> +0.78 armor, +0.78 armor_toughness
+t7: 8 heirloom:tempering_flux, 2 gold_block, 4 magma_cream, 16 quartz, 8 glowstone_dust -> +0.89 armor, +0.89 armor_toughness
+t8: 16 heirloom:tempering_flux, 3 gold_block, 6 magma_cream, 24 quartz, 12 glowstone_dust -> +0.99 armor, +0.99 armor_toughness
+t9: 32 heirloom:tempering_flux, 4 gold_block, 8 magma_cream, 32 quartz, 16 glowstone_dust -> +1.10 armor, +1.10 armor_toughness
+t10: 64 heirloom:tempering_flux, 5 gold_block, 10 magma_cream, 40 quartz, 20 glowstone_dust -> +1.20 armor, +1.20 armor_toughness
+t11: 3 heirloom:tempering_alloy, 1 ancient_debris, 2 gold_block, 4 gilded_blackstone, 4 blaze_powder -> +1.37 armor, +1.37 armor_toughness
+t12: 4 heirloom:tempering_alloy, 1 ancient_debris, 3 gold_block, 8 gilded_blackstone, 6 blaze_powder -> +1.53 armor, +1.53 armor_toughness
+t13: 5 heirloom:tempering_alloy, 2 ancient_debris, 4 gold_block, 12 gilded_blackstone, 8 blaze_powder -> +1.70 armor, +1.70 armor_toughness
+t14: 6 heirloom:tempering_alloy, 2 ancient_debris, 5 gold_block, 16 gilded_blackstone, 10 blaze_powder -> +1.87 armor, +1.87 armor_toughness
+t15: 7 heirloom:tempering_alloy, 2 ancient_debris, 6 gold_block, 20 gilded_blackstone, 12 blaze_powder -> +2.03 armor, +2.03 armor_toughness
+t16: 1 heirloom:tempering_core, 1 netherite_scrap, 2 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +2.20 armor, +2.20 armor_toughness
+t17: 1 heirloom:tempering_core, 2 netherite_scrap, 3 crying_obsidian, 8 gilded_blackstone, 1 ghast_tear -> +2.37 armor, +2.37 armor_toughness
+t18: 1 heirloom:tempering_core, 2 netherite_scrap, 4 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +2.53 armor, +2.53 armor_toughness
+t19: 1 heirloom:tempering_core, 3 netherite_scrap, 5 crying_obsidian, 8 gilded_blackstone, 2 ghast_tear -> +2.70 armor, +2.70 armor_toughness
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 2 ancient_debris, 4 gold_block, 2 ghast_tear -> +2.80 armor, +2.80 armor_toughness
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 5 gold_block, 2 ghast_tear -> +2.85 armor, +2.85 armor_toughness
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 netherite_ingot, 3 ancient_debris, 6 gold_block, 2 ghast_tear -> +2.90 armor, +2.90 armor_toughness
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 7 gold_block, 2 ghast_tear -> +2.95 armor, +2.95 armor_toughness
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 2 netherite_ingot, 4 ancient_debris, 8 gold_block, 2 ghast_tear, 1 netherite_block, 1 breeze_rod -> +3.00 armor, +3.00 armor_toughness
+

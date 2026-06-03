@@ -1,0 +1,107 @@
+# Heirloom tempering table — WOOD tier (tools only, starter). Sword 100% = +3 (vanilla wood); mining 100% = +1.7.
+# Deliberately cheap: only Tempering Dust + sticks, flat steps. L20 = ritual (omitted).
+
+[wooden_sword]
+t1: 1 heirloom:tempering_dust, 1 stick -> +1.02 attack_damage
+t2: 1 heirloom:tempering_dust, 1 stick -> +1.04 attack_damage
+t3: 1 heirloom:tempering_dust, 1 stick -> +1.06 attack_damage
+t4: 1 heirloom:tempering_dust, 1 stick -> +1.08 attack_damage
+t5: 1 heirloom:tempering_dust, 1 stick -> +1.10 attack_damage
+t6: 2 heirloom:tempering_dust, 2 stick -> +1.12 attack_damage
+t7: 2 heirloom:tempering_dust, 2 stick -> +1.14 attack_damage
+t8: 2 heirloom:tempering_dust, 2 stick -> +1.16 attack_damage
+t9: 2 heirloom:tempering_dust, 2 stick -> +1.18 attack_damage
+t10: 2 heirloom:tempering_dust, 2 stick -> +1.20 attack_damage
+t11: 3 heirloom:tempering_dust, 3 stick -> +1.40 attack_damage
+t12: 3 heirloom:tempering_dust, 3 stick -> +1.60 attack_damage
+t13: 3 heirloom:tempering_dust, 3 stick -> +1.80 attack_damage
+t14: 3 heirloom:tempering_dust, 3 stick -> +2.00 attack_damage
+t15: 3 heirloom:tempering_dust, 3 stick -> +2.20 attack_damage
+t16: 4 heirloom:tempering_dust, 4 stick -> +2.40 attack_damage
+t17: 4 heirloom:tempering_dust, 4 stick -> +2.60 attack_damage
+t18: 4 heirloom:tempering_dust, 4 stick -> +2.80 attack_damage
+t19: 4 heirloom:tempering_dust, 4 stick -> +3.00 attack_damage
+t21: 5 heirloom:tempering_dust, 5 stick -> +3.10 attack_damage
+t22: 5 heirloom:tempering_dust, 5 stick -> +3.15 attack_damage
+t23: 5 heirloom:tempering_dust, 5 stick -> +3.20 attack_damage
+t24: 5 heirloom:tempering_dust, 5 stick -> +3.25 attack_damage
+t25: 5 heirloom:tempering_dust, 5 stick -> +3.30 attack_damage, +0.10 attack_speed
+
+[wooden_pickaxe]
+t1: 1 heirloom:tempering_dust, 1 stick -> +0.10 block_break_speed
+t2: 1 heirloom:tempering_dust, 1 stick -> +0.20 block_break_speed
+t3: 1 heirloom:tempering_dust, 1 stick -> +0.31 block_break_speed
+t4: 1 heirloom:tempering_dust, 1 stick -> +0.41 block_break_speed
+t5: 1 heirloom:tempering_dust, 1 stick -> +0.51 block_break_speed
+t6: 2 heirloom:tempering_dust, 2 stick -> +0.61 block_break_speed
+t7: 2 heirloom:tempering_dust, 2 stick -> +0.71 block_break_speed
+t8: 2 heirloom:tempering_dust, 2 stick -> +0.82 block_break_speed
+t9: 2 heirloom:tempering_dust, 2 stick -> +0.92 block_break_speed
+t10: 2 heirloom:tempering_dust, 2 stick -> +1.02 block_break_speed
+t11: 3 heirloom:tempering_dust, 3 stick -> +1.05 block_break_speed
+t12: 3 heirloom:tempering_dust, 3 stick -> +1.09 block_break_speed
+t13: 3 heirloom:tempering_dust, 3 stick -> +1.12 block_break_speed
+t14: 3 heirloom:tempering_dust, 3 stick -> +1.16 block_break_speed
+t15: 3 heirloom:tempering_dust, 3 stick -> +1.19 block_break_speed
+t16: 4 heirloom:tempering_dust, 4 stick -> +1.22 block_break_speed
+t17: 4 heirloom:tempering_dust, 4 stick -> +1.26 block_break_speed
+t18: 4 heirloom:tempering_dust, 4 stick -> +1.29 block_break_speed
+t19: 4 heirloom:tempering_dust, 4 stick -> +1.33 block_break_speed
+t21: 5 heirloom:tempering_dust, 5 stick -> +1.39 block_break_speed
+t22: 5 heirloom:tempering_dust, 5 stick -> +1.43 block_break_speed
+t23: 5 heirloom:tempering_dust, 5 stick -> +1.46 block_break_speed
+t24: 5 heirloom:tempering_dust, 5 stick -> +1.50 block_break_speed
+t25: 5 heirloom:tempering_dust, 5 stick -> +1.53 block_break_speed
+
+[wooden_axe]
+t1: 1 heirloom:tempering_dust, 1 stick -> +0.10 block_break_speed
+t2: 1 heirloom:tempering_dust, 1 stick -> +0.20 block_break_speed
+t3: 1 heirloom:tempering_dust, 1 stick -> +0.31 block_break_speed
+t4: 1 heirloom:tempering_dust, 1 stick -> +0.41 block_break_speed
+t5: 1 heirloom:tempering_dust, 1 stick -> +0.51 block_break_speed
+t6: 2 heirloom:tempering_dust, 2 stick -> +0.61 block_break_speed
+t7: 2 heirloom:tempering_dust, 2 stick -> +0.71 block_break_speed
+t8: 2 heirloom:tempering_dust, 2 stick -> +0.82 block_break_speed
+t9: 2 heirloom:tempering_dust, 2 stick -> +0.92 block_break_speed
+t10: 2 heirloom:tempering_dust, 2 stick -> +1.02 block_break_speed
+t11: 3 heirloom:tempering_dust, 3 stick -> +1.05 block_break_speed
+t12: 3 heirloom:tempering_dust, 3 stick -> +1.09 block_break_speed
+t13: 3 heirloom:tempering_dust, 3 stick -> +1.12 block_break_speed
+t14: 3 heirloom:tempering_dust, 3 stick -> +1.16 block_break_speed
+t15: 3 heirloom:tempering_dust, 3 stick -> +1.19 block_break_speed
+t16: 4 heirloom:tempering_dust, 4 stick -> +1.22 block_break_speed
+t17: 4 heirloom:tempering_dust, 4 stick -> +1.26 block_break_speed
+t18: 4 heirloom:tempering_dust, 4 stick -> +1.29 block_break_speed
+t19: 4 heirloom:tempering_dust, 4 stick -> +1.33 block_break_speed
+t21: 5 heirloom:tempering_dust, 5 stick -> +1.39 block_break_speed
+t22: 5 heirloom:tempering_dust, 5 stick -> +1.43 block_break_speed
+t23: 5 heirloom:tempering_dust, 5 stick -> +1.46 block_break_speed
+t24: 5 heirloom:tempering_dust, 5 stick -> +1.50 block_break_speed
+t25: 5 heirloom:tempering_dust, 5 stick -> +1.53 block_break_speed
+
+[wooden_shovel]
+t1: 1 heirloom:tempering_dust, 1 stick -> +0.10 block_break_speed
+t2: 1 heirloom:tempering_dust, 1 stick -> +0.20 block_break_speed
+t3: 1 heirloom:tempering_dust, 1 stick -> +0.31 block_break_speed
+t4: 1 heirloom:tempering_dust, 1 stick -> +0.41 block_break_speed
+t5: 1 heirloom:tempering_dust, 1 stick -> +0.51 block_break_speed
+t6: 2 heirloom:tempering_dust, 2 stick -> +0.61 block_break_speed
+t7: 2 heirloom:tempering_dust, 2 stick -> +0.71 block_break_speed
+t8: 2 heirloom:tempering_dust, 2 stick -> +0.82 block_break_speed
+t9: 2 heirloom:tempering_dust, 2 stick -> +0.92 block_break_speed
+t10: 2 heirloom:tempering_dust, 2 stick -> +1.02 block_break_speed
+t11: 3 heirloom:tempering_dust, 3 stick -> +1.05 block_break_speed
+t12: 3 heirloom:tempering_dust, 3 stick -> +1.09 block_break_speed
+t13: 3 heirloom:tempering_dust, 3 stick -> +1.12 block_break_speed
+t14: 3 heirloom:tempering_dust, 3 stick -> +1.16 block_break_speed
+t15: 3 heirloom:tempering_dust, 3 stick -> +1.19 block_break_speed
+t16: 4 heirloom:tempering_dust, 4 stick -> +1.22 block_break_speed
+t17: 4 heirloom:tempering_dust, 4 stick -> +1.26 block_break_speed
+t18: 4 heirloom:tempering_dust, 4 stick -> +1.29 block_break_speed
+t19: 4 heirloom:tempering_dust, 4 stick -> +1.33 block_break_speed
+t21: 5 heirloom:tempering_dust, 5 stick -> +1.39 block_break_speed
+t22: 5 heirloom:tempering_dust, 5 stick -> +1.43 block_break_speed
+t23: 5 heirloom:tempering_dust, 5 stick -> +1.46 block_break_speed
+t24: 5 heirloom:tempering_dust, 5 stick -> +1.50 block_break_speed
+t25: 5 heirloom:tempering_dust, 5 stick -> +1.53 block_break_speed
+

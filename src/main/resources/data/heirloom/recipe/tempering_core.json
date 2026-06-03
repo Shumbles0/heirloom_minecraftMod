@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:diamond",
+    "minecraft:iron_block",
+    "minecraft:weathered_copper"
+  ],
+  "result": { "id": "heirloom:tempering_core", "count": 1 }
+}

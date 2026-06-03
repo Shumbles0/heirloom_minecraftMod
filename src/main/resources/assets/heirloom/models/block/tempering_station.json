@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "heirloom:block/tempering_station_front",
+    "down": "heirloom:block/tempering_station_bottom",
+    "up": "heirloom:block/tempering_station_top",
+    "north": "heirloom:block/tempering_station_front",
+    "south": "heirloom:block/tempering_station_front",
+    "east": "heirloom:block/tempering_station_side",
+    "west": "heirloom:block/tempering_station_side"
+  }
+}

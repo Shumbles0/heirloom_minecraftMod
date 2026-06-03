@@ -1,0 +1,106 @@
+# Heirloom tempering table — STONE tier (tools only). Sword 100% = +4 (vanilla stone); mining 100% = +3.3. L20 = ritual.
+
+[stone_sword]
+t1: 2 cobblestone, 2 heirloom:tempering_dust -> +1.06 attack_damage
+t2: 4 cobblestone, 4 heirloom:tempering_dust -> +1.12 attack_damage
+t3: 8 cobblestone, 8 heirloom:tempering_dust -> +1.18 attack_damage
+t4: 16 cobblestone, 16 heirloom:tempering_dust -> +1.24 attack_damage
+t5: 32 cobblestone, 32 heirloom:tempering_dust -> +1.30 attack_damage
+t6: 1 heirloom:tempering_flux, 1 polished_diorite, 1 stone -> +1.36 attack_damage
+t7: 2 heirloom:tempering_flux, 2 polished_diorite, 2 stone -> +1.42 attack_damage
+t8: 4 heirloom:tempering_flux, 3 polished_diorite, 3 stone -> +1.48 attack_damage
+t9: 8 heirloom:tempering_flux, 4 polished_diorite, 4 stone -> +1.54 attack_damage
+t10: 16 heirloom:tempering_flux, 5 polished_diorite, 5 stone -> +1.60 attack_damage
+t11: 1 heirloom:tempering_alloy, 2 gray_concrete, 2 bone_block -> +1.87 attack_damage
+t12: 2 heirloom:tempering_alloy, 3 gray_concrete, 2 bone_block -> +2.13 attack_damage
+t13: 3 heirloom:tempering_alloy, 4 gray_concrete, 2 bone_block -> +2.40 attack_damage
+t14: 4 heirloom:tempering_alloy, 5 gray_concrete, 2 bone_block -> +2.67 attack_damage
+t15: 5 heirloom:tempering_alloy, 6 gray_concrete, 2 bone_block -> +2.93 attack_damage
+t16: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +3.20 attack_damage
+t17: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +3.47 attack_damage
+t18: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +3.73 attack_damage
+t19: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +4.00 attack_damage
+t21: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +4.13 attack_damage
+t22: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +4.20 attack_damage
+t23: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +4.27 attack_damage
+t24: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +4.33 attack_damage
+t25: 1 heirloom:tempering_quintessence, 2 bone_block, 5 polished_blackstone -> +4.40 attack_damage, +0.10 attack_speed
+
+[stone_pickaxe]
+t1: 2 cobblestone, 2 heirloom:tempering_dust -> +0.20 block_break_speed
+t2: 4 cobblestone, 4 heirloom:tempering_dust -> +0.40 block_break_speed
+t3: 8 cobblestone, 8 heirloom:tempering_dust -> +0.59 block_break_speed
+t4: 16 cobblestone, 16 heirloom:tempering_dust -> +0.79 block_break_speed
+t5: 32 cobblestone, 32 heirloom:tempering_dust -> +0.99 block_break_speed
+t6: 1 heirloom:tempering_flux, 1 polished_diorite, 1 stone -> +1.19 block_break_speed
+t7: 2 heirloom:tempering_flux, 2 polished_diorite, 2 stone -> +1.39 block_break_speed
+t8: 4 heirloom:tempering_flux, 3 polished_diorite, 3 stone -> +1.58 block_break_speed
+t9: 8 heirloom:tempering_flux, 4 polished_diorite, 4 stone -> +1.78 block_break_speed
+t10: 16 heirloom:tempering_flux, 5 polished_diorite, 5 stone -> +1.98 block_break_speed
+t11: 1 heirloom:tempering_alloy, 2 gray_concrete, 2 bone_block -> +2.05 block_break_speed
+t12: 2 heirloom:tempering_alloy, 3 gray_concrete, 2 bone_block -> +2.11 block_break_speed
+t13: 3 heirloom:tempering_alloy, 4 gray_concrete, 2 bone_block -> +2.18 block_break_speed
+t14: 4 heirloom:tempering_alloy, 5 gray_concrete, 2 bone_block -> +2.24 block_break_speed
+t15: 5 heirloom:tempering_alloy, 6 gray_concrete, 2 bone_block -> +2.31 block_break_speed
+t16: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.38 block_break_speed
+t17: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.44 block_break_speed
+t18: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.51 block_break_speed
+t19: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.57 block_break_speed
+t21: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.71 block_break_speed
+t22: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.77 block_break_speed
+t23: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.84 block_break_speed
+t24: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.90 block_break_speed
+t25: 1 heirloom:tempering_quintessence, 2 bone_block, 5 polished_blackstone -> +2.97 block_break_speed
+
+[stone_axe]
+t1: 2 cobblestone, 2 heirloom:tempering_dust -> +0.20 block_break_speed
+t2: 4 cobblestone, 4 heirloom:tempering_dust -> +0.40 block_break_speed
+t3: 8 cobblestone, 8 heirloom:tempering_dust -> +0.59 block_break_speed
+t4: 16 cobblestone, 16 heirloom:tempering_dust -> +0.79 block_break_speed
+t5: 32 cobblestone, 32 heirloom:tempering_dust -> +0.99 block_break_speed
+t6: 1 heirloom:tempering_flux, 1 polished_diorite, 1 stone -> +1.19 block_break_speed
+t7: 2 heirloom:tempering_flux, 2 polished_diorite, 2 stone -> +1.39 block_break_speed
+t8: 4 heirloom:tempering_flux, 3 polished_diorite, 3 stone -> +1.58 block_break_speed
+t9: 8 heirloom:tempering_flux, 4 polished_diorite, 4 stone -> +1.78 block_break_speed
+t10: 16 heirloom:tempering_flux, 5 polished_diorite, 5 stone -> +1.98 block_break_speed
+t11: 1 heirloom:tempering_alloy, 2 gray_concrete, 2 bone_block -> +2.05 block_break_speed
+t12: 2 heirloom:tempering_alloy, 3 gray_concrete, 2 bone_block -> +2.11 block_break_speed
+t13: 3 heirloom:tempering_alloy, 4 gray_concrete, 2 bone_block -> +2.18 block_break_speed
+t14: 4 heirloom:tempering_alloy, 5 gray_concrete, 2 bone_block -> +2.24 block_break_speed
+t15: 5 heirloom:tempering_alloy, 6 gray_concrete, 2 bone_block -> +2.31 block_break_speed
+t16: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.38 block_break_speed
+t17: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.44 block_break_speed
+t18: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.51 block_break_speed
+t19: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.57 block_break_speed
+t21: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.71 block_break_speed
+t22: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.77 block_break_speed
+t23: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.84 block_break_speed
+t24: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.90 block_break_speed
+t25: 1 heirloom:tempering_quintessence, 2 bone_block, 5 polished_blackstone -> +2.97 block_break_speed
+
+[stone_shovel]
+t1: 2 cobblestone, 2 heirloom:tempering_dust -> +0.20 block_break_speed
+t2: 4 cobblestone, 4 heirloom:tempering_dust -> +0.40 block_break_speed
+t3: 8 cobblestone, 8 heirloom:tempering_dust -> +0.59 block_break_speed
+t4: 16 cobblestone, 16 heirloom:tempering_dust -> +0.79 block_break_speed
+t5: 32 cobblestone, 32 heirloom:tempering_dust -> +0.99 block_break_speed
+t6: 1 heirloom:tempering_flux, 1 polished_diorite, 1 stone -> +1.19 block_break_speed
+t7: 2 heirloom:tempering_flux, 2 polished_diorite, 2 stone -> +1.39 block_break_speed
+t8: 4 heirloom:tempering_flux, 3 polished_diorite, 3 stone -> +1.58 block_break_speed
+t9: 8 heirloom:tempering_flux, 4 polished_diorite, 4 stone -> +1.78 block_break_speed
+t10: 16 heirloom:tempering_flux, 5 polished_diorite, 5 stone -> +1.98 block_break_speed
+t11: 1 heirloom:tempering_alloy, 2 gray_concrete, 2 bone_block -> +2.05 block_break_speed
+t12: 2 heirloom:tempering_alloy, 3 gray_concrete, 2 bone_block -> +2.11 block_break_speed
+t13: 3 heirloom:tempering_alloy, 4 gray_concrete, 2 bone_block -> +2.18 block_break_speed
+t14: 4 heirloom:tempering_alloy, 5 gray_concrete, 2 bone_block -> +2.24 block_break_speed
+t15: 5 heirloom:tempering_alloy, 6 gray_concrete, 2 bone_block -> +2.31 block_break_speed
+t16: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.38 block_break_speed
+t17: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.44 block_break_speed
+t18: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.51 block_break_speed
+t19: 1 heirloom:tempering_core, 1 cobblestone_wall, 5 polished_andesite, 5 polished_diorite -> +2.57 block_break_speed
+t21: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.71 block_break_speed
+t22: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.77 block_break_speed
+t23: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.84 block_break_speed
+t24: 2 heirloom:tempering_core, 2 bone_block, 5 polished_blackstone -> +2.90 block_break_speed
+t25: 1 heirloom:tempering_quintessence, 2 bone_block, 5 polished_blackstone -> +2.97 block_break_speed
+

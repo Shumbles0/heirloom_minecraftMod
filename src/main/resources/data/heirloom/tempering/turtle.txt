@@ -1,0 +1,28 @@
+# Heirloom tempering table — TURTLE tier (turtle_helmet only). Armor 2 (like iron helmet).
+# Ocean-themed; no turtle scutes below t20 (scutes t21+). Dust->Flux->Alloy->Core, no Quintessence. L20=ritual.
+
+[turtle_helmet]
+t1: 2 heirloom:tempering_dust, 1 kelp -> +0.17 armor
+t2: 3 heirloom:tempering_dust, 1 kelp -> +0.24 armor
+t3: 4 heirloom:tempering_dust, 1 kelp -> +0.31 armor
+t4: 5 heirloom:tempering_dust, 1 kelp -> +0.38 armor
+t5: 6 heirloom:tempering_dust, 1 kelp -> +0.45 armor
+t6: 1 heirloom:tempering_flux, 1 prismarine_shard -> +0.52 armor
+t7: 1 heirloom:tempering_flux, 2 prismarine_shard -> +0.59 armor
+t8: 2 heirloom:tempering_flux, 2 prismarine_shard -> +0.66 armor
+t9: 2 heirloom:tempering_flux, 3 prismarine_shard -> +0.73 armor
+t10: 3 heirloom:tempering_flux, 3 prismarine_shard -> +0.80 armor
+t11: 1 heirloom:tempering_alloy, 1 prismarine_crystals, 1 sea_pickle -> +0.91 armor
+t12: 1 heirloom:tempering_alloy, 1 prismarine_crystals, 1 sea_pickle -> +1.02 armor
+t13: 2 heirloom:tempering_alloy, 1 prismarine_crystals, 1 sea_pickle -> +1.13 armor
+t14: 2 heirloom:tempering_alloy, 2 prismarine_crystals, 1 sea_pickle -> +1.24 armor
+t15: 3 heirloom:tempering_alloy, 2 prismarine_crystals, 1 sea_pickle -> +1.36 armor
+t16: 1 heirloom:tempering_core, 1 nautilus_shell -> +1.47 armor
+t17: 1 heirloom:tempering_core, 1 nautilus_shell -> +1.58 armor
+t18: 1 heirloom:tempering_core, 2 nautilus_shell -> +1.69 armor
+t19: 2 heirloom:tempering_core, 2 nautilus_shell -> +1.80 armor
+t21: 1 heirloom:tempering_core, 1 turtle_scute -> +1.87 armor
+t22: 1 heirloom:tempering_core, 2 turtle_scute -> +1.90 armor
+t23: 2 heirloom:tempering_core, 2 turtle_scute -> +1.93 armor
+t24: 2 heirloom:tempering_core, 3 turtle_scute -> +1.97 armor
+t25: 3 heirloom:tempering_core, 3 turtle_scute, 1 heart_of_the_sea -> +2.00 armor

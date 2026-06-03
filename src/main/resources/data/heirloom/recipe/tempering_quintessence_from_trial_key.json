@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap",
+    "minecraft:ominous_trial_key",
+    "minecraft:heart_of_the_sea"
+  ],
+  "result": { "id": "heirloom:tempering_quintessence", "count": 1 }
+}

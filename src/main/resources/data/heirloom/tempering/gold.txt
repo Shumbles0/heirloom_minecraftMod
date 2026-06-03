@@ -1,0 +1,211 @@
+# Heirloom tempering table — GOLD tier. Sword 100%=+3 (weak); mining 100%=+10 (fastest!); armor 2/5/3/1.
+# Mid difficulty (Dust->Flux->Alloy->Core, no Quintessence), gold-themed materials. L20=ritual.
+
+[golden_sword]
+t1: 2 heirloom:tempering_dust, 1 gold_nugget -> +1.02 attack_damage
+t2: 3 heirloom:tempering_dust, 2 gold_nugget -> +1.04 attack_damage
+t3: 4 heirloom:tempering_dust, 3 gold_nugget -> +1.06 attack_damage
+t4: 5 heirloom:tempering_dust, 4 gold_nugget -> +1.08 attack_damage
+t5: 6 heirloom:tempering_dust, 5 gold_nugget -> +1.10 attack_damage
+t6: 1 heirloom:tempering_flux, 1 gold_ingot, 2 glowstone_dust -> +1.12 attack_damage
+t7: 1 heirloom:tempering_flux, 2 gold_ingot, 2 glowstone_dust -> +1.14 attack_damage
+t8: 2 heirloom:tempering_flux, 2 gold_ingot, 3 glowstone_dust -> +1.16 attack_damage
+t9: 2 heirloom:tempering_flux, 3 gold_ingot, 3 glowstone_dust -> +1.18 attack_damage
+t10: 3 heirloom:tempering_flux, 3 gold_ingot, 4 glowstone_dust -> +1.20 attack_damage
+t11: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +1.40 attack_damage
+t12: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +1.60 attack_damage
+t13: 2 heirloom:tempering_alloy, 2 raw_gold, 1 glowstone -> +1.80 attack_damage
+t14: 2 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +2.00 attack_damage
+t15: 3 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +2.20 attack_damage
+t16: 1 heirloom:tempering_core, 1 gilded_blackstone -> +2.40 attack_damage
+t17: 1 heirloom:tempering_core, 1 gold_block -> +2.60 attack_damage
+t18: 1 heirloom:tempering_core, 2 gilded_blackstone -> +2.80 attack_damage
+t19: 2 heirloom:tempering_core, 1 gold_block -> +3.00 attack_damage
+t21: 1 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +3.10 attack_damage
+t22: 2 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +3.15 attack_damage
+t23: 2 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +3.20 attack_damage
+t24: 3 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +3.25 attack_damage
+t25: 3 heirloom:tempering_core, 3 gold_block, 3 glowstone -> +3.30 attack_damage, +0.10 attack_speed
+
+[golden_pickaxe]
+t1: 2 heirloom:tempering_dust, 1 gold_nugget -> +0.60 block_break_speed
+t2: 3 heirloom:tempering_dust, 2 gold_nugget -> +1.20 block_break_speed
+t3: 4 heirloom:tempering_dust, 3 gold_nugget -> +1.80 block_break_speed
+t4: 5 heirloom:tempering_dust, 4 gold_nugget -> +2.40 block_break_speed
+t5: 6 heirloom:tempering_dust, 5 gold_nugget -> +3.00 block_break_speed
+t6: 1 heirloom:tempering_flux, 1 gold_ingot, 2 glowstone_dust -> +3.60 block_break_speed
+t7: 1 heirloom:tempering_flux, 2 gold_ingot, 2 glowstone_dust -> +4.20 block_break_speed
+t8: 2 heirloom:tempering_flux, 2 gold_ingot, 3 glowstone_dust -> +4.80 block_break_speed
+t9: 2 heirloom:tempering_flux, 3 gold_ingot, 3 glowstone_dust -> +5.40 block_break_speed
+t10: 3 heirloom:tempering_flux, 3 gold_ingot, 4 glowstone_dust -> +6.00 block_break_speed
+t11: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +6.20 block_break_speed
+t12: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +6.40 block_break_speed
+t13: 2 heirloom:tempering_alloy, 2 raw_gold, 1 glowstone -> +6.60 block_break_speed
+t14: 2 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +6.80 block_break_speed
+t15: 3 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +7.00 block_break_speed
+t16: 1 heirloom:tempering_core, 1 gilded_blackstone -> +7.20 block_break_speed
+t17: 1 heirloom:tempering_core, 1 gold_block -> +7.40 block_break_speed
+t18: 1 heirloom:tempering_core, 2 gilded_blackstone -> +7.60 block_break_speed
+t19: 2 heirloom:tempering_core, 1 gold_block -> +7.80 block_break_speed
+t21: 1 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +8.20 block_break_speed
+t22: 2 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +8.40 block_break_speed
+t23: 2 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +8.60 block_break_speed
+t24: 3 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +8.80 block_break_speed
+t25: 3 heirloom:tempering_core, 3 gold_block, 3 glowstone -> +9.00 block_break_speed
+
+[golden_axe]
+t1: 2 heirloom:tempering_dust, 1 gold_nugget -> +0.60 block_break_speed
+t2: 3 heirloom:tempering_dust, 2 gold_nugget -> +1.20 block_break_speed
+t3: 4 heirloom:tempering_dust, 3 gold_nugget -> +1.80 block_break_speed
+t4: 5 heirloom:tempering_dust, 4 gold_nugget -> +2.40 block_break_speed
+t5: 6 heirloom:tempering_dust, 5 gold_nugget -> +3.00 block_break_speed
+t6: 1 heirloom:tempering_flux, 1 gold_ingot, 2 glowstone_dust -> +3.60 block_break_speed
+t7: 1 heirloom:tempering_flux, 2 gold_ingot, 2 glowstone_dust -> +4.20 block_break_speed
+t8: 2 heirloom:tempering_flux, 2 gold_ingot, 3 glowstone_dust -> +4.80 block_break_speed
+t9: 2 heirloom:tempering_flux, 3 gold_ingot, 3 glowstone_dust -> +5.40 block_break_speed
+t10: 3 heirloom:tempering_flux, 3 gold_ingot, 4 glowstone_dust -> +6.00 block_break_speed
+t11: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +6.20 block_break_speed
+t12: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +6.40 block_break_speed
+t13: 2 heirloom:tempering_alloy, 2 raw_gold, 1 glowstone -> +6.60 block_break_speed
+t14: 2 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +6.80 block_break_speed
+t15: 3 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +7.00 block_break_speed
+t16: 1 heirloom:tempering_core, 1 gilded_blackstone -> +7.20 block_break_speed
+t17: 1 heirloom:tempering_core, 1 gold_block -> +7.40 block_break_speed
+t18: 1 heirloom:tempering_core, 2 gilded_blackstone -> +7.60 block_break_speed
+t19: 2 heirloom:tempering_core, 1 gold_block -> +7.80 block_break_speed
+t21: 1 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +8.20 block_break_speed
+t22: 2 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +8.40 block_break_speed
+t23: 2 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +8.60 block_break_speed
+t24: 3 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +8.80 block_break_speed
+t25: 3 heirloom:tempering_core, 3 gold_block, 3 glowstone -> +9.00 block_break_speed
+
+[golden_shovel]
+t1: 2 heirloom:tempering_dust, 1 gold_nugget -> +0.60 block_break_speed
+t2: 3 heirloom:tempering_dust, 2 gold_nugget -> +1.20 block_break_speed
+t3: 4 heirloom:tempering_dust, 3 gold_nugget -> +1.80 block_break_speed
+t4: 5 heirloom:tempering_dust, 4 gold_nugget -> +2.40 block_break_speed
+t5: 6 heirloom:tempering_dust, 5 gold_nugget -> +3.00 block_break_speed
+t6: 1 heirloom:tempering_flux, 1 gold_ingot, 2 glowstone_dust -> +3.60 block_break_speed
+t7: 1 heirloom:tempering_flux, 2 gold_ingot, 2 glowstone_dust -> +4.20 block_break_speed
+t8: 2 heirloom:tempering_flux, 2 gold_ingot, 3 glowstone_dust -> +4.80 block_break_speed
+t9: 2 heirloom:tempering_flux, 3 gold_ingot, 3 glowstone_dust -> +5.40 block_break_speed
+t10: 3 heirloom:tempering_flux, 3 gold_ingot, 4 glowstone_dust -> +6.00 block_break_speed
+t11: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +6.20 block_break_speed
+t12: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +6.40 block_break_speed
+t13: 2 heirloom:tempering_alloy, 2 raw_gold, 1 glowstone -> +6.60 block_break_speed
+t14: 2 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +6.80 block_break_speed
+t15: 3 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +7.00 block_break_speed
+t16: 1 heirloom:tempering_core, 1 gilded_blackstone -> +7.20 block_break_speed
+t17: 1 heirloom:tempering_core, 1 gold_block -> +7.40 block_break_speed
+t18: 1 heirloom:tempering_core, 2 gilded_blackstone -> +7.60 block_break_speed
+t19: 2 heirloom:tempering_core, 1 gold_block -> +7.80 block_break_speed
+t21: 1 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +8.20 block_break_speed
+t22: 2 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +8.40 block_break_speed
+t23: 2 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +8.60 block_break_speed
+t24: 3 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +8.80 block_break_speed
+t25: 3 heirloom:tempering_core, 3 gold_block, 3 glowstone -> +9.00 block_break_speed
+
+[golden_helmet]
+t1: 2 heirloom:tempering_dust, 1 gold_nugget -> +0.17 armor
+t2: 3 heirloom:tempering_dust, 2 gold_nugget -> +0.24 armor
+t3: 4 heirloom:tempering_dust, 3 gold_nugget -> +0.31 armor
+t4: 5 heirloom:tempering_dust, 4 gold_nugget -> +0.38 armor
+t5: 6 heirloom:tempering_dust, 5 gold_nugget -> +0.45 armor
+t6: 1 heirloom:tempering_flux, 1 gold_ingot, 2 glowstone_dust -> +0.52 armor
+t7: 1 heirloom:tempering_flux, 2 gold_ingot, 2 glowstone_dust -> +0.59 armor
+t8: 2 heirloom:tempering_flux, 2 gold_ingot, 3 glowstone_dust -> +0.66 armor
+t9: 2 heirloom:tempering_flux, 3 gold_ingot, 3 glowstone_dust -> +0.73 armor
+t10: 3 heirloom:tempering_flux, 3 gold_ingot, 4 glowstone_dust -> +0.80 armor
+t11: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +0.91 armor
+t12: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +1.02 armor
+t13: 2 heirloom:tempering_alloy, 2 raw_gold, 1 glowstone -> +1.13 armor
+t14: 2 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +1.24 armor
+t15: 3 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +1.36 armor
+t16: 1 heirloom:tempering_core, 1 gilded_blackstone -> +1.47 armor
+t17: 1 heirloom:tempering_core, 1 gold_block -> +1.58 armor
+t18: 1 heirloom:tempering_core, 2 gilded_blackstone -> +1.69 armor
+t19: 2 heirloom:tempering_core, 1 gold_block -> +1.80 armor
+t21: 1 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +1.87 armor
+t22: 2 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +1.90 armor
+t23: 2 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +1.93 armor
+t24: 3 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +1.97 armor
+t25: 3 heirloom:tempering_core, 3 gold_block, 3 glowstone -> +2.00 armor
+
+[golden_chestplate]
+t1: 2 heirloom:tempering_dust, 1 gold_nugget -> +0.43 armor
+t2: 3 heirloom:tempering_dust, 2 gold_nugget -> +0.60 armor
+t3: 4 heirloom:tempering_dust, 3 gold_nugget -> +0.78 armor
+t4: 5 heirloom:tempering_dust, 4 gold_nugget -> +0.95 armor
+t5: 6 heirloom:tempering_dust, 5 gold_nugget -> +1.13 armor
+t6: 1 heirloom:tempering_flux, 1 gold_ingot, 2 glowstone_dust -> +1.30 armor
+t7: 1 heirloom:tempering_flux, 2 gold_ingot, 2 glowstone_dust -> +1.48 armor
+t8: 2 heirloom:tempering_flux, 2 gold_ingot, 3 glowstone_dust -> +1.65 armor
+t9: 2 heirloom:tempering_flux, 3 gold_ingot, 3 glowstone_dust -> +1.83 armor
+t10: 3 heirloom:tempering_flux, 3 gold_ingot, 4 glowstone_dust -> +2.00 armor
+t11: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +2.28 armor
+t12: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +2.56 armor
+t13: 2 heirloom:tempering_alloy, 2 raw_gold, 1 glowstone -> +2.83 armor
+t14: 2 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +3.11 armor
+t15: 3 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +3.39 armor
+t16: 1 heirloom:tempering_core, 1 gilded_blackstone -> +3.67 armor
+t17: 1 heirloom:tempering_core, 1 gold_block -> +3.94 armor
+t18: 1 heirloom:tempering_core, 2 gilded_blackstone -> +4.22 armor
+t19: 2 heirloom:tempering_core, 1 gold_block -> +4.50 armor
+t21: 1 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +4.67 armor
+t22: 2 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +4.75 armor
+t23: 2 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +4.83 armor
+t24: 3 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +4.92 armor
+t25: 3 heirloom:tempering_core, 3 gold_block, 3 glowstone -> +5.00 armor
+
+[golden_leggings]
+t1: 2 heirloom:tempering_dust, 1 gold_nugget -> +0.26 armor
+t2: 3 heirloom:tempering_dust, 2 gold_nugget -> +0.36 armor
+t3: 4 heirloom:tempering_dust, 3 gold_nugget -> +0.47 armor
+t4: 5 heirloom:tempering_dust, 4 gold_nugget -> +0.57 armor
+t5: 6 heirloom:tempering_dust, 5 gold_nugget -> +0.68 armor
+t6: 1 heirloom:tempering_flux, 1 gold_ingot, 2 glowstone_dust -> +0.78 armor
+t7: 1 heirloom:tempering_flux, 2 gold_ingot, 2 glowstone_dust -> +0.89 armor
+t8: 2 heirloom:tempering_flux, 2 gold_ingot, 3 glowstone_dust -> +0.99 armor
+t9: 2 heirloom:tempering_flux, 3 gold_ingot, 3 glowstone_dust -> +1.10 armor
+t10: 3 heirloom:tempering_flux, 3 gold_ingot, 4 glowstone_dust -> +1.20 armor
+t11: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +1.37 armor
+t12: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +1.53 armor
+t13: 2 heirloom:tempering_alloy, 2 raw_gold, 1 glowstone -> +1.70 armor
+t14: 2 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +1.87 armor
+t15: 3 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +2.03 armor
+t16: 1 heirloom:tempering_core, 1 gilded_blackstone -> +2.20 armor
+t17: 1 heirloom:tempering_core, 1 gold_block -> +2.37 armor
+t18: 1 heirloom:tempering_core, 2 gilded_blackstone -> +2.53 armor
+t19: 2 heirloom:tempering_core, 1 gold_block -> +2.70 armor
+t21: 1 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +2.80 armor
+t22: 2 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +2.85 armor
+t23: 2 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +2.90 armor
+t24: 3 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +2.95 armor
+t25: 3 heirloom:tempering_core, 3 gold_block, 3 glowstone -> +3.00 armor
+
+[golden_boots]
+t1: 2 heirloom:tempering_dust, 1 gold_nugget -> +0.09 armor
+t2: 3 heirloom:tempering_dust, 2 gold_nugget -> +0.12 armor
+t3: 4 heirloom:tempering_dust, 3 gold_nugget -> +0.16 armor
+t4: 5 heirloom:tempering_dust, 4 gold_nugget -> +0.19 armor
+t5: 6 heirloom:tempering_dust, 5 gold_nugget -> +0.23 armor
+t6: 1 heirloom:tempering_flux, 1 gold_ingot, 2 glowstone_dust -> +0.26 armor
+t7: 1 heirloom:tempering_flux, 2 gold_ingot, 2 glowstone_dust -> +0.30 armor
+t8: 2 heirloom:tempering_flux, 2 gold_ingot, 3 glowstone_dust -> +0.33 armor
+t9: 2 heirloom:tempering_flux, 3 gold_ingot, 3 glowstone_dust -> +0.37 armor
+t10: 3 heirloom:tempering_flux, 3 gold_ingot, 4 glowstone_dust -> +0.40 armor
+t11: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +0.46 armor
+t12: 1 heirloom:tempering_alloy, 1 raw_gold, 1 glowstone -> +0.51 armor
+t13: 2 heirloom:tempering_alloy, 2 raw_gold, 1 glowstone -> +0.57 armor
+t14: 2 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +0.62 armor
+t15: 3 heirloom:tempering_alloy, 2 raw_gold, 2 glowstone -> +0.68 armor
+t16: 1 heirloom:tempering_core, 1 gilded_blackstone -> +0.73 armor
+t17: 1 heirloom:tempering_core, 1 gold_block -> +0.79 armor
+t18: 1 heirloom:tempering_core, 2 gilded_blackstone -> +0.84 armor
+t19: 2 heirloom:tempering_core, 1 gold_block -> +0.90 armor
+t21: 1 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +0.93 armor
+t22: 2 heirloom:tempering_core, 1 gold_block, 1 glowstone -> +0.95 armor
+t23: 2 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +0.97 armor
+t24: 3 heirloom:tempering_core, 2 gold_block, 2 glowstone -> +0.98 armor
+t25: 3 heirloom:tempering_core, 3 gold_block, 3 glowstone -> +1.00 armor
+

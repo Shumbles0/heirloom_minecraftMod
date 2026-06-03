@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "heirloom:tempering_flux"
+  ],
+  "result": { "id": "heirloom:tempering_alloy", "count": 2 }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": ["LAL","A A","A A"],
+  "key": {
+    "L": "#heirloom:stripped_logs",
+    "A": [ "minecraft:andesite", "minecraft:diorite" ]
+  },
+  "result": { "id": "heirloom:stonewood_leggings", "count": 1 }
+}

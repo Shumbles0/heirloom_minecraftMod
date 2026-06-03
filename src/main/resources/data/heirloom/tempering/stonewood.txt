@@ -1,0 +1,107 @@
+# Heirloom tempering table — STONEWOOD set (armor only). Defense 1/3/2/1; knockback-resist trait is inherent.
+# Theme: stone + wood mix. As cheap as wood (Dust only, no Flux/Alloy/Core/Quintessence). L20 = ritual.
+
+[heirloom:stonewood_helmet]
+t1: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.09 armor
+t2: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.12 armor
+t3: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.16 armor
+t4: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.19 armor
+t5: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.23 armor
+t6: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.26 armor
+t7: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.30 armor
+t8: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.33 armor
+t9: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.37 armor
+t10: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.40 armor
+t11: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.46 armor
+t12: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.51 armor
+t13: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.57 armor
+t14: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.62 armor
+t15: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.68 armor
+t16: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +0.73 armor
+t17: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +0.79 armor
+t18: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +0.84 armor
+t19: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +0.90 armor
+t21: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +0.93 armor
+t22: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +0.95 armor
+t23: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +0.97 armor
+t24: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +0.98 armor
+t25: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +1.00 armor
+
+[heirloom:stonewood_chestplate]
+t1: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.26 armor
+t2: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.36 armor
+t3: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.47 armor
+t4: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.57 armor
+t5: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.68 armor
+t6: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.78 armor
+t7: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.89 armor
+t8: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.99 armor
+t9: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +1.10 armor
+t10: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +1.20 armor
+t11: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +1.37 armor
+t12: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +1.53 armor
+t13: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +1.70 armor
+t14: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +1.87 armor
+t15: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +2.03 armor
+t16: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +2.20 armor
+t17: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +2.37 armor
+t18: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +2.53 armor
+t19: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +2.70 armor
+t21: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +2.80 armor
+t22: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +2.85 armor
+t23: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +2.90 armor
+t24: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +2.95 armor
+t25: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +3.00 armor
+
+[heirloom:stonewood_leggings]
+t1: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.17 armor
+t2: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.24 armor
+t3: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.31 armor
+t4: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.38 armor
+t5: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.45 armor
+t6: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.52 armor
+t7: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.59 armor
+t8: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.66 armor
+t9: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.73 armor
+t10: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.80 armor
+t11: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.91 armor
+t12: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +1.02 armor
+t13: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +1.13 armor
+t14: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +1.24 armor
+t15: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +1.36 armor
+t16: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +1.47 armor
+t17: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +1.58 armor
+t18: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +1.69 armor
+t19: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +1.80 armor
+t21: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +1.87 armor
+t22: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +1.90 armor
+t23: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +1.93 armor
+t24: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +1.97 armor
+t25: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +2.00 armor
+
+[heirloom:stonewood_boots]
+t1: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.09 armor
+t2: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.12 armor
+t3: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.16 armor
+t4: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.19 armor
+t5: 2 heirloom:tempering_dust, 1 stick, 1 cobblestone -> +0.23 armor
+t6: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.26 armor
+t7: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.30 armor
+t8: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.33 armor
+t9: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.37 armor
+t10: 3 heirloom:tempering_dust, 1 oak_planks, 1 andesite -> +0.40 armor
+t11: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.46 armor
+t12: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.51 armor
+t13: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.57 armor
+t14: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.62 armor
+t15: 4 heirloom:tempering_dust, 1 stripped_oak_log, 1 diorite -> +0.68 armor
+t16: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +0.73 armor
+t17: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +0.79 armor
+t18: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +0.84 armor
+t19: 5 heirloom:tempering_dust, 1 stripped_spruce_log, 1 polished_andesite -> +0.90 armor
+t21: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +0.93 armor
+t22: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +0.95 armor
+t23: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +0.97 armor
+t24: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +0.98 armor
+t25: 6 heirloom:tempering_dust, 1 stripped_birch_log, 1 polished_diorite -> +1.00 armor
+

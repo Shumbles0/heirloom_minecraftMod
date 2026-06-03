@@ -1,0 +1,210 @@
+# Heirloom tempering table — IRON tier. Sword 100% = +5 (vanilla iron). Materials shared. L20 = ritual.
+
+[iron_sword]
+t1: 1 iron_nugget, 2 heirloom:tempering_dust -> +1.10 attack_damage
+t2: 2 iron_nugget, 4 heirloom:tempering_dust -> +1.20 attack_damage
+t3: 4 iron_nugget, 8 heirloom:tempering_dust -> +1.30 attack_damage
+t4: 8 iron_nugget, 16 heirloom:tempering_dust -> +1.40 attack_damage
+t5: 16 iron_nugget, 32 heirloom:tempering_dust -> +1.50 attack_damage
+t6: 2 heirloom:tempering_flux, 2 quartz, 1 iron_ingot -> +1.60 attack_damage
+t7: 4 heirloom:tempering_flux, 3 quartz, 2 iron_ingot -> +1.70 attack_damage
+t8: 8 heirloom:tempering_flux, 4 quartz, 3 iron_ingot -> +1.80 attack_damage
+t9: 16 heirloom:tempering_flux, 5 quartz, 4 iron_ingot -> +1.90 attack_damage
+t10: 32 heirloom:tempering_flux, 6 quartz, 5 iron_ingot -> +2.00 attack_damage
+t11: 2 heirloom:tempering_alloy, 1 magma_cream, 1 iron_ingot -> +2.33 attack_damage
+t12: 3 heirloom:tempering_alloy, 2 magma_cream, 2 iron_ingot -> +2.67 attack_damage
+t13: 4 heirloom:tempering_alloy, 3 magma_cream, 3 iron_ingot -> +3.00 attack_damage
+t14: 5 heirloom:tempering_alloy, 4 magma_cream, 4 iron_ingot -> +3.33 attack_damage
+t15: 6 heirloom:tempering_alloy, 2 magma_cream, 5 iron_ingot -> +3.67 attack_damage
+t16: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder -> +4.00 attack_damage
+t17: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +4.33 attack_damage
+t18: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +4.67 attack_damage
+t19: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +5.00 attack_damage
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +5.17 attack_damage
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +5.25 attack_damage
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +5.33 attack_damage
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +5.42 attack_damage
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket, 1 breeze_rod -> +5.50 attack_damage, +0.10 attack_speed
+
+[iron_pickaxe]
+t1: 1 iron_nugget, 2 heirloom:tempering_dust -> +0.30 block_break_speed
+t2: 2 iron_nugget, 4 heirloom:tempering_dust -> +0.60 block_break_speed
+t3: 4 iron_nugget, 8 heirloom:tempering_dust -> +0.90 block_break_speed
+t4: 8 iron_nugget, 16 heirloom:tempering_dust -> +1.20 block_break_speed
+t5: 16 iron_nugget, 32 heirloom:tempering_dust -> +1.50 block_break_speed
+t6: 2 heirloom:tempering_flux, 2 quartz, 1 iron_ingot -> +1.80 block_break_speed
+t7: 4 heirloom:tempering_flux, 3 quartz, 2 iron_ingot -> +2.10 block_break_speed
+t8: 8 heirloom:tempering_flux, 4 quartz, 3 iron_ingot -> +2.40 block_break_speed
+t9: 16 heirloom:tempering_flux, 5 quartz, 4 iron_ingot -> +2.70 block_break_speed
+t10: 32 heirloom:tempering_flux, 6 quartz, 5 iron_ingot -> +3.00 block_break_speed
+t11: 2 heirloom:tempering_alloy, 1 magma_cream, 1 iron_ingot -> +3.10 block_break_speed
+t12: 3 heirloom:tempering_alloy, 2 magma_cream, 2 iron_ingot -> +3.20 block_break_speed
+t13: 4 heirloom:tempering_alloy, 3 magma_cream, 3 iron_ingot -> +3.30 block_break_speed
+t14: 5 heirloom:tempering_alloy, 4 magma_cream, 4 iron_ingot -> +3.40 block_break_speed
+t15: 6 heirloom:tempering_alloy, 2 magma_cream, 5 iron_ingot -> +3.50 block_break_speed
+t16: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder -> +3.60 block_break_speed
+t17: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +3.70 block_break_speed
+t18: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +3.80 block_break_speed
+t19: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +3.90 block_break_speed
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.10 block_break_speed
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.20 block_break_speed
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.30 block_break_speed
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.40 block_break_speed
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket, 1 breeze_rod -> +4.50 block_break_speed
+
+[iron_axe]
+t1: 1 iron_nugget, 2 heirloom:tempering_dust -> +0.30 block_break_speed
+t2: 2 iron_nugget, 4 heirloom:tempering_dust -> +0.60 block_break_speed
+t3: 4 iron_nugget, 8 heirloom:tempering_dust -> +0.90 block_break_speed
+t4: 8 iron_nugget, 16 heirloom:tempering_dust -> +1.20 block_break_speed
+t5: 16 iron_nugget, 32 heirloom:tempering_dust -> +1.50 block_break_speed
+t6: 2 heirloom:tempering_flux, 2 quartz, 1 iron_ingot -> +1.80 block_break_speed
+t7: 4 heirloom:tempering_flux, 3 quartz, 2 iron_ingot -> +2.10 block_break_speed
+t8: 8 heirloom:tempering_flux, 4 quartz, 3 iron_ingot -> +2.40 block_break_speed
+t9: 16 heirloom:tempering_flux, 5 quartz, 4 iron_ingot -> +2.70 block_break_speed
+t10: 32 heirloom:tempering_flux, 6 quartz, 5 iron_ingot -> +3.00 block_break_speed
+t11: 2 heirloom:tempering_alloy, 1 magma_cream, 1 iron_ingot -> +3.10 block_break_speed
+t12: 3 heirloom:tempering_alloy, 2 magma_cream, 2 iron_ingot -> +3.20 block_break_speed
+t13: 4 heirloom:tempering_alloy, 3 magma_cream, 3 iron_ingot -> +3.30 block_break_speed
+t14: 5 heirloom:tempering_alloy, 4 magma_cream, 4 iron_ingot -> +3.40 block_break_speed
+t15: 6 heirloom:tempering_alloy, 2 magma_cream, 5 iron_ingot -> +3.50 block_break_speed
+t16: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder -> +3.60 block_break_speed
+t17: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +3.70 block_break_speed
+t18: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +3.80 block_break_speed
+t19: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +3.90 block_break_speed
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.10 block_break_speed
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.20 block_break_speed
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.30 block_break_speed
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.40 block_break_speed
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket, 1 breeze_rod -> +4.50 block_break_speed
+
+[iron_shovel]
+t1: 1 iron_nugget, 2 heirloom:tempering_dust -> +0.30 block_break_speed
+t2: 2 iron_nugget, 4 heirloom:tempering_dust -> +0.60 block_break_speed
+t3: 4 iron_nugget, 8 heirloom:tempering_dust -> +0.90 block_break_speed
+t4: 8 iron_nugget, 16 heirloom:tempering_dust -> +1.20 block_break_speed
+t5: 16 iron_nugget, 32 heirloom:tempering_dust -> +1.50 block_break_speed
+t6: 2 heirloom:tempering_flux, 2 quartz, 1 iron_ingot -> +1.80 block_break_speed
+t7: 4 heirloom:tempering_flux, 3 quartz, 2 iron_ingot -> +2.10 block_break_speed
+t8: 8 heirloom:tempering_flux, 4 quartz, 3 iron_ingot -> +2.40 block_break_speed
+t9: 16 heirloom:tempering_flux, 5 quartz, 4 iron_ingot -> +2.70 block_break_speed
+t10: 32 heirloom:tempering_flux, 6 quartz, 5 iron_ingot -> +3.00 block_break_speed
+t11: 2 heirloom:tempering_alloy, 1 magma_cream, 1 iron_ingot -> +3.10 block_break_speed
+t12: 3 heirloom:tempering_alloy, 2 magma_cream, 2 iron_ingot -> +3.20 block_break_speed
+t13: 4 heirloom:tempering_alloy, 3 magma_cream, 3 iron_ingot -> +3.30 block_break_speed
+t14: 5 heirloom:tempering_alloy, 4 magma_cream, 4 iron_ingot -> +3.40 block_break_speed
+t15: 6 heirloom:tempering_alloy, 2 magma_cream, 5 iron_ingot -> +3.50 block_break_speed
+t16: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder -> +3.60 block_break_speed
+t17: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +3.70 block_break_speed
+t18: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +3.80 block_break_speed
+t19: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +3.90 block_break_speed
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.10 block_break_speed
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.20 block_break_speed
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.30 block_break_speed
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.40 block_break_speed
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket, 1 breeze_rod -> +4.50 block_break_speed
+
+[iron_helmet]
+t1: 1 iron_nugget, 2 heirloom:tempering_dust -> +0.17 armor
+t2: 2 iron_nugget, 4 heirloom:tempering_dust -> +0.24 armor
+t3: 4 iron_nugget, 8 heirloom:tempering_dust -> +0.31 armor
+t4: 8 iron_nugget, 16 heirloom:tempering_dust -> +0.38 armor
+t5: 16 iron_nugget, 32 heirloom:tempering_dust -> +0.45 armor
+t6: 2 heirloom:tempering_flux, 2 quartz, 1 iron_ingot -> +0.52 armor
+t7: 4 heirloom:tempering_flux, 3 quartz, 2 iron_ingot -> +0.59 armor
+t8: 8 heirloom:tempering_flux, 4 quartz, 3 iron_ingot -> +0.66 armor
+t9: 16 heirloom:tempering_flux, 5 quartz, 4 iron_ingot -> +0.73 armor
+t10: 32 heirloom:tempering_flux, 6 quartz, 5 iron_ingot -> +0.80 armor
+t11: 2 heirloom:tempering_alloy, 1 magma_cream, 1 iron_ingot -> +0.91 armor
+t12: 3 heirloom:tempering_alloy, 2 magma_cream, 2 iron_ingot -> +1.02 armor
+t13: 4 heirloom:tempering_alloy, 3 magma_cream, 3 iron_ingot -> +1.13 armor
+t14: 5 heirloom:tempering_alloy, 4 magma_cream, 4 iron_ingot -> +1.24 armor
+t15: 6 heirloom:tempering_alloy, 2 magma_cream, 5 iron_ingot -> +1.36 armor
+t16: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder -> +1.47 armor
+t17: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +1.58 armor
+t18: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +1.69 armor
+t19: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +1.80 armor
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +1.87 armor
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +1.90 armor
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +1.93 armor
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +1.97 armor
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket, 1 breeze_rod -> +2.00 armor
+
+[iron_chestplate]
+t1: 1 iron_nugget, 2 heirloom:tempering_dust -> +0.51 armor
+t2: 2 iron_nugget, 4 heirloom:tempering_dust -> +0.72 armor
+t3: 4 iron_nugget, 8 heirloom:tempering_dust -> +0.93 armor
+t4: 8 iron_nugget, 16 heirloom:tempering_dust -> +1.14 armor
+t5: 16 iron_nugget, 32 heirloom:tempering_dust -> +1.35 armor
+t6: 2 heirloom:tempering_flux, 2 quartz, 1 iron_ingot -> +1.56 armor
+t7: 4 heirloom:tempering_flux, 3 quartz, 2 iron_ingot -> +1.77 armor
+t8: 8 heirloom:tempering_flux, 4 quartz, 3 iron_ingot -> +1.98 armor
+t9: 16 heirloom:tempering_flux, 5 quartz, 4 iron_ingot -> +2.19 armor
+t10: 32 heirloom:tempering_flux, 6 quartz, 5 iron_ingot -> +2.40 armor
+t11: 2 heirloom:tempering_alloy, 1 magma_cream, 1 iron_ingot -> +2.73 armor
+t12: 3 heirloom:tempering_alloy, 2 magma_cream, 2 iron_ingot -> +3.07 armor
+t13: 4 heirloom:tempering_alloy, 3 magma_cream, 3 iron_ingot -> +3.40 armor
+t14: 5 heirloom:tempering_alloy, 4 magma_cream, 4 iron_ingot -> +3.73 armor
+t15: 6 heirloom:tempering_alloy, 2 magma_cream, 5 iron_ingot -> +4.07 armor
+t16: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder -> +4.40 armor
+t17: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +4.73 armor
+t18: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +5.07 armor
+t19: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +5.40 armor
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +5.60 armor
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +5.70 armor
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +5.80 armor
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +5.90 armor
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket, 1 breeze_rod -> +6.00 armor
+
+[iron_leggings]
+t1: 1 iron_nugget, 2 heirloom:tempering_dust -> +0.43 armor
+t2: 2 iron_nugget, 4 heirloom:tempering_dust -> +0.60 armor
+t3: 4 iron_nugget, 8 heirloom:tempering_dust -> +0.78 armor
+t4: 8 iron_nugget, 16 heirloom:tempering_dust -> +0.95 armor
+t5: 16 iron_nugget, 32 heirloom:tempering_dust -> +1.13 armor
+t6: 2 heirloom:tempering_flux, 2 quartz, 1 iron_ingot -> +1.30 armor
+t7: 4 heirloom:tempering_flux, 3 quartz, 2 iron_ingot -> +1.48 armor
+t8: 8 heirloom:tempering_flux, 4 quartz, 3 iron_ingot -> +1.65 armor
+t9: 16 heirloom:tempering_flux, 5 quartz, 4 iron_ingot -> +1.83 armor
+t10: 32 heirloom:tempering_flux, 6 quartz, 5 iron_ingot -> +2.00 armor
+t11: 2 heirloom:tempering_alloy, 1 magma_cream, 1 iron_ingot -> +2.28 armor
+t12: 3 heirloom:tempering_alloy, 2 magma_cream, 2 iron_ingot -> +2.56 armor
+t13: 4 heirloom:tempering_alloy, 3 magma_cream, 3 iron_ingot -> +2.83 armor
+t14: 5 heirloom:tempering_alloy, 4 magma_cream, 4 iron_ingot -> +3.11 armor
+t15: 6 heirloom:tempering_alloy, 2 magma_cream, 5 iron_ingot -> +3.39 armor
+t16: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder -> +3.67 armor
+t17: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +3.94 armor
+t18: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +4.22 armor
+t19: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +4.50 armor
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.67 armor
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.75 armor
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.83 armor
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +4.92 armor
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket, 1 breeze_rod -> +5.00 armor
+
+[iron_boots]
+t1: 1 iron_nugget, 2 heirloom:tempering_dust -> +0.17 armor
+t2: 2 iron_nugget, 4 heirloom:tempering_dust -> +0.24 armor
+t3: 4 iron_nugget, 8 heirloom:tempering_dust -> +0.31 armor
+t4: 8 iron_nugget, 16 heirloom:tempering_dust -> +0.38 armor
+t5: 16 iron_nugget, 32 heirloom:tempering_dust -> +0.45 armor
+t6: 2 heirloom:tempering_flux, 2 quartz, 1 iron_ingot -> +0.52 armor
+t7: 4 heirloom:tempering_flux, 3 quartz, 2 iron_ingot -> +0.59 armor
+t8: 8 heirloom:tempering_flux, 4 quartz, 3 iron_ingot -> +0.66 armor
+t9: 16 heirloom:tempering_flux, 5 quartz, 4 iron_ingot -> +0.73 armor
+t10: 32 heirloom:tempering_flux, 6 quartz, 5 iron_ingot -> +0.80 armor
+t11: 2 heirloom:tempering_alloy, 1 magma_cream, 1 iron_ingot -> +0.91 armor
+t12: 3 heirloom:tempering_alloy, 2 magma_cream, 2 iron_ingot -> +1.02 armor
+t13: 4 heirloom:tempering_alloy, 3 magma_cream, 3 iron_ingot -> +1.13 armor
+t14: 5 heirloom:tempering_alloy, 4 magma_cream, 4 iron_ingot -> +1.24 armor
+t15: 6 heirloom:tempering_alloy, 2 magma_cream, 5 iron_ingot -> +1.36 armor
+t16: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder -> +1.47 armor
+t17: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +1.58 armor
+t18: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +1.69 armor
+t19: 1 raw_iron_block, 1 heirloom:tempering_core, 5 blaze_powder, 1 blaze_rod -> +1.80 armor
+t21: 2 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +1.87 armor
+t22: 3 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +1.90 armor
+t23: 4 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +1.93 armor
+t24: 5 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket -> +1.97 armor
+t25: 6 heirloom:tempering_core, 1 heirloom:tempering_quintessence, 1 lava_bucket, 1 water_bucket, 1 breeze_rod -> +2.00 armor
+

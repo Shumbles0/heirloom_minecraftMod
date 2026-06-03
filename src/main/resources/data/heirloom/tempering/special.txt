@@ -1,0 +1,135 @@
+# Heirloom tempering table — SPECIAL tier (bow, crossbow, trident, mace).
+# Fill each gear's levels:  t<level>: <materials> -> <buffs>
+#   materials = comma list of "<count> <item_id>"  (minecraft: assumed if no namespace)
+#   buffs     = comma list of "<value> <attribute_id>"  (ABSOLUTE total at that level)
+# Levels 1-19 and 21-25. Level 10 is use-gated; level 20 is ritual-only (omit it).
+#
+# MATERIALS ARE INTENTIONALLY BLANK — author them per level (these items see heavy use).
+# The attribute buffs below ARE the melee curve and are final; just add the cost before
+# each "->". The non-attribute effects are NOT in this file — they are scaled in code by
+# temper level (see com.shumbles.gearoverhaul.special.SpecialScaling + the mixin layer):
+#   bow      — draw speed: 1/3 (3x slower) at t0 -> vanilla at t25   (damage untouched)
+#   crossbow — arrow velocity: 33% at t0 -> 100% at t25
+#   trident  — thrown damage: 20% at t0 -> 100% at t25  (melee curve is below)
+#   mace     — fall-smash bonus: 20% at t0 -> 100% at t25  (melee curve is below)
+# So bow & crossbow have no attribute buff to restore here — author only their materials
+# (the level entries gate tempering, which the mixins read). Shields are left untouched.
+
+[bow]
+# No attribute buff — bow draw is scaled in code. These costs only gate the temper level.
+# Compound upgrades every 5 levels (dust->flux->alloy->core), doubling 1..16 within each
+# band; quintessence kept light at 1/level. t1-5 string; t6-10 sticks + any arrow; t11-15 blaze rod + 20 string;
+# t16-19 breeze rod + tipped arrow + 20 string; t21-25 blaze+breeze (doubling), copper
+# chains, tipped arrows of harming, ramping string.
+t1:  1 heirloom:tempering_dust, 1 string ->
+t2:  2 heirloom:tempering_dust, 2 string ->
+t3:  4 heirloom:tempering_dust, 3 string ->
+t4:  8 heirloom:tempering_dust, 4 string ->
+t5:  16 heirloom:tempering_dust, 5 string ->
+t6:  1 heirloom:tempering_flux, 1 stick, 1 #minecraft:arrows ->
+t7:  2 heirloom:tempering_flux, 2 stick, 2 #minecraft:arrows ->
+t8:  4 heirloom:tempering_flux, 3 stick, 3 #minecraft:arrows ->
+t9:  8 heirloom:tempering_flux, 4 stick, 4 #minecraft:arrows ->
+t10: 16 heirloom:tempering_flux, 5 stick, 5 #minecraft:arrows ->
+t11: 1 heirloom:tempering_alloy, 1 blaze_rod, 20 string ->
+t12: 2 heirloom:tempering_alloy, 3 blaze_rod, 20 string ->
+t13: 4 heirloom:tempering_alloy, 5 blaze_rod, 20 string ->
+t14: 8 heirloom:tempering_alloy, 7 blaze_rod, 20 string ->
+t15: 16 heirloom:tempering_alloy, 9 blaze_rod, 20 string ->
+t16: 1 heirloom:tempering_core, 1 breeze_rod, 1 tipped_arrow, 20 string ->
+t17: 2 heirloom:tempering_core, 3 breeze_rod, 2 tipped_arrow, 20 string ->
+t18: 4 heirloom:tempering_core, 5 breeze_rod, 3 tipped_arrow, 20 string ->
+t19: 8 heirloom:tempering_core, 7 breeze_rod, 4 tipped_arrow, 20 string ->
+t21: 1 heirloom:tempering_quintessence, 1 blaze_rod, 1 breeze_rod, 20 string, 2 copper_chain, 5 tipped_arrow ->
+t22: 1 heirloom:tempering_quintessence, 2 blaze_rod, 2 breeze_rod, 25 string, 2 copper_chain, 5 tipped_arrow ->
+t23: 1 heirloom:tempering_quintessence, 4 blaze_rod, 4 breeze_rod, 30 string, 2 copper_chain, 5 tipped_arrow ->
+t24: 1 heirloom:tempering_quintessence, 8 blaze_rod, 8 breeze_rod, 35 string, 2 copper_chain, 5 tipped_arrow ->
+t25: 1 heirloom:tempering_quintessence, 16 blaze_rod, 16 breeze_rod, 40 string, 2 copper_chain, 5 tipped_arrow ->
+
+[crossbow]
+# No attribute buff — crossbow velocity is scaled in code. These costs only gate the level.
+# Same compound progression. t1-5 string (doubling); t6-10 arrow + any wooden button;
+# t11-15 prismarine shard + 10 string; t16-19 tipped arrow + slime block; t21-25 tipped
+# arrows of harming, magma cream + slimeball (ramping), and a soul torch at t25.
+t1:  1 heirloom:tempering_dust, 1 string ->
+t2:  2 heirloom:tempering_dust, 2 string ->
+t3:  4 heirloom:tempering_dust, 4 string ->
+t4:  8 heirloom:tempering_dust, 8 string ->
+t5:  16 heirloom:tempering_dust, 16 string ->
+t6:  1 heirloom:tempering_flux, 1 arrow, 1 #minecraft:wooden_buttons ->
+t7:  2 heirloom:tempering_flux, 2 arrow, 2 #minecraft:wooden_buttons ->
+t8:  4 heirloom:tempering_flux, 3 arrow, 3 #minecraft:wooden_buttons ->
+t9:  8 heirloom:tempering_flux, 4 arrow, 4 #minecraft:wooden_buttons ->
+t10: 16 heirloom:tempering_flux, 5 arrow, 5 #minecraft:wooden_buttons ->
+t11: 1 heirloom:tempering_alloy, 1 prismarine_shard, 10 string ->
+t12: 2 heirloom:tempering_alloy, 2 prismarine_shard, 10 string ->
+t13: 4 heirloom:tempering_alloy, 3 prismarine_shard, 10 string ->
+t14: 8 heirloom:tempering_alloy, 4 prismarine_shard, 10 string ->
+t15: 16 heirloom:tempering_alloy, 5 prismarine_shard, 10 string ->
+t16: 1 heirloom:tempering_core, 1 tipped_arrow, 1 slime_block ->
+t17: 2 heirloom:tempering_core, 2 tipped_arrow, 2 slime_block ->
+t18: 4 heirloom:tempering_core, 3 tipped_arrow, 3 slime_block ->
+t19: 8 heirloom:tempering_core, 4 tipped_arrow, 4 slime_block ->
+t21: 1 heirloom:tempering_quintessence, 5 tipped_arrow, 1 magma_cream, 1 slime_ball ->
+t22: 1 heirloom:tempering_quintessence, 5 tipped_arrow, 2 magma_cream, 2 slime_ball ->
+t23: 1 heirloom:tempering_quintessence, 5 tipped_arrow, 3 magma_cream, 3 slime_ball ->
+t24: 1 heirloom:tempering_quintessence, 5 tipped_arrow, 4 magma_cream, 4 slime_ball ->
+t25: 1 heirloom:tempering_quintessence, 5 tipped_arrow, 5 magma_cream, 5 slime_ball, 1 soul_torch ->
+
+[trident]
+# Water -> aerodynamic theme. Melee attack_damage curve: +1.0 floor -> +8.0 (vanilla) at t25.
+# Compound doubles 1..16 per band; quintessence kept light at 1/level. Top bands gate on
+# hearts of the sea (buried treasure), so it can't be maxed until deep ocean exploration.
+t1:  1 heirloom:tempering_dust, 1 prismarine_shard, 2 kelp -> +1.22 attack_damage
+t2:  2 heirloom:tempering_dust, 2 prismarine_shard, 4 kelp -> +1.44 attack_damage
+t3:  4 heirloom:tempering_dust, 3 prismarine_shard, 8 kelp -> +1.66 attack_damage
+t4:  8 heirloom:tempering_dust, 4 prismarine_shard, 16 kelp -> +1.88 attack_damage
+t5:  16 heirloom:tempering_dust, 5 prismarine_shard, 32 kelp -> +2.10 attack_damage
+t6:  1 heirloom:tempering_flux, 1 prismarine_crystals, 1 nautilus_shell -> +2.32 attack_damage
+t7:  2 heirloom:tempering_flux, 2 prismarine_crystals, 2 nautilus_shell -> +2.54 attack_damage
+t8:  4 heirloom:tempering_flux, 3 prismarine_crystals, 3 nautilus_shell -> +2.76 attack_damage
+t9:  8 heirloom:tempering_flux, 4 prismarine_crystals, 4 nautilus_shell -> +2.98 attack_damage
+t10: 16 heirloom:tempering_flux, 5 prismarine_crystals, 5 nautilus_shell -> +3.20 attack_damage
+t11: 1 heirloom:tempering_alloy, 1 wet_sponge, 1 phantom_membrane -> +3.52 attack_damage
+t12: 2 heirloom:tempering_alloy, 2 wet_sponge, 2 phantom_membrane -> +3.84 attack_damage
+t13: 4 heirloom:tempering_alloy, 3 wet_sponge, 3 phantom_membrane -> +4.16 attack_damage
+t14: 8 heirloom:tempering_alloy, 4 wet_sponge, 4 phantom_membrane -> +4.48 attack_damage
+t15: 16 heirloom:tempering_alloy, 5 wet_sponge, 5 phantom_membrane -> +4.80 attack_damage
+t16: 1 heirloom:tempering_core, 1 heart_of_the_sea, 1 phantom_membrane -> +5.12 attack_damage
+t17: 2 heirloom:tempering_core, 1 heart_of_the_sea, 2 phantom_membrane -> +5.44 attack_damage
+t18: 4 heirloom:tempering_core, 2 heart_of_the_sea, 3 phantom_membrane -> +5.76 attack_damage
+t19: 8 heirloom:tempering_core, 2 heart_of_the_sea, 4 phantom_membrane -> +6.08 attack_damage
+t21: 1 heirloom:tempering_quintessence, 1 heart_of_the_sea, 1 nautilus_shell, 1 breeze_rod -> +6.72 attack_damage
+t22: 1 heirloom:tempering_quintessence, 2 heart_of_the_sea, 2 nautilus_shell, 2 breeze_rod -> +7.04 attack_damage
+t23: 1 heirloom:tempering_quintessence, 3 heart_of_the_sea, 4 nautilus_shell, 3 breeze_rod -> +7.36 attack_damage
+t24: 1 heirloom:tempering_quintessence, 4 heart_of_the_sea, 8 nautilus_shell, 4 breeze_rod -> +7.68 attack_damage
+t25: 1 heirloom:tempering_quintessence, 5 heart_of_the_sea, 16 nautilus_shell, 5 breeze_rod -> +8.00 attack_damage
+
+[mace]
+# Dense / heavy theme. Melee attack_damage curve: +1.0 floor (20% vanilla) -> +5.0 at t25.
+# Compound doubles 1..16 per band; quintessence kept light at 1/level. Top band gates on
+# heavy cores (trial-chamber vaults), so it can't be maxed until the trial-chamber endgame.
+t1:  1 heirloom:tempering_dust, 1 cobbled_deepslate, 1 raw_iron -> +1.10 attack_damage
+t2:  2 heirloom:tempering_dust, 2 cobbled_deepslate, 2 raw_iron -> +1.20 attack_damage
+t3:  4 heirloom:tempering_dust, 3 cobbled_deepslate, 3 raw_iron -> +1.30 attack_damage
+t4:  8 heirloom:tempering_dust, 4 cobbled_deepslate, 4 raw_iron -> +1.40 attack_damage
+t5:  16 heirloom:tempering_dust, 5 cobbled_deepslate, 5 raw_iron -> +1.50 attack_damage
+t6:  1 heirloom:tempering_flux, 1 iron_ingot, 1 copper_block -> +1.60 attack_damage
+t7:  2 heirloom:tempering_flux, 2 iron_ingot, 2 copper_block -> +1.70 attack_damage
+t8:  4 heirloom:tempering_flux, 3 iron_ingot, 3 copper_block -> +1.80 attack_damage
+t9:  8 heirloom:tempering_flux, 4 iron_ingot, 4 copper_block -> +1.90 attack_damage
+t10: 16 heirloom:tempering_flux, 5 iron_ingot, 5 copper_block -> +2.00 attack_damage
+t11: 1 heirloom:tempering_alloy, 1 iron_block, 2 obsidian -> +2.20 attack_damage
+t12: 2 heirloom:tempering_alloy, 2 iron_block, 4 obsidian -> +2.40 attack_damage
+t13: 4 heirloom:tempering_alloy, 3 iron_block, 6 obsidian -> +2.60 attack_damage
+t14: 8 heirloom:tempering_alloy, 4 iron_block, 8 obsidian -> +2.80 attack_damage
+t15: 16 heirloom:tempering_alloy, 5 iron_block, 10 obsidian -> +3.00 attack_damage
+t16: 1 heirloom:tempering_core, 1 netherite_scrap, 1 anvil -> +3.20 attack_damage
+t17: 2 heirloom:tempering_core, 2 netherite_scrap, 2 anvil -> +3.40 attack_damage
+t18: 4 heirloom:tempering_core, 3 netherite_scrap, 3 anvil -> +3.60 attack_damage
+t19: 8 heirloom:tempering_core, 4 netherite_scrap, 4 anvil -> +3.80 attack_damage
+t21: 1 heirloom:tempering_quintessence, 1 heavy_core, 1 netherite_ingot, 1 iron_block -> +4.20 attack_damage
+t22: 1 heirloom:tempering_quintessence, 1 heavy_core, 2 netherite_ingot, 2 iron_block -> +4.40 attack_damage
+t23: 1 heirloom:tempering_quintessence, 1 heavy_core, 3 netherite_ingot, 4 iron_block -> +4.60 attack_damage
+t24: 1 heirloom:tempering_quintessence, 1 heavy_core, 4 netherite_ingot, 8 iron_block -> +4.80 attack_damage
+t25: 1 heirloom:tempering_quintessence, 2 heavy_core, 5 netherite_ingot, 16 iron_block -> +5.00 attack_damage

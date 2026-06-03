@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap",
+    "minecraft:ominous_trial_key",
+    "heirloom:tempering_core"
+  ],
+  "result": { "id": "heirloom:tempering_quintessence", "count": 1 }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:deepslate",
+    "minecraft:deepslate",
+    "minecraft:deepslate",
+    "minecraft:deepslate",
+    "minecraft:gravel"
+  ],
+  "result": { "id": "heirloom:tempering_dust", "count": 4 }
+}

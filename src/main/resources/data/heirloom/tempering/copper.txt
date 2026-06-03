@@ -1,0 +1,211 @@
+# Heirloom tempering table — COPPER tier. Sword 100%=+4; mining 100%=+4.2; armor 2/4/3/1 (helm/chest/legs/boots).
+# Easy + creative: themed bands (Raw Smelt -> Conductive -> Patina -> Copper-Age -> Storm-Forged). No Quintessence. L20=ritual.
+
+[copper_sword]
+t1: 1 heirloom:tempering_dust, 1 raw_copper -> +1.06 attack_damage
+t2: 2 heirloom:tempering_dust, 1 raw_copper -> +1.12 attack_damage
+t3: 3 heirloom:tempering_dust, 1 raw_copper -> +1.18 attack_damage
+t4: 4 heirloom:tempering_dust, 1 raw_copper -> +1.24 attack_damage
+t5: 5 heirloom:tempering_dust, 1 raw_copper -> +1.30 attack_damage
+t6: 1 heirloom:tempering_flux, 2 redstone, 1 copper_ingot -> +1.36 attack_damage
+t7: 1 heirloom:tempering_flux, 3 redstone, 1 copper_ingot -> +1.42 attack_damage
+t8: 2 heirloom:tempering_flux, 4 redstone, 2 copper_ingot -> +1.48 attack_damage
+t9: 2 heirloom:tempering_flux, 5 redstone, 2 copper_ingot -> +1.54 attack_damage
+t10: 3 heirloom:tempering_flux, 6 redstone, 3 copper_ingot -> +1.60 attack_damage
+t11: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 exposed_copper -> +1.87 attack_damage
+t12: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 weathered_copper -> +2.13 attack_damage
+t13: 2 heirloom:tempering_alloy, 1 amethyst_shard, 1 oxidized_copper -> +2.40 attack_damage
+t14: 2 heirloom:tempering_alloy, 2 amethyst_shard, 1 exposed_cut_copper -> +2.67 attack_damage
+t15: 3 heirloom:tempering_alloy, 2 amethyst_shard, 1 oxidized_cut_copper -> +2.93 attack_damage
+t16: 1 heirloom:tempering_core, 1 copper_bulb -> +3.20 attack_damage
+t17: 1 heirloom:tempering_core, 1 copper_grate -> +3.47 attack_damage
+t18: 1 heirloom:tempering_core, 1 chiseled_copper -> +3.73 attack_damage
+t19: 1 heirloom:tempering_core, 1 copper_door -> +4.00 attack_damage
+t21: 1 heirloom:tempering_core, 1 lightning_rod, 1 copper_block -> +4.13 attack_damage
+t22: 1 heirloom:tempering_core, 1 lightning_rod, 1 amethyst_block -> +4.20 attack_damage
+t23: 2 heirloom:tempering_core, 1 lightning_rod, 1 copper_bulb -> +4.27 attack_damage
+t24: 2 heirloom:tempering_core, 2 lightning_rod, 1 oxidized_copper -> +4.33 attack_damage
+t25: 3 heirloom:tempering_core, 2 lightning_rod, 1 amethyst_block -> +4.40 attack_damage, +0.10 attack_speed
+
+[copper_pickaxe]
+t1: 1 heirloom:tempering_dust, 1 raw_copper -> +0.25 block_break_speed
+t2: 2 heirloom:tempering_dust, 1 raw_copper -> +0.50 block_break_speed
+t3: 3 heirloom:tempering_dust, 1 raw_copper -> +0.76 block_break_speed
+t4: 4 heirloom:tempering_dust, 1 raw_copper -> +1.01 block_break_speed
+t5: 5 heirloom:tempering_dust, 1 raw_copper -> +1.26 block_break_speed
+t6: 1 heirloom:tempering_flux, 2 redstone, 1 copper_ingot -> +1.51 block_break_speed
+t7: 1 heirloom:tempering_flux, 3 redstone, 1 copper_ingot -> +1.76 block_break_speed
+t8: 2 heirloom:tempering_flux, 4 redstone, 2 copper_ingot -> +2.02 block_break_speed
+t9: 2 heirloom:tempering_flux, 5 redstone, 2 copper_ingot -> +2.27 block_break_speed
+t10: 3 heirloom:tempering_flux, 6 redstone, 3 copper_ingot -> +2.52 block_break_speed
+t11: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 exposed_copper -> +2.60 block_break_speed
+t12: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 weathered_copper -> +2.69 block_break_speed
+t13: 2 heirloom:tempering_alloy, 1 amethyst_shard, 1 oxidized_copper -> +2.77 block_break_speed
+t14: 2 heirloom:tempering_alloy, 2 amethyst_shard, 1 exposed_cut_copper -> +2.86 block_break_speed
+t15: 3 heirloom:tempering_alloy, 2 amethyst_shard, 1 oxidized_cut_copper -> +2.94 block_break_speed
+t16: 1 heirloom:tempering_core, 1 copper_bulb -> +3.02 block_break_speed
+t17: 1 heirloom:tempering_core, 1 copper_grate -> +3.11 block_break_speed
+t18: 1 heirloom:tempering_core, 1 chiseled_copper -> +3.19 block_break_speed
+t19: 1 heirloom:tempering_core, 1 copper_door -> +3.28 block_break_speed
+t21: 1 heirloom:tempering_core, 1 lightning_rod, 1 copper_block -> +3.44 block_break_speed
+t22: 1 heirloom:tempering_core, 1 lightning_rod, 1 amethyst_block -> +3.53 block_break_speed
+t23: 2 heirloom:tempering_core, 1 lightning_rod, 1 copper_bulb -> +3.61 block_break_speed
+t24: 2 heirloom:tempering_core, 2 lightning_rod, 1 oxidized_copper -> +3.70 block_break_speed
+t25: 3 heirloom:tempering_core, 2 lightning_rod, 1 amethyst_block -> +3.78 block_break_speed
+
+[copper_axe]
+t1: 1 heirloom:tempering_dust, 1 raw_copper -> +0.25 block_break_speed
+t2: 2 heirloom:tempering_dust, 1 raw_copper -> +0.50 block_break_speed
+t3: 3 heirloom:tempering_dust, 1 raw_copper -> +0.76 block_break_speed
+t4: 4 heirloom:tempering_dust, 1 raw_copper -> +1.01 block_break_speed
+t5: 5 heirloom:tempering_dust, 1 raw_copper -> +1.26 block_break_speed
+t6: 1 heirloom:tempering_flux, 2 redstone, 1 copper_ingot -> +1.51 block_break_speed
+t7: 1 heirloom:tempering_flux, 3 redstone, 1 copper_ingot -> +1.76 block_break_speed
+t8: 2 heirloom:tempering_flux, 4 redstone, 2 copper_ingot -> +2.02 block_break_speed
+t9: 2 heirloom:tempering_flux, 5 redstone, 2 copper_ingot -> +2.27 block_break_speed
+t10: 3 heirloom:tempering_flux, 6 redstone, 3 copper_ingot -> +2.52 block_break_speed
+t11: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 exposed_copper -> +2.60 block_break_speed
+t12: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 weathered_copper -> +2.69 block_break_speed
+t13: 2 heirloom:tempering_alloy, 1 amethyst_shard, 1 oxidized_copper -> +2.77 block_break_speed
+t14: 2 heirloom:tempering_alloy, 2 amethyst_shard, 1 exposed_cut_copper -> +2.86 block_break_speed
+t15: 3 heirloom:tempering_alloy, 2 amethyst_shard, 1 oxidized_cut_copper -> +2.94 block_break_speed
+t16: 1 heirloom:tempering_core, 1 copper_bulb -> +3.02 block_break_speed
+t17: 1 heirloom:tempering_core, 1 copper_grate -> +3.11 block_break_speed
+t18: 1 heirloom:tempering_core, 1 chiseled_copper -> +3.19 block_break_speed
+t19: 1 heirloom:tempering_core, 1 copper_door -> +3.28 block_break_speed
+t21: 1 heirloom:tempering_core, 1 lightning_rod, 1 copper_block -> +3.44 block_break_speed
+t22: 1 heirloom:tempering_core, 1 lightning_rod, 1 amethyst_block -> +3.53 block_break_speed
+t23: 2 heirloom:tempering_core, 1 lightning_rod, 1 copper_bulb -> +3.61 block_break_speed
+t24: 2 heirloom:tempering_core, 2 lightning_rod, 1 oxidized_copper -> +3.70 block_break_speed
+t25: 3 heirloom:tempering_core, 2 lightning_rod, 1 amethyst_block -> +3.78 block_break_speed
+
+[copper_shovel]
+t1: 1 heirloom:tempering_dust, 1 raw_copper -> +0.25 block_break_speed
+t2: 2 heirloom:tempering_dust, 1 raw_copper -> +0.50 block_break_speed
+t3: 3 heirloom:tempering_dust, 1 raw_copper -> +0.76 block_break_speed
+t4: 4 heirloom:tempering_dust, 1 raw_copper -> +1.01 block_break_speed
+t5: 5 heirloom:tempering_dust, 1 raw_copper -> +1.26 block_break_speed
+t6: 1 heirloom:tempering_flux, 2 redstone, 1 copper_ingot -> +1.51 block_break_speed
+t7: 1 heirloom:tempering_flux, 3 redstone, 1 copper_ingot -> +1.76 block_break_speed
+t8: 2 heirloom:tempering_flux, 4 redstone, 2 copper_ingot -> +2.02 block_break_speed
+t9: 2 heirloom:tempering_flux, 5 redstone, 2 copper_ingot -> +2.27 block_break_speed
+t10: 3 heirloom:tempering_flux, 6 redstone, 3 copper_ingot -> +2.52 block_break_speed
+t11: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 exposed_copper -> +2.60 block_break_speed
+t12: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 weathered_copper -> +2.69 block_break_speed
+t13: 2 heirloom:tempering_alloy, 1 amethyst_shard, 1 oxidized_copper -> +2.77 block_break_speed
+t14: 2 heirloom:tempering_alloy, 2 amethyst_shard, 1 exposed_cut_copper -> +2.86 block_break_speed
+t15: 3 heirloom:tempering_alloy, 2 amethyst_shard, 1 oxidized_cut_copper -> +2.94 block_break_speed
+t16: 1 heirloom:tempering_core, 1 copper_bulb -> +3.02 block_break_speed
+t17: 1 heirloom:tempering_core, 1 copper_grate -> +3.11 block_break_speed
+t18: 1 heirloom:tempering_core, 1 chiseled_copper -> +3.19 block_break_speed
+t19: 1 heirloom:tempering_core, 1 copper_door -> +3.28 block_break_speed
+t21: 1 heirloom:tempering_core, 1 lightning_rod, 1 copper_block -> +3.44 block_break_speed
+t22: 1 heirloom:tempering_core, 1 lightning_rod, 1 amethyst_block -> +3.53 block_break_speed
+t23: 2 heirloom:tempering_core, 1 lightning_rod, 1 copper_bulb -> +3.61 block_break_speed
+t24: 2 heirloom:tempering_core, 2 lightning_rod, 1 oxidized_copper -> +3.70 block_break_speed
+t25: 3 heirloom:tempering_core, 2 lightning_rod, 1 amethyst_block -> +3.78 block_break_speed
+
+[copper_helmet]
+t1: 1 heirloom:tempering_dust, 1 raw_copper -> +0.17 armor
+t2: 2 heirloom:tempering_dust, 1 raw_copper -> +0.24 armor
+t3: 3 heirloom:tempering_dust, 1 raw_copper -> +0.31 armor
+t4: 4 heirloom:tempering_dust, 1 raw_copper -> +0.38 armor
+t5: 5 heirloom:tempering_dust, 1 raw_copper -> +0.45 armor
+t6: 1 heirloom:tempering_flux, 2 redstone, 1 copper_ingot -> +0.52 armor
+t7: 1 heirloom:tempering_flux, 3 redstone, 1 copper_ingot -> +0.59 armor
+t8: 2 heirloom:tempering_flux, 4 redstone, 2 copper_ingot -> +0.66 armor
+t9: 2 heirloom:tempering_flux, 5 redstone, 2 copper_ingot -> +0.73 armor
+t10: 3 heirloom:tempering_flux, 6 redstone, 3 copper_ingot -> +0.80 armor
+t11: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 exposed_copper -> +0.91 armor
+t12: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 weathered_copper -> +1.02 armor
+t13: 2 heirloom:tempering_alloy, 1 amethyst_shard, 1 oxidized_copper -> +1.13 armor
+t14: 2 heirloom:tempering_alloy, 2 amethyst_shard, 1 exposed_cut_copper -> +1.24 armor
+t15: 3 heirloom:tempering_alloy, 2 amethyst_shard, 1 oxidized_cut_copper -> +1.36 armor
+t16: 1 heirloom:tempering_core, 1 copper_bulb -> +1.47 armor
+t17: 1 heirloom:tempering_core, 1 copper_grate -> +1.58 armor
+t18: 1 heirloom:tempering_core, 1 chiseled_copper -> +1.69 armor
+t19: 1 heirloom:tempering_core, 1 copper_door -> +1.80 armor
+t21: 1 heirloom:tempering_core, 1 lightning_rod, 1 copper_block -> +1.87 armor
+t22: 1 heirloom:tempering_core, 1 lightning_rod, 1 amethyst_block -> +1.90 armor
+t23: 2 heirloom:tempering_core, 1 lightning_rod, 1 copper_bulb -> +1.93 armor
+t24: 2 heirloom:tempering_core, 2 lightning_rod, 1 oxidized_copper -> +1.97 armor
+t25: 3 heirloom:tempering_core, 2 lightning_rod, 1 amethyst_block -> +2.00 armor
+
+[copper_chestplate]
+t1: 1 heirloom:tempering_dust, 1 raw_copper -> +0.34 armor
+t2: 2 heirloom:tempering_dust, 1 raw_copper -> +0.48 armor
+t3: 3 heirloom:tempering_dust, 1 raw_copper -> +0.62 armor
+t4: 4 heirloom:tempering_dust, 1 raw_copper -> +0.76 armor
+t5: 5 heirloom:tempering_dust, 1 raw_copper -> +0.90 armor
+t6: 1 heirloom:tempering_flux, 2 redstone, 1 copper_ingot -> +1.04 armor
+t7: 1 heirloom:tempering_flux, 3 redstone, 1 copper_ingot -> +1.18 armor
+t8: 2 heirloom:tempering_flux, 4 redstone, 2 copper_ingot -> +1.32 armor
+t9: 2 heirloom:tempering_flux, 5 redstone, 2 copper_ingot -> +1.46 armor
+t10: 3 heirloom:tempering_flux, 6 redstone, 3 copper_ingot -> +1.60 armor
+t11: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 exposed_copper -> +1.82 armor
+t12: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 weathered_copper -> +2.04 armor
+t13: 2 heirloom:tempering_alloy, 1 amethyst_shard, 1 oxidized_copper -> +2.27 armor
+t14: 2 heirloom:tempering_alloy, 2 amethyst_shard, 1 exposed_cut_copper -> +2.49 armor
+t15: 3 heirloom:tempering_alloy, 2 amethyst_shard, 1 oxidized_cut_copper -> +2.71 armor
+t16: 1 heirloom:tempering_core, 1 copper_bulb -> +2.93 armor
+t17: 1 heirloom:tempering_core, 1 copper_grate -> +3.16 armor
+t18: 1 heirloom:tempering_core, 1 chiseled_copper -> +3.38 armor
+t19: 1 heirloom:tempering_core, 1 copper_door -> +3.60 armor
+t21: 1 heirloom:tempering_core, 1 lightning_rod, 1 copper_block -> +3.73 armor
+t22: 1 heirloom:tempering_core, 1 lightning_rod, 1 amethyst_block -> +3.80 armor
+t23: 2 heirloom:tempering_core, 1 lightning_rod, 1 copper_bulb -> +3.87 armor
+t24: 2 heirloom:tempering_core, 2 lightning_rod, 1 oxidized_copper -> +3.93 armor
+t25: 3 heirloom:tempering_core, 2 lightning_rod, 1 amethyst_block -> +4.00 armor
+
+[copper_leggings]
+t1: 1 heirloom:tempering_dust, 1 raw_copper -> +0.26 armor
+t2: 2 heirloom:tempering_dust, 1 raw_copper -> +0.36 armor
+t3: 3 heirloom:tempering_dust, 1 raw_copper -> +0.47 armor
+t4: 4 heirloom:tempering_dust, 1 raw_copper -> +0.57 armor
+t5: 5 heirloom:tempering_dust, 1 raw_copper -> +0.68 armor
+t6: 1 heirloom:tempering_flux, 2 redstone, 1 copper_ingot -> +0.78 armor
+t7: 1 heirloom:tempering_flux, 3 redstone, 1 copper_ingot -> +0.89 armor
+t8: 2 heirloom:tempering_flux, 4 redstone, 2 copper_ingot -> +0.99 armor
+t9: 2 heirloom:tempering_flux, 5 redstone, 2 copper_ingot -> +1.10 armor
+t10: 3 heirloom:tempering_flux, 6 redstone, 3 copper_ingot -> +1.20 armor
+t11: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 exposed_copper -> +1.37 armor
+t12: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 weathered_copper -> +1.53 armor
+t13: 2 heirloom:tempering_alloy, 1 amethyst_shard, 1 oxidized_copper -> +1.70 armor
+t14: 2 heirloom:tempering_alloy, 2 amethyst_shard, 1 exposed_cut_copper -> +1.87 armor
+t15: 3 heirloom:tempering_alloy, 2 amethyst_shard, 1 oxidized_cut_copper -> +2.03 armor
+t16: 1 heirloom:tempering_core, 1 copper_bulb -> +2.20 armor
+t17: 1 heirloom:tempering_core, 1 copper_grate -> +2.37 armor
+t18: 1 heirloom:tempering_core, 1 chiseled_copper -> +2.53 armor
+t19: 1 heirloom:tempering_core, 1 copper_door -> +2.70 armor
+t21: 1 heirloom:tempering_core, 1 lightning_rod, 1 copper_block -> +2.80 armor
+t22: 1 heirloom:tempering_core, 1 lightning_rod, 1 amethyst_block -> +2.85 armor
+t23: 2 heirloom:tempering_core, 1 lightning_rod, 1 copper_bulb -> +2.90 armor
+t24: 2 heirloom:tempering_core, 2 lightning_rod, 1 oxidized_copper -> +2.95 armor
+t25: 3 heirloom:tempering_core, 2 lightning_rod, 1 amethyst_block -> +3.00 armor
+
+[copper_boots]
+t1: 1 heirloom:tempering_dust, 1 raw_copper -> +0.09 armor
+t2: 2 heirloom:tempering_dust, 1 raw_copper -> +0.12 armor
+t3: 3 heirloom:tempering_dust, 1 raw_copper -> +0.16 armor
+t4: 4 heirloom:tempering_dust, 1 raw_copper -> +0.19 armor
+t5: 5 heirloom:tempering_dust, 1 raw_copper -> +0.23 armor
+t6: 1 heirloom:tempering_flux, 2 redstone, 1 copper_ingot -> +0.26 armor
+t7: 1 heirloom:tempering_flux, 3 redstone, 1 copper_ingot -> +0.30 armor
+t8: 2 heirloom:tempering_flux, 4 redstone, 2 copper_ingot -> +0.33 armor
+t9: 2 heirloom:tempering_flux, 5 redstone, 2 copper_ingot -> +0.37 armor
+t10: 3 heirloom:tempering_flux, 6 redstone, 3 copper_ingot -> +0.40 armor
+t11: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 exposed_copper -> +0.46 armor
+t12: 1 heirloom:tempering_alloy, 1 amethyst_shard, 1 weathered_copper -> +0.51 armor
+t13: 2 heirloom:tempering_alloy, 1 amethyst_shard, 1 oxidized_copper -> +0.57 armor
+t14: 2 heirloom:tempering_alloy, 2 amethyst_shard, 1 exposed_cut_copper -> +0.62 armor
+t15: 3 heirloom:tempering_alloy, 2 amethyst_shard, 1 oxidized_cut_copper -> +0.68 armor
+t16: 1 heirloom:tempering_core, 1 copper_bulb -> +0.73 armor
+t17: 1 heirloom:tempering_core, 1 copper_grate -> +0.79 armor
+t18: 1 heirloom:tempering_core, 1 chiseled_copper -> +0.84 armor
+t19: 1 heirloom:tempering_core, 1 copper_door -> +0.90 armor
+t21: 1 heirloom:tempering_core, 1 lightning_rod, 1 copper_block -> +0.93 armor
+t22: 1 heirloom:tempering_core, 1 lightning_rod, 1 amethyst_block -> +0.95 armor
+t23: 2 heirloom:tempering_core, 1 lightning_rod, 1 copper_bulb -> +0.97 armor
+t24: 2 heirloom:tempering_core, 2 lightning_rod, 1 oxidized_copper -> +0.98 armor
+t25: 3 heirloom:tempering_core, 2 lightning_rod, 1 amethyst_block -> +1.00 armor
+
