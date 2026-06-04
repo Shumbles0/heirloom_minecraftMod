@@ -117,7 +117,7 @@ public class CodexReadingScreen extends Screen {
 
 	private void rebuildRows() {
 		List<Row> out = new ArrayList<>();
-		out.add(new Row(T_OVERVIEW, 0, CodexEntries.title(CodexEntries.OVERVIEW), CodexEntries.OVERVIEW, null, -1));
+		out.add(new Row(T_OVERVIEW, 0, Text.literal(CodexContent.overviewTitle(track)), CodexEntries.OVERVIEW, null, -1));
 
 		Set<Integer> have = new HashSet<>(unlocked);
 
@@ -304,7 +304,9 @@ public class CodexReadingScreen extends Screen {
 			: CodexEntries.isRitual(selected) ? "Ritual"
 			: CodexEntries.rarityOf(selected).label;
 		drawScaled(context, Text.literal(headerLabel), rightX, pageTop + 12, 1.1f, INK_FADED);
-		drawScaled(context, CodexEntries.title(selected), rightX, pageTop + 28, 1.5f, INK);
+		Text pageTitle = selected == CodexEntries.OVERVIEW
+			? Text.literal(CodexContent.overviewTitle(track)) : CodexEntries.title(selected);
+		drawScaled(context, pageTitle, rightX, pageTop + 28, 1.5f, INK);
 
 		int y = rightTop + 14;
 		for (int i = 0; i < rightRowsVisible; i++) {
@@ -329,7 +331,7 @@ public class CodexReadingScreen extends Screen {
 		}
 		cachedBodyFor = selected;
 		rightScroll = 0;
-		List<Text> source = selected == CodexEntries.OVERVIEW ? CodexContent.overviewLines()
+		List<Text> source = selected == CodexEntries.OVERVIEW ? CodexContent.overviewLines(track)
 			: CodexEntries.isMilestone(selected) ? CodexContent.milestoneLines(selected)
 			: CodexEntries.isRitual(selected) ? CodexContent.ritualLines(selected)
 			: CodexContent.chapterLines(selected);

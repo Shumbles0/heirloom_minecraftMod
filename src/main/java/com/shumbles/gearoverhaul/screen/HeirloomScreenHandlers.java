@@ -17,6 +17,10 @@ public final class HeirloomScreenHandlers {
 		Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Heirloom.MOD_ID, "codex"),
 			new ScreenHandlerType<>(CodexScreenHandler::new, FeatureFlags.VANILLA_FEATURES));
 
+	public static final ScreenHandlerType<SkeetLauncherScreenHandler> SKEET_LAUNCHER =
+		Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Heirloom.MOD_ID, "skeet_launcher"),
+			new ScreenHandlerType<>(SkeetLauncherScreenHandler::new, FeatureFlags.VANILLA_FEATURES));
+
 	private HeirloomScreenHandlers() {
 	}
 

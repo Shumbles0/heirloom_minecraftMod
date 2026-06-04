@@ -6,7 +6,12 @@ import com.shumbles.gearoverhaul.block.HeirloomBlocks;
 import com.shumbles.gearoverhaul.codex.CodexComponents;
 import com.shumbles.gearoverhaul.codex.CodexItems;
 import com.shumbles.gearoverhaul.foundation.GearNerf;
+import com.shumbles.gearoverhaul.ritual.ChargeHandler;
+import com.shumbles.gearoverhaul.ritual.HotBladeHandler;
+import com.shumbles.gearoverhaul.ritual.MaceRitual;
 import com.shumbles.gearoverhaul.ritual.RitualBlocks;
+import com.shumbles.gearoverhaul.ritual.RitualComponents;
+import com.shumbles.gearoverhaul.ritual.RitualEntities;
 import com.shumbles.gearoverhaul.ritual.RitualItems;
 import com.shumbles.gearoverhaul.screen.HeirloomScreenHandlers;
 import com.shumbles.gearoverhaul.temper.TemperCommand;
@@ -65,8 +70,13 @@ public class Heirloom implements ModInitializer {
 		UsageComponents.register();
 		UsageTracking.register();
 
-		// Level-20 rituals: placeholder blocks + items (behavior wired per-ritual later).
+		// Level-20 rituals: blocks + items + per-item ritual state components.
+		RitualComponents.register();
 		RitualBlocks.register();
 		RitualItems.register();
+		RitualEntities.register();
+		HotBladeHandler.register();
+		MaceRitual.register();
+		ChargeHandler.register();
 	}
 }

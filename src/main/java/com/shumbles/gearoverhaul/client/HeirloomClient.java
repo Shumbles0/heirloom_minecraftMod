@@ -1,12 +1,15 @@
 package com.shumbles.gearoverhaul.client;
 
 import com.shumbles.gearoverhaul.Heirloom;
+import com.shumbles.gearoverhaul.ritual.RitualEntities;
 import com.shumbles.gearoverhaul.screen.HeirloomScreenHandlers;
 import com.shumbles.gearoverhaul.temper.Tempering;
 import com.shumbles.gearoverhaul.usage.UsageGate;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.resource.language.I18n;
 import net.minecraft.registry.Registries;
 import net.minecraft.text.Text;
@@ -24,6 +27,9 @@ public class HeirloomClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		HandledScreens.register(HeirloomScreenHandlers.TEMPERING_STATION, TemperingStationScreen::new);
 		HandledScreens.register(HeirloomScreenHandlers.CODEX, CodexScreen::new);
+		HandledScreens.register(HeirloomScreenHandlers.SKEET_LAUNCHER, SkeetLauncherScreen::new);
+
+		EntityRendererRegistry.register(RitualEntities.CLAY_PIGEON, FlyingItemEntityRenderer::new);
 
 		ItemTooltipCallback.EVENT.register((stack, context, type, lines) -> {
 			// Per-item flavor description: shown for any Heirloom item that defines a

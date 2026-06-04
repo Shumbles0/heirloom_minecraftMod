@@ -35,16 +35,33 @@ public final class CodexContent {
 		return local;
 	}
 
-	// ---- overview -----------------------------------------------------------
+	// ---- overview (per track) ----------------------------------------------
 
-	public static List<Text> overviewLines() {
+	/** Title shown on a track's overview page. */
+	public static String overviewTitle(CodexEntries.Track track) {
+		return switch (track) {
+			case TEMPERING -> "The Heirloom Codex";
+			case RITUAL -> "The Rites";
+			case ARCANE -> "The Arcane";
+		};
+	}
+
+	public static List<Text> overviewLines(CodexEntries.Track track) {
+		return switch (track) {
+			case TEMPERING -> temperingOverview();
+			case RITUAL -> ritualOverview();
+			case ARCANE -> arcaneOverview();
+		};
+	}
+
+	private static List<Text> temperingOverview() {
 		List<Text> out = new ArrayList<>();
 		out.add(Text.literal("Every blade and plate you find in the world is but an echo of what it once was. "
 			+ "The old forging is lost; what you hold now barely outcuts a bare fist. This Codex is the way back."));
 		out.add(Text.literal(""));
 		out.add(Text.literal("TEMPERING. At a Tempering Station, gear is raised one deliberate level at a time, "
 			+ "1 through 25. Each level asks for a fixed set of materials — no luck, no waste — and grants a "
-			+ "fixed gain. What a level costs and gives is written in this Codex, one chapter per piece per stage."));
+			+ "fixed gain. What a level costs and gives is written here, one chapter per piece per stage."));
 		out.add(Text.literal(""));
 		out.add(Text.literal("THE CURVE. Gains start small and climb. Around level 10 a piece is roughly 40% of its "
 			+ "former self; by level 19 it has returned to its old vanilla strength. Weapons and tools may be pushed "
@@ -55,16 +72,37 @@ public final class CodexContent {
 			+ "materials fitting the gear itself."));
 		out.add(Text.literal(""));
 		out.add(Text.literal("MILESTONES. Level 10 is a threshold the gear must be put to use to cross — each kind of "
-			+ "piece has its own deed to perform. The exact condition for each can be inscribed into this Codex, just "
-			+ "as recipes are. Level 20 is a ritual rather than a plain temper — the rite that unlocks the last five "
-			+ "levels (and, for weapons, a touch of restored speed at the very end)."));
+			+ "piece has its own deed to perform, recorded among these chapters."));
 		out.add(Text.literal(""));
-		out.add(Text.literal("SPECIAL ARMS. The bow, crossbow, trident and mace are handled apart. Their signature "
-			+ "powers are dulled and restored as they temper: the bow's draw quickens back to true, the crossbow's "
-			+ "bolts regain their speed, the trident its throw, the mace its fall-borne smash."));
+		out.add(Text.literal("Knowledge is inscribed, not given. Gather Tempering Manuscripts, choose a rarity, and "
+			+ "spend them to reveal its recipes — chapter by chapter — onto these pages."));
+		return out;
+	}
+
+	private static List<Text> ritualOverview() {
+		List<Text> out = new ArrayList<>();
+		out.add(Text.literal("Tempering carries a piece to level 19, and there it stops. The final climb — levels 21 "
+			+ "through 25 — is opened not by the station but by a rite."));
 		out.add(Text.literal(""));
-		out.add(Text.literal("THE CODEX. Knowledge is inscribed, not given. Gather Tempering Manuscripts, choose a "
-			+ "rarity, and spend them to reveal its recipes — chapter by chapter — onto these pages."));
+		out.add(Text.literal("THE RITES. Level 20 is no plain temper. Each kind of gear must undergo one deliberate, "
+			+ "active deed of its own — performed in the world, not at the station. Carry it out on a piece tempered "
+			+ "to 19 and it crosses to 20, and the station will take it the rest of the way."));
+		out.add(Text.literal(""));
+		out.add(Text.literal("SOFT FAILURE. A botched rite never destroys the gear; at worst it slips a level, costing "
+			+ "you time and reagents, never the piece itself. Go again."));
+		out.add(Text.literal(""));
+		out.add(Text.literal("Each rite, and exactly what it asks, is inscribed here from Ritual Manuscripts — one "
+			+ "entry per kind of gear."));
+		return out;
+	}
+
+	private static List<Text> arcaneOverview() {
+		List<Text> out = new ArrayList<>();
+		out.add(Text.literal("The arcane arts — the old enchanting — are lost more deeply than any forging. These "
+			+ "pages wait for knowledge that has not yet been rediscovered."));
+		out.add(Text.literal(""));
+		out.add(Text.literal("When the work is done, Enchanting Manuscripts will inscribe its secrets here. For now, "
+			+ "the section stands empty."));
 		return out;
 	}
 
