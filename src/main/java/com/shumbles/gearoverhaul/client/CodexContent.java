@@ -98,11 +98,45 @@ public final class CodexContent {
 
 	private static List<Text> arcaneOverview() {
 		List<Text> out = new ArrayList<>();
-		out.add(Text.literal("The arcane arts — the old enchanting — are lost more deeply than any forging. These "
-			+ "pages wait for knowledge that has not yet been rediscovered."));
+		out.add(Text.literal("The old enchanting is gone. In its place: directions, attributes, and tradeoffs — power "
+			+ "as identity, not a ladder. Each piece carries up to three, and every one costs as much as it gives."));
 		out.add(Text.literal(""));
-		out.add(Text.literal("When the work is done, Enchanting Manuscripts will inscribe its secrets here. For now, "
-			+ "the section stands empty."));
+		out.add(Text.literal("Inscribe Enchanting Manuscripts here to learn it — the first reveals the Directions "
+			+ "themselves, then each later page documents one reagent and what it does. Knowing a page only explains "
+			+ "it; you can brew without it."));
+		out.add(Text.literal(""));
+		out.add(Text.literal("Enchanting Manuscript:  1 Paper + 1 Lapis Lazuli"));
+		return out;
+	}
+
+	/** The Directions Index, or a single attribute's page. */
+	public static List<Text> arcaneLines(int index) {
+		if (CodexEntries.isArcaneIndex(index)) {
+			return ArcaneText.directionsIndexLines();
+		}
+		return ArcaneText.attributeLines(CodexEntries.arcaneAttributeOf(index));
+	}
+
+	// ---- basics (always unlocked) -------------------------------------------
+
+	public static List<Text> basicsLines() {
+		List<Text> out = new ArrayList<>();
+		out.add(Text.literal("The first crafts every smith should know — no inscribing required."));
+		out.add(Text.literal(""));
+		out.add(Text.literal("LORE."));
+		out.add(Text.literal("Tempering Manuscript:  1 Paper + 1 Ink Sac"));
+		out.add(Text.literal("Codex:  1 Book + 1 Tempering Dust"));
+		out.add(Text.literal(""));
+		out.add(Text.literal("REAGENTS. An ingredient with \"(or ...)\" beside it may be swapped for that "
+			+ "alternative — most often the compound one tier below it."));
+		out.add(Text.literal("Dust (x4):  4 Cobblestone (or Deepslate) + 1 Gravel"));
+		out.add(Text.literal("Flux (x2):  2 Copper Ingot + 2 Redstone + 1 Lapis (or 1 Dust)"));
+		out.add(Text.literal("Alloy (x2):  3 Iron Ingot + 1 Gold Ingot + 1 Amethyst Shard (or 1 Flux)"));
+		out.add(Text.literal("Core:  1 Diamond + 1 Iron Block + 1 Weathered Copper (or 1 Alloy)"));
+		out.add(Text.literal("Quintessence:  2 Netherite Scrap + 1 Echo Shard (or 1 Ominous Trial Key) "
+			+ "+ 1 Heart of the Sea (or 1 Core)"));
+		out.add(Text.literal(""));
+		out.add(Text.literal("All are shapeless — the ingredients may sit anywhere in the grid."));
 		return out;
 	}
 

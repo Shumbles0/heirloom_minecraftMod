@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "heirloom:block/arcane_bookshelf_end",
+    "side": "heirloom:block/arcane_bookshelf"
+  }
+}

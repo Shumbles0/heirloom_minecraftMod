@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [" R ", "RQR", " R "],
+  "key": {
+    "R": "minecraft:red_dye",
+    "Q": "minecraft:quartz_block"
+  },
+  "result": { "id": "heirloom:bullseye_target", "count": 1 }
+}

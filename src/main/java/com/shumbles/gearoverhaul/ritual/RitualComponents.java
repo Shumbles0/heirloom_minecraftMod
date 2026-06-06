@@ -8,6 +8,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
+
 /**
  * Transient item components used by the rituals. For the sword: when a heated blade is pulled
  * from the forge it carries the heat it was pulled at and the tick it was pulled, so the
@@ -22,6 +24,16 @@ public final class RitualComponents {
 	/** World game-time tick the blade was pulled, for the quench window. */
 	public static final ComponentType<Long> FORGE_PULL_TICK = register("forge_pull_tick",
 		ComponentType.<Long>builder().codec(Codec.LONG).packetCodec(PacketCodecs.VAR_LONG).build());
+
+	/**
+	 * The distinct chunks a frozen pair of leggings has crossed during the cold-trek rite. Its
+	 * presence means the leggings are frozen and trekking; its size is the progress toward 100.
+	 */
+	public static final ComponentType<List<Long>> FROZEN_CHUNKS = register("frozen_chunks",
+		ComponentType.<List<Long>>builder()
+			.codec(Codec.LONG.listOf())
+			.packetCodec(PacketCodecs.VAR_LONG.collect(PacketCodecs.toList()))
+			.build());
 
 	private RitualComponents() {
 	}

@@ -1,5 +1,6 @@
 package com.shumbles.gearoverhaul.codex;
 
+import com.shumbles.gearoverhaul.enchant.ArcaneAttribute;
 import com.shumbles.gearoverhaul.usage.UsageGate;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -61,9 +62,64 @@ public final class CodexEntries {
 		return ITEMS.size() * BANDS;
 	}
 
-	/** Total addressable entries including the overview, milestones and rituals. */
-	public static int count() {
+	/** The always-unlocked "basics" entry (crafting recipes) sits just past the rituals. */
+	public static int basicsIndex() {
 		return 1 + chapterCount() + MILESTONE_KINDS.length + RITUAL_KINDS.length;
+	}
+
+	public static boolean isBasics(int index) {
+		return index == basicsIndex();
+	}
+
+	/** Total addressable entries including the overview, milestones, rituals, basics and arcane. */
+	public static int count() {
+		return arcaneBase() + arcaneCount();
+	}
+
+	// ---- arcane -------------------------------------------------------------
+	// Enchanting entries (the ARCANE track, fed by Enchanting Manuscripts): a Directions Index
+	// followed by one entry per ArcaneAttribute. Appended at the very end so existing indices never
+	// shift. The first arcane reveal is forced to the Index (see lockedInTrack).
+
+	/** Index of the Directions Index entry — the first arcane entry, just past basics. */
+	public static int arcaneBase() {
+		return basicsIndex() + 1;
+	}
+
+	/** Index of the first per-attribute entry (right after the Directions Index). */
+	public static int arcaneAttributeBase() {
+		return arcaneBase() + 1;
+	}
+
+	/** Arcane entries: the Directions Index plus one per attribute. */
+	public static int arcaneCount() {
+		return 1 + ArcaneAttribute.values().length;
+	}
+
+	public static boolean isArcane(int index) {
+		return index >= arcaneBase() && index < arcaneBase() + arcaneCount();
+	}
+
+	public static boolean isArcaneIndex(int index) {
+		return index == arcaneBase();
+	}
+
+	public static int arcaneAttributeIndex(int ordinal) {
+		return arcaneAttributeBase() + ordinal;
+	}
+
+	public static ArcaneAttribute arcaneAttributeOf(int index) {
+		return ArcaneAttribute.values()[index - arcaneAttributeBase()];
+	}
+
+	/** All arcane entry indices (Index first), in order. */
+	public static List<Integer> allArcane() {
+		List<Integer> out = new ArrayList<>();
+		out.add(arcaneBase());
+		for (int i = 0; i < ArcaneAttribute.values().length; i++) {
+			out.add(arcaneAttributeIndex(i));
+		}
+		return out;
 	}
 
 	// ---- milestones ---------------------------------------------------------
@@ -183,7 +239,10 @@ public final class CodexEntries {
 		if (isRitual(index)) {
 			return Track.RITUAL;
 		}
-		// Overview, recipe chapters and milestones are all Tempering; Arcane has no entries yet.
+		if (isArcane(index)) {
+			return Track.ARCANE;
+		}
+		// Overview, recipe chapters and milestones are all Tempering.
 		return Track.TEMPERING;
 	}
 
@@ -192,7 +251,7 @@ public final class CodexEntries {
 		return switch (track) {
 			case TEMPERING -> chapterCount() + MILESTONE_KINDS.length;
 			case RITUAL -> RITUAL_KINDS.length;
-			case ARCANE -> 0;
+			case ARCANE -> arcaneCount();
 		};
 	}
 
@@ -211,8 +270,27 @@ public final class CodexEntries {
 	public static List<Integer> lockedInTrack(Track track, List<Integer> unlocked) {
 		return switch (track) {
 			case RITUAL -> lockedRituals(unlocked);
+			case ARCANE -> lockedArcane(unlocked);
 			default -> List.of();
 		};
+	}
+
+	/**
+	 * Arcane reveal pool. The <b>first</b> arcane reveal is forced to the Directions Index; only once
+	 * that's known do the per-attribute entries become drawable.
+	 */
+	public static List<Integer> lockedArcane(List<Integer> unlocked) {
+		if (!unlocked.contains(arcaneBase())) {
+			return List.of(arcaneBase());
+		}
+		List<Integer> out = new ArrayList<>();
+		for (int i = 0; i < ArcaneAttribute.values().length; i++) {
+			int idx = arcaneAttributeIndex(i);
+			if (!unlocked.contains(idx)) {
+				out.add(idx);
+			}
+		}
+		return out;
 	}
 
 	public static boolean isOverview(int index) {
@@ -255,6 +333,15 @@ public final class CodexEntries {
 		}
 		if (isRitual(index)) {
 			return Text.literal(ritualKindOf(index).gearName + " Ritual");
+		}
+		if (isBasics(index)) {
+			return Text.literal("The Smith's Basics");
+		}
+		if (isArcaneIndex(index)) {
+			return Text.literal("The Arcane Directions");
+		}
+		if (isArcane(index)) {
+			return Text.literal(arcaneAttributeOf(index).displayName);
 		}
 		Gear gear = gearOf(index);
 		return gearName(gear).copy().append(Text.literal(" (" + BAND_LABELS[bandOf(index)] + ")"));

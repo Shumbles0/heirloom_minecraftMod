@@ -1,6 +1,7 @@
 package com.shumbles.gearoverhaul.client;
 
 import com.shumbles.gearoverhaul.Heirloom;
+import com.shumbles.gearoverhaul.enchant.EnchantComponents;
 import com.shumbles.gearoverhaul.ritual.RitualEntities;
 import com.shumbles.gearoverhaul.screen.HeirloomScreenHandlers;
 import com.shumbles.gearoverhaul.temper.Tempering;
@@ -28,8 +29,12 @@ public class HeirloomClient implements ClientModInitializer {
 		HandledScreens.register(HeirloomScreenHandlers.TEMPERING_STATION, TemperingStationScreen::new);
 		HandledScreens.register(HeirloomScreenHandlers.CODEX, CodexScreen::new);
 		HandledScreens.register(HeirloomScreenHandlers.SKEET_LAUNCHER, SkeetLauncherScreen::new);
+		HandledScreens.register(HeirloomScreenHandlers.DIRECTION, DirectionScreen::new);
+		HandledScreens.register(HeirloomScreenHandlers.ADVANCED_TABLE, AdvancedTableScreen::new);
 
 		EntityRendererRegistry.register(RitualEntities.CLAY_PIGEON, FlyingItemEntityRenderer::new);
+
+		HeatOverlay.register();
 
 		ItemTooltipCallback.EVENT.register((stack, context, type, lines) -> {
 			// Per-item flavor description: shown for any Heirloom item that defines a
@@ -40,6 +45,15 @@ public class HeirloomClient implements ClientModInitializer {
 				if (I18n.hasTranslation(key)) {
 					lines.add(Text.translatable(key).formatted(Formatting.DARK_GRAY, Formatting.ITALIC));
 				}
+			}
+
+			// Enchant slots chosen for this piece: direction (and attribute, if selected).
+			java.util.List<String> slots = EnchantComponents.getSlots(stack);
+			for (int i = 0; i < slots.size(); i++) {
+				String attr = EnchantComponents.attributeAt(stack, i);
+				String text = EnchantComponents.directionAt(stack, i) + (attr != null ? " — " + attr : "");
+				lines.add(Text.literal((i == 0 ? "Enchanted: " : "          ") + text)
+					.formatted(Formatting.LIGHT_PURPLE));
 			}
 
 			if (Tempering.isTempered(stack)) {

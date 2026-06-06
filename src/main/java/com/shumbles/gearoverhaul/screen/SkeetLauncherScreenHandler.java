@@ -26,7 +26,7 @@ public class SkeetLauncherScreenHandler extends ScreenHandler {
 		inventory.onOpen(playerInventory.player);
 
 		for (int col = 0; col < 9; col++) {
-			this.addSlot(new Slot(inventory, col, 8 + col * 18, 35) {
+			this.addSlot(new Slot(inventory, col, 8 + col * 18, 48) {
 				@Override
 				public boolean canInsert(ItemStack stack) {
 					return stack.isOf(RitualItems.CLAY_PIGEON);

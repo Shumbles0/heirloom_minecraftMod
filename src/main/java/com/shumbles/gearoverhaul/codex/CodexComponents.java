@@ -39,9 +39,9 @@ public final class CodexComponents {
 		return codex.getOrDefault(PENDING, List.of());
 	}
 
-	/** The overview is always readable; everything else must be inscribed. */
+	/** The overview and the basics are always readable; everything else must be inscribed. */
 	public static boolean isUnlocked(ItemStack codex, int index) {
-		return index == CodexEntries.OVERVIEW || getUnlocked(codex).contains(index);
+		return index == CodexEntries.OVERVIEW || CodexEntries.isBasics(index) || getUnlocked(codex).contains(index);
 	}
 
 	/** Touch this class so its static registration runs during mod init. */

@@ -5,14 +5,25 @@ import com.shumbles.gearoverhaul.block.HeirloomBlockEntities;
 import com.shumbles.gearoverhaul.block.HeirloomBlocks;
 import com.shumbles.gearoverhaul.codex.CodexComponents;
 import com.shumbles.gearoverhaul.codex.CodexItems;
+import com.shumbles.gearoverhaul.enchant.EnchantBlocks;
+import com.shumbles.gearoverhaul.enchant.EnchantComponents;
+import com.shumbles.gearoverhaul.enchant.EnchantConversion;
 import com.shumbles.gearoverhaul.foundation.GearNerf;
+import com.shumbles.gearoverhaul.loot.ManuscriptDrops;
+import com.shumbles.gearoverhaul.loot.ManuscriptLoot;
+import com.shumbles.gearoverhaul.ritual.AxeRitual;
+import com.shumbles.gearoverhaul.ritual.BootsRitual;
 import com.shumbles.gearoverhaul.ritual.ChargeHandler;
+import com.shumbles.gearoverhaul.ritual.HelmetRitual;
 import com.shumbles.gearoverhaul.ritual.HotBladeHandler;
+import com.shumbles.gearoverhaul.ritual.LeggingsRitual;
 import com.shumbles.gearoverhaul.ritual.MaceRitual;
+import com.shumbles.gearoverhaul.ritual.PickaxeRitual;
 import com.shumbles.gearoverhaul.ritual.RitualBlocks;
 import com.shumbles.gearoverhaul.ritual.RitualComponents;
 import com.shumbles.gearoverhaul.ritual.RitualEntities;
 import com.shumbles.gearoverhaul.ritual.RitualItems;
+import com.shumbles.gearoverhaul.ritual.ShovelRitual;
 import com.shumbles.gearoverhaul.screen.HeirloomScreenHandlers;
 import com.shumbles.gearoverhaul.temper.TemperCommand;
 import com.shumbles.gearoverhaul.temper.TemperComponents;
@@ -78,5 +89,21 @@ public class Heirloom implements ModInitializer {
 		HotBladeHandler.register();
 		MaceRitual.register();
 		ChargeHandler.register();
+		LeggingsRitual.register();
+		BootsRitual.register();
+		PickaxeRitual.register();
+		AxeRitual.register();
+		ShovelRitual.register();
+		HelmetRitual.register();
+
+		// Manuscript sources: rate-limited mob drops + chest/vault loot.
+		ManuscriptDrops.register();
+		ManuscriptLoot.register();
+
+		// Enchanting rework (in progress): components, arcane bookshelves, the Advanced Enchanting
+		// Table, and direction selection at the vanilla table.
+		EnchantComponents.register();
+		EnchantBlocks.register();
+		EnchantConversion.register();
 	}
 }

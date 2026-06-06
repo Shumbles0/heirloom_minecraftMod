@@ -187,8 +187,9 @@ public class CodexScreen extends HandledScreen<CodexScreenHandler> {
 			boolean show = mode == Mode.READ;
 			this.trackButtons[i].visible = show;
 			if (show) {
-				int got = CodexEntries.unlockedInTrack(tracks[i], CodexComponents.getUnlocked(codex));
-				this.trackButtons[i].active = got > 0; // nothing to read until something's inscribed
+				// Always openable: the overview (and, for Tempering, the Smith's Basics) are
+				// readable even with nothing inscribed yet.
+				this.trackButtons[i].active = true;
 				this.trackButtons[i].setMessage(Text.literal(tracks[i].label));
 			}
 		}

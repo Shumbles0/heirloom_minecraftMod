@@ -32,6 +32,10 @@ public abstract class TridentEntityMixin {
 	private boolean heirloom$rolled = false;
 	@Unique
 	private int heirloom$floatTicks = 0;
+	@Unique
+	private int heirloom$boltsLeft = 0;
+	@Unique
+	private int heirloom$boltTimer = 0;
 
 	@ModifyArg(
 		method = "onEntityHit",
@@ -50,12 +54,18 @@ public abstract class TridentEntityMixin {
 			return;
 		}
 
-		// Hold the trident frozen for the float after a strike, then let it fall.
+		// Held frozen after the storm answers: fire BOLTS bolts one after another, then drop.
 		if (heirloom$floatTicks > 0) {
 			self.setVelocity(0.0, 0.0, 0.0);
 			self.setNoGravity(true);
+			if (heirloom$boltsLeft > 0 && --heirloom$boltTimer <= 0) {
+				TridentRitual.spawnBolt(world, self);
+				heirloom$boltsLeft--;
+				heirloom$boltTimer = TridentRitual.BOLT_INTERVAL;
+			}
 			if (--heirloom$floatTicks == 0) {
 				self.setNoGravity(false);
+				TridentRitual.finish(world, self, getWeaponStack());
 			}
 			ci.cancel();
 			return;
@@ -73,10 +83,11 @@ public abstract class TridentEntityMixin {
 		// Qualified — one roll per throw.
 		heirloom$rolled = true;
 		if (world.getRandom().nextInt(TridentRitual.STRIKE_CHANCE_IN) == 0) {
-			heirloom$floatTicks = TridentRitual.FLOAT_TICKS;
+			heirloom$boltsLeft = TridentRitual.BOLTS;
+			heirloom$boltTimer = 0; // first bolt next tick
+			heirloom$floatTicks = TridentRitual.BOLTS * TridentRitual.BOLT_INTERVAL + TridentRitual.FLOAT_TAIL;
 			self.setVelocity(0.0, 0.0, 0.0);
 			self.setNoGravity(true);
-			TridentRitual.strike(world, self, getWeaponStack());
 			ci.cancel();
 		}
 	}

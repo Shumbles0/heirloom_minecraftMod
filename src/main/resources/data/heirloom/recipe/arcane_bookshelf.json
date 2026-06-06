@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["LLL", "BBB", "LAL"],
+  "key": {
+    "L": "minecraft:lapis_lazuli",
+    "B": "minecraft:book",
+    "A": "minecraft:amethyst_shard"
+  },
+  "result": { "id": "heirloom:arcane_bookshelf", "count": 1 }
+}

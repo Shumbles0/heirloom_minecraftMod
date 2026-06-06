@@ -71,7 +71,11 @@ public class SkeetLauncherBlockEntity extends BlockEntity implements Inventory, 
 		ClayPigeonEntity pigeon = new ClayPigeonEntity(RitualEntities.CLAY_PIGEON, world);
 		pigeon.refreshPositionAndAngles(pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, 0.0f, 0.0f);
 		pigeon.setItem(new ItemStack(RitualItems.CLAY_PIGEON));
-		pigeon.setVelocity(0.0, BowRitual.PIGEON_LAUNCH_VY, 0.0);
+		// A slight random lean in any direction + a varied apex, so no two shots are alike.
+		double angle = world.getRandom().nextDouble() * Math.PI * 2.0;
+		double lean = 0.10 + world.getRandom().nextDouble() * 0.15;          // 0.10–0.25 horizontal
+		double vy = BowRitual.PIGEON_LAUNCH_VY * (0.85 + world.getRandom().nextDouble() * 0.30); // ±15% height
+		pigeon.setVelocity(Math.cos(angle) * lean, vy, Math.sin(angle) * lean);
 		pigeon.setLauncher(pos);
 		world.spawnEntity(pigeon);
 		world.playSound(null, pos, SoundEvents.BLOCK_DISPENSER_LAUNCH, SoundCategory.BLOCKS, 1.0f, 1.2f);

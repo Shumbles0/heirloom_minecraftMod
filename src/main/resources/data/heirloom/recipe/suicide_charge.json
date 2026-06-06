@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["LGL", "GTG", "LGL"],
+  "key": {
+    "L": "minecraft:leather",
+    "G": "minecraft:gunpowder",
+    "T": "minecraft:tnt"
+  },
+  "result": { "id": "heirloom:suicide_charge", "count": 1 }
+}

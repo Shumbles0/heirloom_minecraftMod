@@ -27,19 +27,21 @@ public final class RitualBlocks {
 	public static final Block QUENCHING_TROUGH = register("quenching_trough",
 		key -> new RitualTroughBlock(AbstractBlock.Settings.create().registryKey(key).strength(3.0f).sounds(BlockSoundGroup.METAL)));
 	public static final Block CHOPPING_STUMP = register("chopping_stump", BlockSoundGroup.WOOD, 2.5f);
-	public static final Block DEEPVEIN = register("deepvein", BlockSoundGroup.STONE, 3.5f);
-	public static final Block AVALANCHE_CAIRN = register("avalanche_cairn", BlockSoundGroup.GRAVEL, 2.0f);
+	public static final Block AVALANCHE_CAIRN = register("avalanche_cairn",
+		key -> new AvalancheCairnBlock(AbstractBlock.Settings.create().registryKey(key).strength(2.0f).sounds(BlockSoundGroup.GRAVEL)));
 	public static final Block SKEET_LAUNCHER = register("skeet_launcher",
 		key -> new SkeetLauncherBlock(AbstractBlock.Settings.create().registryKey(key).strength(2.5f).sounds(BlockSoundGroup.WOOD)));
 	public static final Block BULLSEYE_TARGET = register("bullseye_target", BlockSoundGroup.WOOD, 2.0f);
 	// striking_plate is no longer a block — it's a spawner item (see RitualItems / StrikingPlateItem).
-	public static final Block PRESSURE_SEAL = register("pressure_seal", BlockSoundGroup.STONE, 3.0f);
-	public static final Block FREEZE_MACHINE = register("freeze_machine", BlockSoundGroup.GLASS, 2.5f);
+	public static final Block PRESSURE_SEAL = register("pressure_seal",
+		key -> new PressureSealBlock(AbstractBlock.Settings.create().registryKey(key).strength(3.0f).sounds(BlockSoundGroup.STONE)));
+	public static final Block FREEZE_MACHINE = register("freeze_machine",
+		key -> new FreezeMachineBlock(AbstractBlock.Settings.create().registryKey(key).strength(2.5f).sounds(BlockSoundGroup.GLASS)));
 	public static final Block HEATBED = register("heatbed", BlockSoundGroup.STONE, 2.5f);
 
 	/** Every ritual block, for the creative tab. */
 	public static final Block[] ALL = {
-		RITUAL_FORGE, QUENCHING_TROUGH, CHOPPING_STUMP, DEEPVEIN, AVALANCHE_CAIRN, SKEET_LAUNCHER,
+		RITUAL_FORGE, QUENCHING_TROUGH, CHOPPING_STUMP, AVALANCHE_CAIRN, SKEET_LAUNCHER,
 		BULLSEYE_TARGET, PRESSURE_SEAL, FREEZE_MACHINE, HEATBED
 	};
 
@@ -57,7 +59,11 @@ public final class RitualBlocks {
 		Block block = Registry.register(Registries.BLOCK, blockKey, factory.apply(blockKey));
 
 		RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, id);
-		Registry.register(Registries.ITEM, itemKey, new BlockItem(block, new Item.Settings().registryKey(itemKey)));
+		// useBlockPrefixedTranslationKey: a 1.21.11 BlockItem otherwise names itself from the
+		// item key (item.heirloom.x); this points it at the block key (block.heirloom.x) the
+		// lang file actually provides, matching vanilla blocks.
+		Registry.register(Registries.ITEM, itemKey,
+			new BlockItem(block, new Item.Settings().registryKey(itemKey).useBlockPrefixedTranslationKey()));
 		return block;
 	}
 

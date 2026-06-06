@@ -1,0 +1,23 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "particle": "heirloom:block/advanced_enchanting_table_side",
+    "top": "heirloom:block/advanced_enchanting_table_top",
+    "side": "heirloom:block/advanced_enchanting_table_side",
+    "bottom": "heirloom:block/advanced_enchanting_table_bottom"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 12, 16],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#side" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

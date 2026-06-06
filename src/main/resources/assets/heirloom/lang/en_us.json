@@ -30,10 +30,12 @@
   "tooltip.heirloom.stonewood_leggings": "Crude wood-and-stone plate. Heavy enough to resist a shove.",
   "tooltip.heirloom.stonewood_boots": "Crude wood-and-stone plate. Heavy enough to resist a shove.",
 
+  "block.heirloom.arcane_bookshelf": "Arcane Bookshelf",
+  "block.heirloom.advanced_enchanting_table": "Advanced Enchanting Table",
+
   "block.heirloom.ritual_forge": "Ritual Forge",
   "block.heirloom.quenching_trough": "Quenching Trough",
   "block.heirloom.chopping_stump": "Chopping Stump",
-  "block.heirloom.deepvein": "Deepvein",
   "block.heirloom.avalanche_cairn": "Avalanche Cairn",
   "block.heirloom.skeet_launcher": "Skeet Launcher",
   "block.heirloom.bullseye_target": "Bullseye Target",
@@ -44,10 +46,12 @@
   "item.heirloom.suicide_charge": "Suicide Charge",
   "item.heirloom.clay_pigeon": "Clay Pigeon",
 
+  "tooltip.heirloom.arcane_bookshelf": "Ring an enchanting table with 15 of these to awaken it.",
+  "tooltip.heirloom.advanced_enchanting_table": "Where directions take shape — the arcane arts.",
+
   "tooltip.heirloom.ritual_forge": "Heat a blade here, then quench it — the sword's rite.",
   "tooltip.heirloom.quenching_trough": "Quench a heated blade to finish its rite.",
   "tooltip.heirloom.chopping_stump": "Strike a log here in rhythm — the axe's rite.",
-  "tooltip.heirloom.deepvein": "A vein that flees the pick — the pickaxe's rite.",
   "tooltip.heirloom.avalanche_cairn": "Triggers a collapse to dig free of — the shovel's rite.",
   "tooltip.heirloom.skeet_launcher": "Flings targets skyward — the bow's rite.",
   "tooltip.heirloom.bullseye_target": "A distant mark for the crossbow's rite.",

@@ -42,7 +42,7 @@ public class SkeetLauncherScreen extends HandledScreen<SkeetLauncherScreenHandle
 	@Override
 	protected void drawForeground(DrawContext context, int mouseX, int mouseY) {
 		context.drawText(this.textRenderer, this.title, this.titleX, this.titleY, INK, false);
-		context.drawText(this.textRenderer, Text.literal("Load clay pigeons; power with redstone"),
-			8, 22, INK_FADED, false);
+		context.drawText(this.textRenderer, Text.literal("Load clay pigeons."), 8, 22, INK_FADED, false);
+		context.drawText(this.textRenderer, Text.literal("Power with redstone."), 8, 33, INK_FADED, false);
 	}
 }

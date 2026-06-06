@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["III", "ISI", "ICI"],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "S": "minecraft:slime_block",
+    "C": "minecraft:wind_charge"
+  },
+  "result": { "id": "heirloom:striking_plate", "count": 1 }
+}

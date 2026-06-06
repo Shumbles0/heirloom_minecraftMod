@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["PPP", "PDP", " R "],
+  "key": {
+    "P": "#minecraft:planks",
+    "D": "minecraft:dispenser",
+    "R": "minecraft:redstone"
+  },
+  "result": { "id": "heirloom:skeet_launcher", "count": 1 }
+}

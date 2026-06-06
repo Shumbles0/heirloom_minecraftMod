@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:clay_ball"
+  ],
+  "result": { "id": "heirloom:clay_pigeon", "count": 1 }
+}
