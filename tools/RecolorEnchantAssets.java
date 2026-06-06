@@ -16,8 +16,13 @@ public class RecolorEnchantAssets {
 	static final String SRC = "tools/vanilla_src/";
 	static final String OUT = "src/main/resources/assets/heirloom/textures/block/";
 
+	static final String OUTITEM = "src/main/resources/assets/heirloom/textures/item/";
+
 	public static void main(String[] args) throws Exception {
 		new File(OUT).mkdirs();
+		new File(OUTITEM).mkdirs();
+		// Arcane Dust: glowstone dust hue-shifted to deep blue/purple.
+		recolour(SRC + "glowstone_dust.png", OUTITEM + "arcane_dust.png", 0.715f, 1.1f, 1.0f, false);
 		// Deep blue / dark purple (~262 deg). Frame planks a touch darker than the spines.
 		recolour(SRC + "bookshelf.png",   OUT + "arcane_bookshelf.png",     0.728f, 1.0f, 0.95f, false);
 		recolour(SRC + "oak_planks.png",  OUT + "arcane_bookshelf_end.png", 0.728f, 0.95f, 0.72f, false);
@@ -30,6 +35,10 @@ public class RecolorEnchantAssets {
 
 	static void recolour(String in, String outPath, float hue, float satScale, float valScale, boolean invertBright)
 			throws Exception {
+		if (!new File(in).exists()) {
+			System.out.println("skip (missing): " + in);
+			return;
+		}
 		BufferedImage img = ImageIO.read(new File(in));
 		int w = img.getWidth(), h = img.getHeight();
 		BufferedImage o = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);

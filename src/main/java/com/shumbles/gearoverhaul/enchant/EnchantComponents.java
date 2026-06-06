@@ -49,26 +49,42 @@ public final class EnchantComponents {
 		return slotCount(stack) < MAX_SLOTS;
 	}
 
+	public static final int MAX_LEVEL = 3;
+
+	/** Slot encoding split into [direction, attribute?, level?]. */
+	private static String[] parts(ItemStack stack, int i) {
+		return getSlots(stack).get(i).split("\\" + SEP);
+	}
+
 	/** The direction in slot {@code i}. */
 	public static String directionAt(ItemStack stack, int i) {
-		String e = getSlots(stack).get(i);
-		int b = e.indexOf(SEP);
-		return b < 0 ? e : e.substring(0, b);
+		return parts(stack, i)[0];
 	}
 
 	/** The attribute in slot {@code i}, or {@code null} if none chosen yet. */
 	public static String attributeAt(ItemStack stack, int i) {
-		String e = getSlots(stack).get(i);
-		int b = e.indexOf(SEP);
-		return b < 0 ? null : e.substring(b + 1);
+		String[] p = parts(stack, i);
+		return p.length >= 2 ? p[1] : null;
+	}
+
+	/** The level of slot {@code i}'s attribute (1 if set, 0 if no attribute yet). */
+	public static int levelAt(ItemStack stack, int i) {
+		String[] p = parts(stack, i);
+		if (p.length >= 3) {
+			try {
+				return Integer.parseInt(p[2]);
+			} catch (NumberFormatException ignored) {
+				return 1;
+			}
+		}
+		return p.length >= 2 ? 1 : 0;
 	}
 
 	/** Just the directions, slot order (for the table offer + eligibility). */
 	public static List<String> getDirections(ItemStack stack) {
 		List<String> out = new ArrayList<>();
-		for (String e : getSlots(stack)) {
-			int b = e.indexOf(SEP);
-			out.add(b < 0 ? e : e.substring(0, b));
+		for (int i = 0; i < slotCount(stack); i++) {
+			out.add(directionAt(stack, i));
 		}
 		return out;
 	}
@@ -84,13 +100,28 @@ public final class EnchantComponents {
 		return true;
 	}
 
-	/** Sets (or replaces) the attribute in slot {@code i}, keeping its direction. */
+	/** Sets (or replaces) the attribute in slot {@code i} at level 1, keeping its direction. */
 	public static boolean setAttribute(ItemStack stack, int i, String attribute) {
 		List<String> slots = new ArrayList<>(getSlots(stack));
 		if (i < 0 || i >= slots.size()) {
 			return false;
 		}
-		slots.set(i, directionAt(stack, i) + SEP + attribute);
+		slots.set(i, directionAt(stack, i) + SEP + attribute + SEP + 1);
+		stack.set(DIRECTIONS, List.copyOf(slots));
+		return true;
+	}
+
+	/** Sets the level of slot {@code i}'s attribute (no-op if the slot has no attribute). */
+	public static boolean setLevel(ItemStack stack, int i, int level) {
+		List<String> slots = new ArrayList<>(getSlots(stack));
+		if (i < 0 || i >= slots.size()) {
+			return false;
+		}
+		String attr = attributeAt(stack, i);
+		if (attr == null) {
+			return false;
+		}
+		slots.set(i, directionAt(stack, i) + SEP + attr + SEP + Math.max(1, Math.min(MAX_LEVEL, level)));
 		stack.set(DIRECTIONS, List.copyOf(slots));
 		return true;
 	}

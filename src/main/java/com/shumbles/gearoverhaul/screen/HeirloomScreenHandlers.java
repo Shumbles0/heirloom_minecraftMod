@@ -21,10 +21,6 @@ public final class HeirloomScreenHandlers {
 		Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Heirloom.MOD_ID, "skeet_launcher"),
 			new ScreenHandlerType<>(SkeetLauncherScreenHandler::new, FeatureFlags.VANILLA_FEATURES));
 
-	public static final ScreenHandlerType<DirectionScreenHandler> DIRECTION =
-		Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Heirloom.MOD_ID, "direction"),
-			new ScreenHandlerType<>(DirectionScreenHandler::new, FeatureFlags.VANILLA_FEATURES));
-
 	public static final ScreenHandlerType<AdvancedTableScreenHandler> ADVANCED_TABLE =
 		Registry.register(Registries.SCREEN_HANDLER, Identifier.of(Heirloom.MOD_ID, "advanced_table"),
 			new ScreenHandlerType<>(AdvancedTableScreenHandler::new, FeatureFlags.VANILLA_FEATURES));

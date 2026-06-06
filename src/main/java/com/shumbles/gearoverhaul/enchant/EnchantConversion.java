@@ -1,26 +1,18 @@
 package com.shumbles.gearoverhaul.enchant;
 
 import com.shumbles.gearoverhaul.Heirloom;
-import com.shumbles.gearoverhaul.screen.DirectionScreenHandler;
-import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.Text;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 /**
- * Converts a vanilla enchanting table into the {@link EnchantBlocks#ADVANCED_ENCHANTING_TABLE} when
- * it's ringed by enough {@link EnchantBlocks#ARCANE_BOOKSHELF}s. Right-clicking such a table awakens
- * it (with a sound + particle flourish) instead of opening the vanilla enchant screen.
+ * Conversion helpers for the enchanting table → {@link EnchantBlocks#ADVANCED_ENCHANTING_TABLE}. The
+ * actual interaction (convert when ringed, or open direction selection) lives in
+ * {@code mixin.EnchantingTableBlockMixin}, which calls {@link #ringComplete} and {@link #convert}.
  */
 public final class EnchantConversion {
 	/** Arcane bookshelves needed in the standard ring (the vanilla 15-shelf max). */
@@ -30,38 +22,7 @@ public final class EnchantConversion {
 	}
 
 	public static void register() {
-		UseBlockCallback.EVENT.register((player, world, hand, hit) -> {
-			BlockPos pos = hit.getBlockPos();
-			if (!world.getBlockState(pos).isOf(Blocks.ENCHANTING_TABLE)) {
-				return ActionResult.PASS;
-			}
-			if (countArcaneShelves(world, pos) >= REQUIRED_SHELVES) {
-				// Ring complete: convert (server-side) and consume the click on both sides.
-				if (world instanceof ServerWorld serverWorld) {
-					convert(serverWorld, pos);
-				}
-				return ActionResult.SUCCESS;
-			}
-			// Ordinary table: holding Heirloom gear opens direction selection instead of vanilla enchanting.
-			ItemStack held = player.getMainHandStack();
-			if (EnchantDirections.canTakeDirections(held)) {
-				if (!EnchantComponents.hasFreeSlot(held)) {
-					if (!world.isClient()) {
-						player.sendMessage(Text.literal("This piece already holds three directions.")
-							.formatted(Formatting.GRAY), true);
-					}
-					return ActionResult.SUCCESS;
-				}
-				if (player instanceof ServerPlayerEntity serverPlayer) {
-					serverPlayer.openHandledScreen(new SimpleNamedScreenHandlerFactory(
-						(syncId, inv, p) -> new DirectionScreenHandler(syncId, inv),
-						Text.literal("Choose a Direction")));
-				}
-				return ActionResult.SUCCESS;
-			}
-			return ActionResult.PASS; // not Heirloom gear — let the vanilla enchant screen open
-		});
-		Heirloom.LOGGER.info("[Enchant] Advanced table conversion registered.");
+		Heirloom.LOGGER.info("[Enchant] Enchanting-table interaction ready (via mixin).");
 	}
 
 	/** True if {@code pos} still has its full ring of Arcane Bookshelves (re-checked each open). */
@@ -89,7 +50,11 @@ public final class EnchantConversion {
 		return count;
 	}
 
-	private static void convert(ServerWorld world, BlockPos pos) {
+	/** Replace the vanilla table at {@code pos} with the Advanced table, with sound + particles. */
+	public static void convert(ServerWorld world, BlockPos pos) {
+		if (!world.getBlockState(pos).isOf(Blocks.ENCHANTING_TABLE)) {
+			return;
+		}
 		world.setBlockState(pos, EnchantBlocks.ADVANCED_ENCHANTING_TABLE.getDefaultState());
 		world.playSound(null, pos, SoundEvents.BLOCK_BEACON_ACTIVATE, SoundCategory.BLOCKS, 1.0f, 0.8f);
 		world.playSound(null, pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS, 1.0f, 1.4f);

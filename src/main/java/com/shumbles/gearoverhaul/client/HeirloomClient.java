@@ -29,7 +29,6 @@ public class HeirloomClient implements ClientModInitializer {
 		HandledScreens.register(HeirloomScreenHandlers.TEMPERING_STATION, TemperingStationScreen::new);
 		HandledScreens.register(HeirloomScreenHandlers.CODEX, CodexScreen::new);
 		HandledScreens.register(HeirloomScreenHandlers.SKEET_LAUNCHER, SkeetLauncherScreen::new);
-		HandledScreens.register(HeirloomScreenHandlers.DIRECTION, DirectionScreen::new);
 		HandledScreens.register(HeirloomScreenHandlers.ADVANCED_TABLE, AdvancedTableScreen::new);
 
 		EntityRendererRegistry.register(RitualEntities.CLAY_PIGEON, FlyingItemEntityRenderer::new);

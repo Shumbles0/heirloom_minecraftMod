@@ -2,6 +2,8 @@
   "itemGroup.heirloom": "Heirloom",
   "block.heirloom.tempering_station": "Tempering Station",
   "item.heirloom.tempering_station": "Tempering Station",
+  "item.heirloom.arcane_dust": "Arcane Dust",
+  "tooltip.heirloom.arcane_dust": "The base reagent for every enchant brew.",
   "item.heirloom.tempering_dust": "Tempering Dust",
   "item.heirloom.tempering_flux": "Tempering Flux",
   "item.heirloom.tempering_alloy": "Tempering Alloy",
@@ -46,7 +48,7 @@
   "item.heirloom.suicide_charge": "Suicide Charge",
   "item.heirloom.clay_pigeon": "Clay Pigeon",
 
-  "tooltip.heirloom.arcane_bookshelf": "Ring an enchanting table with 15 of these to awaken it.",
+  "tooltip.heirloom.arcane_bookshelf": "Ring an enchanting table with 15 of these, then right-click it empty-handed to awaken it.",
   "tooltip.heirloom.advanced_enchanting_table": "Where directions take shape — the arcane arts.",
 
   "tooltip.heirloom.ritual_forge": "Heat a blade here, then quench it — the sword's rite.",

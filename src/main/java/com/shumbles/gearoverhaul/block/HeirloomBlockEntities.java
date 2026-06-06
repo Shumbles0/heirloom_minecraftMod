@@ -1,6 +1,8 @@
 package com.shumbles.gearoverhaul.block;
 
 import com.shumbles.gearoverhaul.Heirloom;
+import com.shumbles.gearoverhaul.enchant.AdvancedTableBlockEntity;
+import com.shumbles.gearoverhaul.enchant.EnchantBlocks;
 import com.shumbles.gearoverhaul.ritual.RitualBlocks;
 import com.shumbles.gearoverhaul.ritual.RitualForgeBlockEntity;
 import com.shumbles.gearoverhaul.ritual.SkeetLauncherBlockEntity;
@@ -23,6 +25,10 @@ public final class HeirloomBlockEntities {
 	public static final BlockEntityType<SkeetLauncherBlockEntity> SKEET_LAUNCHER =
 		Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Heirloom.MOD_ID, "skeet_launcher"),
 			FabricBlockEntityTypeBuilder.create(SkeetLauncherBlockEntity::new, RitualBlocks.SKEET_LAUNCHER).build());
+
+	public static final BlockEntityType<AdvancedTableBlockEntity> ADVANCED_TABLE =
+		Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Heirloom.MOD_ID, "advanced_table"),
+			FabricBlockEntityTypeBuilder.create(AdvancedTableBlockEntity::new, EnchantBlocks.ADVANCED_ENCHANTING_TABLE).build());
 
 	private HeirloomBlockEntities() {
 	}

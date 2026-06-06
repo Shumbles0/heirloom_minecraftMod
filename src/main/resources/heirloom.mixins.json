@@ -6,6 +6,8 @@
 		"ExampleMixin",
 		"BowItemMixin",
 		"CrossbowItemMixin",
+		"EnchantingTableBlockMixin",
+		"EnchantmentScreenHandlerMixin",
 		"MaceItemMixin",
 		"PersistentProjectileEntityMixin",
 		"RepairItemRecipeMixin",

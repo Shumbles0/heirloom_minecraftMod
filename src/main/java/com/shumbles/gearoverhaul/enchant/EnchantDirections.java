@@ -2,14 +2,18 @@ package com.shumbles.gearoverhaul.enchant;
 
 import com.shumbles.gearoverhaul.usage.UsageGate;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.registry.Registries;
+import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 import java.util.Random;
-
-// (uses ArcaneAttribute from this package for attributesOf)
 
 /**
  * Which directions a piece can take (Table A of the design), and the up-to-three offered at the
@@ -58,6 +62,14 @@ public final class EnchantDirections {
 		return pool.subList(0, Math.min(3, pool.size()));
 	}
 
+	/** Up to three offered directions for the gear (valid minus chosen, fixed order). No player needed. */
+	public static List<String> offeredFor(ItemStack stack) {
+		List<String> chosen = EnchantComponents.getDirections(stack);
+		List<String> pool = new ArrayList<>(validFor(stack));
+		pool.removeAll(chosen);
+		return pool.subList(0, Math.min(3, pool.size()));
+	}
+
 	/** The attribute display-names belonging to a direction, in roster order. */
 	public static List<String> attributesOf(String direction) {
 		List<String> out = new ArrayList<>();
@@ -67,5 +79,62 @@ public final class EnchantDirections {
 			}
 		}
 		return out;
+	}
+
+	// ---- selector items (the brewing reagents that pick an attribute) -------
+
+	private static final Map<String, String> SPECIAL_SELECTORS = Map.of(
+		"Bottle o' Enchanting", "experience_bottle",
+		"Glistering Melon", "glistering_melon_slice");
+
+	/** The vanilla item that selects this attribute at the Advanced table. */
+	public static Item selectorItemOf(ArcaneAttribute a) {
+		String path = SPECIAL_SELECTORS.getOrDefault(a.selector,
+			a.selector.toLowerCase(Locale.ROOT).replace("'", "").replace(" ", "_"));
+		return Registries.ITEM.getOptionalValue(Identifier.ofVanilla(path)).orElse(Items.AIR);
+	}
+
+	/** A chosen attribute for a slot (the slot index + the attribute name). */
+	public record Selection(int slot, String attribute) {
+	}
+
+	/** Which unset direction slot + attribute the {@code selector} item maps to on this gear, or null. */
+	public static Selection matchSelector(ItemStack gear, Item selector) {
+		if (selector == Items.AIR) {
+			return null;
+		}
+		for (int i = 0; i < EnchantComponents.slotCount(gear); i++) {
+			if (EnchantComponents.attributeAt(gear, i) != null) {
+				continue; // slot already has an attribute
+			}
+			String dir = EnchantComponents.directionAt(gear, i);
+			for (ArcaneAttribute a : ArcaneAttribute.values()) {
+				if (a.direction.equals(dir) && selectorItemOf(a) == selector) {
+					return new Selection(i, a.displayName);
+				}
+			}
+		}
+		return null;
+	}
+
+	/** The first slot whose attribute can still be upgraded (below max level), or -1. */
+	public static int firstUpgradeableSlot(ItemStack gear) {
+		for (int i = 0; i < EnchantComponents.slotCount(gear); i++) {
+			if (EnchantComponents.attributeAt(gear, i) != null
+				&& EnchantComponents.levelAt(gear, i) < EnchantComponents.MAX_LEVEL) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	/** True if any slot has a direction but no attribute yet (so stirring is useful). */
+	public static boolean hasUnsetDirection(ItemStack gear) {
+		for (int i = 0; i < EnchantComponents.slotCount(gear); i++) {
+			if (EnchantComponents.attributeAt(gear, i) == null) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

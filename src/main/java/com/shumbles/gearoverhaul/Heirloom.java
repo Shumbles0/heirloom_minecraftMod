@@ -8,6 +8,7 @@ import com.shumbles.gearoverhaul.codex.CodexItems;
 import com.shumbles.gearoverhaul.enchant.EnchantBlocks;
 import com.shumbles.gearoverhaul.enchant.EnchantComponents;
 import com.shumbles.gearoverhaul.enchant.EnchantConversion;
+import com.shumbles.gearoverhaul.enchant.EnchantItems;
 import com.shumbles.gearoverhaul.foundation.GearNerf;
 import com.shumbles.gearoverhaul.loot.ManuscriptDrops;
 import com.shumbles.gearoverhaul.loot.ManuscriptLoot;
@@ -103,6 +104,7 @@ public class Heirloom implements ModInitializer {
 		// Enchanting rework (in progress): components, arcane bookshelves, the Advanced Enchanting
 		// Table, and direction selection at the vanilla table.
 		EnchantComponents.register();
+		EnchantItems.register();
 		EnchantBlocks.register();
 		EnchantConversion.register();
 	}
