@@ -1,6 +1,7 @@
 package com.shumbles.gearoverhaul.temper;
 
 import com.shumbles.gearoverhaul.Heirloom;
+import com.shumbles.gearoverhaul.enchant.EnchantEffects;
 import com.shumbles.gearoverhaul.temper.data.TemperLevel;
 import com.shumbles.gearoverhaul.temper.data.TemperTableLoader;
 import net.minecraft.component.DataComponentTypes;
@@ -43,7 +44,7 @@ public final class TemperStats {
 	private TemperStats() {
 	}
 
-	/** Recompute and install the attribute modifiers for the stack's current temper level. */
+	/** Recompute and install the attribute modifiers for the stack's temper level + enchant attributes. */
 	public static void refresh(ItemStack stack) {
 		if (stack.isEmpty()) {
 			return;
@@ -57,53 +58,57 @@ public final class TemperStats {
 			? TemperTableLoader.getTable().getEffective(itemId, level)
 			: null;
 
-		if (entry == null || entry.buffs().isEmpty()) {
-			// Untempered or no buffs defined → revert to the item's default (nerfed) stats.
+		boolean hasTemper = entry != null && !entry.buffs().isEmpty();
+		boolean hasEnchant = EnchantEffects.hasAny(stack);
+		if (!hasTemper && !hasEnchant) {
+			// Untempered, unenchanted → revert to the item's default (nerfed) stats.
 			stack.remove(DataComponentTypes.ATTRIBUTE_MODIFIERS);
 			return;
 		}
 
 		AttributeModifiersComponent base = item.getComponents()
 			.getOrDefault(DataComponentTypes.ATTRIBUTE_MODIFIERS, AttributeModifiersComponent.DEFAULT);
-
-		// Attributes the temper level touches.
-		Set<RegistryEntry<EntityAttribute>> overridden = new HashSet<>();
-		for (TemperLevel.StatBuff buff : entry.buffs()) {
-			overridden.add(buff.attribute());
-		}
-
-		// REPLACE attributes (attack damage, armor, toughness) overwrite their base
-		// modifier — the temper value IS the total, so we drop the base and reuse its id
-		// (which lets vanilla fold it into the white "X Attack Damage" total line).
-		// Everything else (attack speed, block-break speed, …) is ADDITIVE: the base
-		// modifier stays and the temper value stacks on top via a separate id. That's
-		// essential for attack speed, where the base is the sword's inherent slowness.
-		Map<RegistryEntry<EntityAttribute>, AttributeModifierSlot> baseSlots = new HashMap<>();
-		Map<RegistryEntry<EntityAttribute>, Identifier> baseIds = new HashMap<>();
-		AttributeModifiersComponent.Builder builder = AttributeModifiersComponent.builder();
-		for (AttributeModifiersComponent.Entry e : base.modifiers()) {
-			if (overridden.contains(e.attribute())) {
-				baseSlots.putIfAbsent(e.attribute(), e.slot());
-				baseIds.putIfAbsent(e.attribute(), e.modifier().id());
-				if (REPLACE_ATTRIBUTES.contains(e.attribute())) {
-					continue; // dropped: the temper buff replaces this base modifier
-				}
-			}
-			builder.add(e.attribute(), e.modifier(), e.slot());
-		}
-
 		AttributeModifierSlot fallback = fallbackSlot(item);
-		for (TemperLevel.StatBuff buff : entry.buffs()) {
-			AttributeModifierSlot slot = baseSlots.getOrDefault(buff.attribute(), fallback);
-			Identifier heirloomId = Identifier.of(Heirloom.MOD_ID, "temper_" + buff.attributeId().getPath());
-			Identifier modifierId = REPLACE_ATTRIBUTES.contains(buff.attribute())
-				? baseIds.getOrDefault(buff.attribute(), heirloomId)
-				: heirloomId;
-			builder.add(buff.attribute(),
-				new EntityAttributeModifier(modifierId, buff.value(), EntityAttributeModifier.Operation.ADD_VALUE),
-				slot);
+		AttributeModifiersComponent.Builder builder = AttributeModifiersComponent.builder();
+
+		if (hasTemper) {
+			// REPLACE attributes (attack damage, armor, toughness) overwrite their base modifier —
+			// the temper value IS the total, so we drop the base and reuse its id. Everything else
+			// (attack speed, …) is ADDITIVE: the base stays and the temper value stacks on top.
+			Set<RegistryEntry<EntityAttribute>> overridden = new HashSet<>();
+			for (TemperLevel.StatBuff buff : entry.buffs()) {
+				overridden.add(buff.attribute());
+			}
+			Map<RegistryEntry<EntityAttribute>, AttributeModifierSlot> baseSlots = new HashMap<>();
+			Map<RegistryEntry<EntityAttribute>, Identifier> baseIds = new HashMap<>();
+			for (AttributeModifiersComponent.Entry e : base.modifiers()) {
+				if (overridden.contains(e.attribute())) {
+					baseSlots.putIfAbsent(e.attribute(), e.slot());
+					baseIds.putIfAbsent(e.attribute(), e.modifier().id());
+					if (REPLACE_ATTRIBUTES.contains(e.attribute())) {
+						continue;
+					}
+				}
+				builder.add(e.attribute(), e.modifier(), e.slot());
+			}
+			for (TemperLevel.StatBuff buff : entry.buffs()) {
+				AttributeModifierSlot slot = baseSlots.getOrDefault(buff.attribute(), fallback);
+				Identifier heirloomId = Identifier.of(Heirloom.MOD_ID, "temper_" + buff.attributeId().getPath());
+				Identifier modifierId = REPLACE_ATTRIBUTES.contains(buff.attribute())
+					? baseIds.getOrDefault(buff.attribute(), heirloomId)
+					: heirloomId;
+				builder.add(buff.attribute(),
+					new EntityAttributeModifier(modifierId, buff.value(), EntityAttributeModifier.Operation.ADD_VALUE),
+					slot);
+			}
+		} else {
+			// No temper buffs: keep the item's base modifiers as-is, then add enchant ones on top.
+			for (AttributeModifiersComponent.Entry e : base.modifiers()) {
+				builder.add(e.attribute(), e.modifier(), e.slot());
+			}
 		}
 
+		EnchantEffects.append(stack, builder, fallback);
 		stack.set(DataComponentTypes.ATTRIBUTE_MODIFIERS, builder.build());
 	}
 

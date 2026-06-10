@@ -165,6 +165,8 @@ public class AdvancedTableBlockEntity extends BlockEntity implements Inventory, 
 			default -> {
 			}
 		}
+		// Re-bake the gear's attribute modifiers so the new attribute / level takes effect.
+		com.shumbles.gearoverhaul.temper.TemperStats.refresh(getStack(GEAR));
 		world.playSound(null, pos, SoundEvents.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.BLOCKS, 0.8f, 1.1f);
 		world.playSound(null, pos, SoundEvents.BLOCK_AMETHYST_BLOCK_CHIME, SoundCategory.BLOCKS, 0.7f, 1.4f);
 		markDirty();

@@ -96,4 +96,14 @@ public enum ArcaneAttribute {
 		this.effect = effect;
 		this.drawback = drawback;
 	}
+
+	/** The attribute with this in-game name, or {@code null}. */
+	public static ArcaneAttribute fromDisplay(String displayName) {
+		for (ArcaneAttribute a : values()) {
+			if (a.displayName.equals(displayName)) {
+				return a;
+			}
+		}
+		return null;
+	}
 }

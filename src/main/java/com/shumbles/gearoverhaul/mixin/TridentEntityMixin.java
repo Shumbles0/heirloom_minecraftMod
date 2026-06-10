@@ -1,10 +1,14 @@
 package com.shumbles.gearoverhaul.mixin;
 
+import com.shumbles.gearoverhaul.enchant.ArcaneAttribute;
+import com.shumbles.gearoverhaul.enchant.EnchantEffects;
 import com.shumbles.gearoverhaul.ritual.TridentRitual;
 import com.shumbles.gearoverhaul.special.SpecialScaling;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.TridentEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -36,6 +40,17 @@ public abstract class TridentEntityMixin {
 	private int heirloom$boltsLeft = 0;
 	@Unique
 	private int heirloom$boltTimer = 0;
+
+	/** Storm direction — Stormcall: a thrown trident that hits an entity calls lightning (cooldown). */
+	@Inject(method = "onEntityHit", at = @At("TAIL"))
+	private void heirloom$stormcall(EntityHitResult hit, CallbackInfo ci) {
+		TridentEntity self = (TridentEntity) (Object) this;
+		if (self.getEntityWorld() instanceof ServerWorld world
+			&& EnchantEffects.hasAttribute(getWeaponStack(), ArcaneAttribute.STORMCALL)) {
+			LivingEntity channeler = self.getOwner() instanceof LivingEntity living ? living : null;
+			EnchantEffects.stormcall(world, self.getX(), self.getY(), self.getZ(), channeler);
+		}
+	}
 
 	@ModifyArg(
 		method = "onEntityHit",

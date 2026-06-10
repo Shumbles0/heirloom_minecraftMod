@@ -9,6 +9,7 @@ import com.shumbles.gearoverhaul.enchant.EnchantBlocks;
 import com.shumbles.gearoverhaul.enchant.EnchantComponents;
 import com.shumbles.gearoverhaul.enchant.EnchantConversion;
 import com.shumbles.gearoverhaul.enchant.EnchantItems;
+import com.shumbles.gearoverhaul.enchant.EnchantTick;
 import com.shumbles.gearoverhaul.foundation.GearNerf;
 import com.shumbles.gearoverhaul.loot.ManuscriptDrops;
 import com.shumbles.gearoverhaul.loot.ManuscriptLoot;
@@ -107,5 +108,6 @@ public class Heirloom implements ModInitializer {
 		EnchantItems.register();
 		EnchantBlocks.register();
 		EnchantConversion.register();
+		EnchantTick.register();
 	}
 }

@@ -8,6 +8,7 @@
 		"CrossbowItemMixin",
 		"EnchantingTableBlockMixin",
 		"EnchantmentScreenHandlerMixin",
+		"LivingEntityMixin",
 		"MaceItemMixin",
 		"PersistentProjectileEntityMixin",
 		"RepairItemRecipeMixin",
